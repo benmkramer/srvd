@@ -1,0 +1,2464 @@
+/* MAIN */
+
+body, #jqt {
+	width: 100%;
+	overflow: hidden;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-touch-callout: none;
+}
+
+#jqt {
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	z-index: 1000;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+	user-select: none;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+}
+
+body, .pattern {
+	background: url("http://cdn.flowtab.mobi/img/pattern.png") repeat !important;
+}
+
+.hidden {
+	display: none;
+}
+
+.webfont-icon-base {
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: 0;
+	text-shadow: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-drag: none;
+}
+
+.selectable, #jqt input, #jqt textarea {
+	-webkit-user-select: auto;
+}
+
+.notransform {
+	-webkit-transform: none !important;
+}
+
+#jqt > * {
+	display: block;
+	left: 0;
+	top: 0;
+	min-height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	position: absolute;
+	z-index: 0;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+
+#jqt > .current {
+	z-index: 10;
+}
+
+#jqt > :not(.current) {
+	display: none;
+}
+
+.touchscroll:not(.animating3d) {
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.touchscroll:not(.animating3d) > * {
+	height: 100%;
+}
+
+.touchscroll:not(.animating3d) .scroll {
+	position: relative;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.scroll {
+	-webkit-margin-collapse: separate;
+}
+
+.in, #jqt .out {
+	-webkit-animation-duration: 250ms;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+.in {
+	z-index: 10;
+}
+
+.in:after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+}
+
+.out {
+	z-index: 0 !important;
+}
+
+.supports3d {
+	-webkit-perspective: 1000;
+}
+
+.supports3d > * {
+	-webkit-transform: translate3d(0, 0, 0) rotate(0) scale(1);
+}
+
+/* TOPBAR */
+
+.toolbar {
+	background: url("http://cdn.flowtab.mobi/img/topbar.png");
+	background-size: auto 100%;
+	background-repeat: repeat-x;
+	-webkit-box-sizing: border-box;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 6px;
+	border-bottom: 1px solid black;
+	z-index: 3000;
+	position: relative;
+	padding: 10px;
+	height: 44px;
+}
+
+.toolbar > h1 {
+	position: relative;
+	overflow: hidden;
+	bottom: 9px;
+	margin: 7px auto;
+	width: 100%;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: center;
+	white-space: nowrap;
+	color: white;
+	z-index: -1;
+	left: 0;
+	text-shadow: #161717 0 -1px 0;
+}
+
+.button, .back, .cancel, .clear, .logout, .delete, .add {
+	position: absolute;
+	overflow: hidden;
+	width: auto;
+	height: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 30px;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	white-space: nowrap;
+	background: none;
+	bottom: 6px;
+	right: 10px;
+	margin: 0;
+	padding: 0 10px;
+	color: #e2e3e3;
+	text-shadow: black 1px 1px 1px;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, rgba(0, 0, 0, 0.2) 0 1px 2px inset;
+	box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, rgba(0, 0, 0, 0.2) 0 1px 2px inset;
+	border: 1px solid black;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-image: none;
+	background-color: #0a0a0a;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f3031), color-stop(50%, #161717), color-stop(51%, #0a0a0a), color-stop(100%, #000000));
+	background-image: -webkit-linear-gradient(top, #2f3031, #161717 50%, #0a0a0a 51%, #000000);
+	background-image: linear-gradient(top, #2f3031, #161717 50%, #0a0a0a 51%, #000000);
+}
+
+.back {
+	max-width: 60px;
+	margin-left: 15px;
+	overflow: visible;
+	padding-left: 5px;
+}
+
+.back:after, .back:before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 1px;
+	left: 1px;
+	-webkit-transform: rotate(45deg) translate3d(0.2px, 0, 0);
+	transform: rotate(45deg) translate3d(0.2px, 0, 0);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	background-image: none;
+	background-color: #0a0a0a;
+	background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2f3031), color-stop(50%, #161717), color-stop(51%, #0a0a0a), color-stop(100%, #000000));
+	background-image: -webkit-linear-gradient(top left, #2f3031, #161717 50%, #0a0a0a 51%, #000000);
+	background-image: linear-gradient(top left, #2f3031, #161717 50%, #0a0a0a 51%, #000000);
+	background-size: 100% 98%;
+	-webkit-border-radius: 0 0 0 2px;
+	border-radius: 0 0 0 2px;
+	-webkit-mask-image: -webkit-linear-gradient(45deg, black, black 15px, rgba(0, 0, 0, 0) 15px);
+	-webkit-mask-image: -webkit-gradient(linear, left bottom, right top, from(black), color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+	-webkit-mask-clip: border-box;
+	-webkit-background-clip: content-box;
+}
+
+.back:after {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 0 0 inset, rgba(0, 0, 0, 0.2) 0 -1px 0 inset;
+	box-shadow: rgba(0, 0, 0, 0.2) 1px 0 0 inset, rgba(0, 0, 0, 0.2) 0 -1px 0 inset;
+}
+
+.back:before {
+	margin-left: -1px;
+	background: black none;
+}
+
+.back.active:after {
+	background-image: none;
+	background-color: black;
+	background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #262627), color-stop(50%, #0d0d0d), color-stop(51%, #000000), color-stop(100%, #000000));
+	background-image: -webkit-linear-gradient(left top, #262627, #0d0d0d 50%, #000000 51%, #000000);
+	background-image: linear-gradient(left top, #262627, #0d0d0d 50%, #000000 51%, #000000);
+}
+
+.back.active:before {
+	background-color: black;
+}
+
+.leftButton, .cancel, .back {
+	left: 4px;
+	right: auto;
+}
+
+.clear, .logout, .delete {
+	right: 4px;
+	left: auto;
+}
+
+.add {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+ul li {
+	border-bottom: 1px solid #AAAAAA;
+	list-style-type: none;
+	overflow: hidden;
+	padding: 10px;
+	-webkit-transform: translate3d(0, 0, 0);
+	/* expensive way to avoid flickr */
+}
+
+ul:first-child {
+	margin-top: 15px;
+}
+
+ul li.forward:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 24px;
+	height: 24px;
+	top: 50%;
+	right: 6px;
+	margin-top: -12px;
+	width: 24px;
+	height: 24px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	background-image: none;
+	background-color: #53b401;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #76fe04), color-stop(50%, #5fcd01), color-stop(51%, #53b401), color-stop(100%, #479b01));
+	background-image: -webkit-linear-gradient(top, #76fe04, #5fcd01 50%, #53b401 51%, #479b01);
+	background-image: linear-gradient(top, #76fe04, #5fcd01 50%, #53b401 51%, #479b01);
+	border: 2px solid #fff;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-sizing: border-box;
+	padding: 0;
+	z-index: 10;
+	line-height: 0;
+	pointer-events: none;
+}
+
+ul li.forward:after {
+	color: white;
+	text-shadow: #3c8101 0 -1px 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+	font-size: 24px;
+}
+
+ul.edgetoedge li:first-child {
+	border-top: 0;
+}
+
+ul.edgetoedge li.sep {
+	font-size: 16px;
+	padding: 2px 10px;
+}
+
+ul.edgetoedge li em {
+	font-weight: normal;
+	font-style: normal;
+}
+
+ul.edgetoedge li.sep {
+	background-image: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(38, 38, 38, 0.3)), color-stop(30%, rgba(20, 20, 20, 0.3)), color-stop(65%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+	background-image: -webkit-linear-gradient(top, rgba(38, 38, 38, 0.3), rgba(20, 20, 20, 0.3) 30%, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.3));
+	background-image: linear-gradient(top, rgba(38, 38, 38, 0.3), rgba(20, 20, 20, 0.3) 30%, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.3));
+	color: #949698;
+	text-shadow: black 0 -1px 0;
+}
+
+/* FONTS */
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+/* SPIN */
+
+#spinner-wrap {
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	position: fixed;
+	text-align: center;
+	left: 0 !important;
+	top: 0 !important;
+	background: rgba(0,0,0,0.25);
+}
+
+#spinner-box {
+	position: relative;
+	top: 35%;
+	z-index: 99999;
+	background: rgba(0, 0, 0, 0.75);
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.spinner {
+	position: relative;
+	width: 80%;
+	height: 80%;
+	z-index: 999999;
+	margin: 10%;
+	display: none;
+}
+
+.spin-bars {
+	width: 12%;
+	height: 26%;
+	background: white;
+	position: absolute;
+	left: 44.5%;
+	top: 37%;
+	opacity: 0;
+	-webkit-animation: fade 1s linear infinite;
+	-webkit-border-radius: 50px;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+div.spinner div.bar1 {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+div.spinner div.bar2 {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+div.spinner div.bar3 {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+div.spinner div.bar4 {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+div.spinner div.bar5 {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+div.spinner div.bar6 {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+div.spinner div.bar7 {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+div.spinner div.bar8 {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+div.spinner div.bar9 {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+div.spinner div.bar10 {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+div.spinner div.bar11 {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+
+@-webkit-keyframes fade {
+	from {opacity: 1;}
+	to {opacity: 0.25;}
+}
+
+#loading-gif {
+	position: relative;
+	width: 80%;
+	height: 80%;
+	z-index: 999999;
+	margin: 10%;
+}
+
+#spinner-gif {
+	width: 90%;
+	margin: 12px 5%;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.spinner-block{
+	background-color:#F9F9F9;
+	border:2px solid #AAAAAA;
+	float:left;
+	height:71px;
+	margin-left:5px;
+	width:19px;
+	-webkit-animation-name:bounceG;
+	-webkit-animation-duration:1.2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:linear;
+	-webkit-transform:scale(0.7);
+	-webkit-transform: translate3d(0,0,0);
+	opacity:0.15;
+}
+
+#spinner-block1{
+	-webkit-animation-delay:0.36s;
+}
+
+#spinner-block2{
+	-webkit-animation-delay:0.48s;
+}
+
+#spinner-block3{
+	-webkit-animation-delay:0.6s;
+}
+
+@-webkit-keyframes bounceG{
+	0%{
+		-webkit-transform:scale(1.2);
+		opacity: 0.90;
+	}
+	100%{
+		-webkit-transform:scale(0.7);
+		opacity: 0.15;
+	}
+}
+
+#stuck-loading {
+	width: 96%;
+	margin: 0 auto;
+	font-size: 15px;
+	color: white;
+	font-family: 'Open Sans';
+	position: absolute;
+	left: 0;
+	top: 140px;
+	text-shadow: 1px 1px 1px #444;
+	border: 1px solid #242424;
+	border-radius: 7px;
+	padding: 5px 2%;
+	background: rgba(0,0,0,.7);
+	display: none;
+}
+
+.f-line {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -159px -8px;
+	background-size: 450px;
+	width: 285px;
+	height: 44px;
+	margin: 8px auto;
+	clear: both;
+}
+
+.logout, .delete {
+	background-image: -webkit-linear-gradient(top, red, #C80000 50%, #C00000 51%, #A80000) !important;
+}
+
+.clear {
+	background-image: -webkit-linear-gradient(top, red, #C80000 50%, #C00000 51%, #A80000) !important;
+	height: 30px !important;
+	width: 37px !important;
+	font-size: 14px !important;
+	line-height: 29px !important;
+	right: 4px !important;
+}
+
+h1, .clear {
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.checkout {
+	background: -webkit-gradient(linear, left top, left bottom, from(#00CC33), to(#006633)) !important;
+	-webkit-transition: all .25s ease-out;
+	right: 4px !important;
+	top: 5px;
+	z-index: -1;
+}
+
+.cart {
+	top: -44px;
+}
+
+.delete {
+	-webkit-transition: all .25s ease-out;
+}
+
+.refresh {
+	left: auto !important;
+	right: 4px !important;
+}
+
+.back-home, .back-hist {
+	background: none;
+	background-color: #0A0A0A;
+	background-image: linear-gradient(top, #2F3031, #161717 50%, #0A0A0A 51%, black);
+	background-image: none;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2F3031), color-stop(50%, #161717), color-stop(51%, #0A0A0A), color-stop(100%, black));
+	background-image: -webkit-linear-gradient(top, #2F3031, #161717 50%, #0A0A0A 51%, black);
+	border: 1px solid black;
+	border-radius: 5px;
+	bottom: 6px;
+	box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, rgba(0, 0, 0, 0.2) 0 1px 2px inset;
+	color: #E2E3E3;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	height: 30px;
+	left: 10px;
+	line-height: 30px;
+	margin-left: 15px;
+	max-width: 60px;
+	overflow: visible;
+	padding: 0 10px 0 5px;
+	position: absolute;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	text-shadow: black 0 -1px 0;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, rgba(0, 0, 0, 0.2) 0 1px 2px inset;
+	white-space: nowrap;
+	border-left: none;
+}
+
+.back-home::after, .back-home::before, .back-hist::after, .back-hist::before {
+	background-color: #0A0A0A;
+	background-image: linear-gradient(top left, #2F3031, #161717 50%, #0A0A0A 51%, black);
+	background-image: none;
+	background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2F3031), color-stop(50%, #161717), color-stop(51%, #0A0A0A), color-stop(100%, black));
+	background-image: -webkit-linear-gradient(top left, #2F3031, #161717 50%, #0A0A0A 51%, black);
+	background-size: 100% 98%;
+	border: 1px solid black;
+	border-radius: 0 0 0 2px;
+	content: '';
+	height: 20px;
+	left: 1px;
+	position: absolute;
+	top: -1px;
+	transform: rotate(45deg) translate3d(0.2px, 0, 0);
+	transform-origin: 0 0;
+	-webkit-background-clip: content-box;
+	-webkit-border-radius: 0 0 0 2px;
+	-webkit-mask-clip: border-box;
+	-webkit-mask-image: -webkit-gradient(linear, left bottom, right top, from(black), color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+	-webkit-mask-image: -webkit-linear-gradient(45deg, black, black 15px, rgba(0, 0, 0, 0) 15px);
+	-webkit-transform: rotate(45deg) translate3d(0.2px, 0, 0);
+	-webkit-transform-origin: 0 0;
+	width: 20px;
+}
+
+.back {
+	border-left: none !important;
+}
+
+#jqt .back::after, #jqt .back::before, .back-home::after, .back-home::before, .back-hist::after, .back-hist::before {
+	left: 2px;
+}
+
+/* HOMEPAGE */
+
+#home {
+	overflow: hidden;
+}
+
+#homepage {
+	background: url("http://cdn.flowtab.mobi/img/chicago9.jpg") repeat;
+	background-position: top right;
+	background-size: auto 150%;
+	height: 0;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	bottom: 0;
+	-webkit-transition: all .25s linear;
+}
+
+#logout {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	display: none;
+	-webkit-transition: all .25s linear;
+}
+
+#backdrop {
+	background-color: rgba(0,0,0,0.35);
+	position: absolute;
+	border-radius: 5px;
+	height: 154px;
+	opacity: .90;
+	top: 180px;
+	width: 96%;
+	margin: 0 2%;
+	padding: 4px 0;
+	text-decoration: none;
+}
+
+#backdrop .slideleft {
+	height: 48px;
+	width: 100%;
+	display: block;
+	margin: 0;
+	text-decoration: none;
+}
+
+#info-btn {
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    opacity: 0.90;
+}
+
+.slideleft {
+	text-decoration: none;
+}
+
+#thirsty-btn, #settings-btn, #coupons-btn {
+	background: url("http://cdn.flowtab.mobi/img/dropbar.jpg") repeat 0 -1px;
+	border-radius: 4px;
+	margin: 5px auto 0;
+	height: 48px;
+	width: 97%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0.25);
+}
+
+#settings-btn, #coupons-btn {
+	margin-top: 0;
+}
+
+#home .home-text {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 44px;
+	margin-left: 10px;
+	margin-top: 2px;
+	float: left;
+	text-shadow: 1px 1px 1px #444;
+}
+
+#thirsty-btn .home-text {
+	font-weight: bold;
+}
+
+#thirsty-icon, #settings-icon, #coupons-icon {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -257px -93px;
+	background-size: 400px;
+	height: 43px;
+	margin: 2px 2px 2px 5px;
+	width: 35px;
+	display: block;
+	float: left;
+}
+
+#thirsty-icon {
+	background-position: -255px -50px;
+}
+
+#settings-icon {
+	background-position: -257px -90px;
+}
+
+#coupons-icon {
+	background-position: -256px -126px;
+	margin-top: 5px;
+}
+
+#offer-code {
+	font-size: 26px;
+	margin: 10px 0;
+	color: #444;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+.green {
+	color: #444;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 2px;
+}
+
+#big-reward {
+	color: white;
+	margin: 25px auto;
+	font-size: 75px;
+	width: 100px;
+	text-align: center;
+	text-shadow: 2px 2px 3px #282828;
+	display: none;
+	-webkit-transition: all 0.50s ease-out;
+}
+
+.reward-rotate {
+	-webkit-transform: rotate(365deg);
+	font-size: 125px !important;
+	margin-top: 5px !important;
+	opacity: .75 !important;
+}
+
+/* LOGOUT */
+
+#home-in, #home-out {
+    position: absolute;
+	width: 100%;
+	height: 0;
+	bottom: 0; left: 0;
+	opacity: .90;
+	z-index: 10;
+	-webkit-transition: all 0.50s ease-out;
+}
+
+#home-block1, #home-block2 {
+	opacity: .90;
+	width: 50%;
+	height: 100%;
+	bottom: 0;
+	float: left;
+	z-index: 20;
+	text-align: center;
+	font-family: 'Open Sans';
+	overflow: hidden;
+	display: block;
+	border: 1px solid #DDD;
+}
+
+#home-block1 {
+	margin-right: -2px;
+}
+
+#home-block2 {
+	margin-left: -2px;
+}
+
+#home-block1 .line1, #home-block2 .line1 {
+	color: #666;
+	font-size: 20px;
+	margin-top: 14px;
+	font-weight: bold;
+	display: block;
+	clear: both;
+}
+
+#home-block1 .line2, #home-block2 .line2 {
+	color: #888;
+	font-size: 14px;
+	display: block;
+	clear: both;
+}
+
+.logo-wrap {
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	z-index: 1000;
+}
+
+#logo {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -214px -92px;
+	background-size: 700px;
+	width: 220px;
+	height: 80px;
+	position: relative;
+	top: 50px;
+	margin: 0 auto;
+	-webkit-transition: all .8s linear;
+}
+
+#img-box {
+	width: 360px;
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+	margin: 0 auto;
+	z-index: 500;
+}
+
+#checkers-box, #barpad-box, #skyline-box, #taps-box {
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 360px;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#checkers, #barpad, #skyline, #taps {
+	height: 100%;
+	position: relative;
+	-webkit-transition: all 8s linear;
+	-webkit-transform: scale(1.1);
+}
+
+#barpad {
+	width: 100%;
+	height: auto;
+	margin-top: -50px;
+}
+
+#smally {
+    clear: both;
+    color: #888;
+    font-family: 'Open Sans';
+	font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    width: 90%;
+	margin: 60px 5%;
+	opacity: 0;
+	-webkit-transition: all 1.25s linear;
+}
+
+#biggy2 {
+	margin-top: 145px;
+}
+
+#points, #reward1, #reward2, #high-score {
+	font-weight: bold;
+	color: #339900;
+	font-size: 21px;
+	margin: 2px;
+	text-shadow: 1px 1px 1px #343434;
+}
+
+#reward2 {
+	color: #DC143C;
+}
+
+.mono {
+	font-family: monospace;
+	font-size: 23px;
+	color: #444;
+	margin: 0 5px;
+	font-weight: bold;
+	font-weight: 1px 1px 1px #AAA;
+}
+
+.aff-header {
+	display: inline-block;
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 17px;
+	width: 30%;
+	margin: 15px 1% 0;
+	padding: 1px;
+	height: 23px;
+	padding: 8px 0;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	line-height: 23px;
+}
+
+.aff-block {
+	box-shadow: inset 0px 1px 0px 0px white;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #EDEDED), color-stop(1, #DFDFDF) );
+	background-color: #EDEDED;
+	border-radius: 6px;
+	border: 1px solid gainsboro;
+	text-shadow: 1px 1px 1px white;
+	display: inline-block;
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: bold;
+	width: 30%;
+	margin: 15px 1% 0;
+	height: 23px;
+	padding: 8px 0;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	line-height: 23px;
+	opacity: .8;
+}
+
+#aff-code {
+	font-style: italic;
+}
+
+#aff-true {
+	display: none;
+}
+
+/* LISTS */
+
+#jqt ul.edgetoedge li {
+    height: 50px;
+}
+
+#jqt ul li {
+	border: 1px solid #AAA;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	padding: 4px 10px;
+	margin: -1px 0 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-transition: all .25s linear;
+}
+
+.location {
+	position: relative;
+}
+
+.closed {
+	opacity: .55;
+	z-index: -100;
+}
+
+.closed .cat-arrow {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -764px -110px !important;
+	width: 28px;
+	height: 30px;
+	top: 15px;
+}
+
+.inner-location {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.menus {
+	-webkit-transition: all .25s linear;
+}
+
+#auth-menu {
+	display: none;
+}
+
+.white-arrow {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -737px -228px;
+	width: 20px;
+	height: 18px;
+	position: absolute;
+	display: inline-table;
+	right: 4%;
+	margin-top: 16px;
+}
+
+.black-arrow {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -702px -228px;
+	width: 20px;
+	height: 18px;
+	position: absolute;
+	display: inline-table;
+	right: 10px;
+	top: 10px;
+	opacity: .5;
+}
+
+.cat-arrow {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -702px -228px;
+	width: 20px;
+	height: 18px;
+	position: absolute;
+	display: inline-table;
+	right: 10px;
+	top: 20px;
+	opacity: .5;
+}
+
+.title {
+    color: #777777;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -.25px;
+    line-height: 25px;
+    margin-top: 3px;
+}
+
+#settings .settings, #support .settings, #feedback .settings {
+    color: #777777;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -.25px;
+    line-height: 32px;
+    height: 34px;
+}
+
+#locations .title, #locations .addy {
+	margin-left: 45px;
+	line-height: 23px;
+}
+
+.spacer {
+	height: 14px;
+	width: 100%;
+	color: white;
+	background: #AAA;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: 'Open Sans';
+	padding-left: 12px;
+}
+
+#settings .base-chevron, #settings ul li.arrow::after, #settings ul li.forward::after, #support .base-chevron, #support ul li.arrow::after, #support ul li.forward::after {
+	margin-top: -9px;
+}
+
+.base-chevron, #jqt ul li.arrow::after, #jqt ul li.forward::after {
+	display: none;
+}
+
+.addy {
+	font-size: 14px;
+	margin-top: -2px;
+	color: #50ADFF;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: italic;
+}
+
+#categories .title, #categories .addy, #cocktails .title, #cocktails .addy, #shooters .title, #shooters .addy {
+	margin-left: 45px;
+	line-height: 23px; 
+}
+
+ul li a.active {
+	background: #EFEFEF;
+	height: 62px !important;
+}
+
+#settings ul li a.active, #support ul li a.active {
+	background: #EEE;
+	height: 34px !important;
+}
+
+.text-link {
+	color: #FF4500;
+}
+
+.rounded {
+	background: #F9F9F9;
+	border-radius: 10px;
+	border: 1px solid #AAA;
+	margin: 15px 10px;
+}
+
+.top-box {
+	border-radius: 8px 8px 0 0 !important;
+}
+
+.bottom-box {
+	border-radius: 0 0 8px 8px !important;
+}
+
+a {
+	text-decoration: none;
+	border: none;
+}
+
+.card-wrap {
+	width: 250px;
+	margin: 0 auto 14px;
+	height: 35px;
+}
+
+.card-num {
+	font-size: 23px;
+	margin: 6px 0 0 58px;
+	float: left;
+	left: 20px;
+}
+
+.cim-delete {
+	box-shadow: inset 0px 1px 0px 0px #F29C93;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FE1A00), color-stop(1, #CE0100) );
+	background-color: #FE1A00;
+	border-radius: 6px;
+	border: 1px solid #D83526;
+	display: inline-block;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 14px;
+	width: 70px;
+	height: 15px;
+	padding: 8px 0;
+	text-decoration: none;
+	text-align: center;
+	right: 12px;
+	-webkit-tap-highlight-color: rgba(0,0,0,.15);
+	float: right;
+}
+
+#no-cards {
+	width: 245px;
+	margin: 0 auto;
+}
+
+/* MENU */
+
+.imagecol {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -77px -319px;
+	background-size: 415px;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	left: 12px;
+	top: 10px;
+	border-radius: 5px;
+	opacity: .90;
+}
+
+#categories .imagecol {
+	top: 10px;
+}
+
+.bar-img {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -168px -27px;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 0;
+	border-radius: 8px;
+	border: 1px solid #EEE;
+	box-shadow: 1px 1px 1px #AAA
+}
+
+#beer .imagecol, .beer .imagecol {
+	background-position: -78px -44px;
+}
+
+#wine .imagecol, .wine .imagecol {
+	background-position: -77px -86px;
+}
+
+#cocktails .imagecol, .cocktails .imagecol, #featured .imagecol, #well .imagecol, #premium .imagecol, #custom .imagecol {
+	background-position: -77px -124px;
+}
+
+#shooters .imagecol, .shooters .imagecol, #vodka .imagecol, #rum .imagecol, #whiskey .imagecol, #tequila .imagecol, #other .imagecol {
+	background-position: -151px -166px;
+}
+
+#soft-drinks .imagecol, .soft-drinks .imagecol{
+	background-position: -77px -165px;
+}
+
+#food .imagecol, .food .imagecol {
+	background-position: -114px -166px;
+}
+
+.p-item {
+	border-bottom: 1px solid #AAAAAA;
+	border-top: 1px solid #AAAAAA;
+    height: 86px;
+    margin: -1px 0 0;
+    width: 100%;
+    float: left;
+    background: none;
+    overflow: hidden;
+    -webkit-transition: all .75s ease;
+	-webkit-transform:translate3d(0,0,0);
+}
+
+#custom .p-item {
+	height: 76px;
+}
+
+.p-title {
+	color: #777;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	letter-spacing: -1px;
+	font-weight: 400;
+	text-decoration: none;
+	margin-top: 6px;
+	left: 58px !important;
+	position: absolute;
+}
+
+.p-price, .p-sale {
+  	color: #50ADFF;
+  	float: right;
+  	font-family: 'Open Sans';
+  	font-size: 17px;
+  	font-weight: 300;
+  	left: 57px;
+  	margin-top: 30px;
+  	line-height: 17px;
+  	position: absolute;
+}
+
+.p-sale {
+	color: forestGreen;
+	display: none;
+}
+
+.p-desc {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #777;
+    font-weight: 400;
+    left: 11px;
+    letter-spacing: -0.25px;
+    line-height: 14px;
+    margin-top: 53px;
+    padding-right: 8px;
+    position: absolute;
+}
+
+.p-name, .p-key {
+	display: none;
+}
+
+.happy-price {
+	color: #77CA48;	
+}
+
+.buy-rotate {
+	-webkit-transform: rotate(135deg);
+}
+
+#promo-div {
+	display: none;
+}
+
+/* SWIPER */
+
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	z-index:1;
+}
+
+.swiper-wrapper {
+	position:relative;
+	width:100%; height: 48px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-transition-timing-function:ease;
+}
+
+.swiper-slide {
+	float:left;
+	-webkit-transform:translate3d(0,0,0);
+}
+
+#mixers-wrap {
+	width: 100%;
+}
+
+#mixers {
+	position: relative;
+	height: 78px;
+}
+
+#mixer-title {
+	font-family: 'Open Sans';
+	text-align: center;
+	font-size: 13px;
+	font-style: italic;
+	color: #777;
+	height: 30px;
+	line-height: 30px;
+}
+
+.mixer-item {
+	background: #F9F9F9;
+    font-family: 'Open Sans';
+    border: 1px solid #DDD;
+    box-shadow: 1px 1px 1px #AAA;
+    font-size: 15px;
+    font-weight: 400;
+	text-align: center;
+    color: #777;
+	height: 45px !important;
+	line-height: 45px;
+	margin-right: -2px;
+	-webkit-transition: all .25s linear;
+}
+
+/* INFO PAGES */
+
+.text, .form {
+    color: #666;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 4% 20px;
+    width: 92%;
+    border: none;
+}
+
+#account .text {
+	padding-top: 0;
+}
+
+.text h2 {
+	color: #777777;
+	font-family: 'Open Sans';
+	margin: 15px 0;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.no-margin-top {
+	margin-top: 0 !important;
+}
+
+/* LOGIN / REGISTER */
+
+.text-input, .area-input {
+    background: white;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    color: #888888;
+    font-family: 'Open Sans';
+    font-size: 19px;
+    height: 40px;
+    padding: 1px 2%;
+    margin: 6px 0;
+    width: 96%;
+}
+
+.area-input {
+	height: 100px;
+	margin: 20px 0 0;
+}
+
+.secure {
+	-webkit-transition: all .35s ease-out;
+}
+
+#password, #pass {
+    -webkit-text-security: disc;
+}
+
+#send_credentials_via_email {
+	display: none;
+}
+
+#login-btn, #forgot-btn, #register-btn, #account-btn, #offer-btn {
+	box-shadow: inset 0px 1px 0px 0px #BBDAF7;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79BBFF), color-stop(1, #378DE5) );
+	background-color: #79BBFF;
+	border-radius: 6px;
+	border: 1px solid #84BBF3;
+	display: inline-block;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: bold;
+	width: 100%;
+	margin: 15px 0;
+	height: 23px;
+	padding: 8px 0;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	line-height: 23px;
+	left: 0; top: 0;
+}
+
+#logout-btn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+	background-color:#f9f9f9;
+	border-radius:4px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:'Open Sans';
+	font-size:14px;
+	padding:8px 0;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	width: 40%;
+	height: 20px;
+	line-height: 20px;
+	margin: 5px 30%;
+	padding: 8px 0;
+	text-align: center;
+}
+
+label, #remember-me {
+	display: none;
+}
+
+#first_name, #first_name2 {
+	width: 45%;
+	float: left;
+	border-radius: 5px; 
+}
+
+#last_name, #last_name2 {
+	width: 45%;
+	float: right;
+	border-radius: 5px;
+}
+
+#user_phone2 {
+	/* opacity: .5; */
+}
+
+.terms-wrap, .thanks-wrap, #brand-alert {
+    color: #777;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    letter-spacing: -.5px;
+    text-align: center;
+    width: 100%;
+    margin-top: -5px;
+}
+
+#brand-alert {
+	width: 100%;
+	text-align: center;
+	left: 0;
+	position: absolute;
+}
+
+.terms-btn, .auth-text, .welcome {
+    /* color: #0066FF; */
+    color: #777;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.auth-text {
+	margin-left: 7px;
+	margin-top: 17px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.welcome {
+    color: #777;
+    margin-top: 5px;
+	text-align: center;
+}
+
+#kap {
+	color: #50ADFF;
+}
+
+.green-check {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -637px -227px;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 8px;
+	margin-right: -30px;
+	margin-top: 5px;
+}
+
+.red-x {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -608px -226px;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 8px;
+	margin-right: -30px;
+	margin-top: 5px;
+}
+
+.order-confirm, .max-drinks, .promo-valid, .promo-invalid, .mobile-invalid, .card-accepted, .card-declined, .bar-closed, .account-valid, .account-invalid, .exists-invalid, .login-valid, .login-invalid, .register-valid, .register-invalid, .forgot-valid, .forgot-invalid, .msg-sent, .table-invalid, .card-delete, .wifi-alert, .text-remind {
+	background: rgba(236, 244, 229, 0.95);
+	border-radius: 0 0 3px 3px;
+	top: 0; left: 0;
+	width: 100%;
+	text-align: center;
+	height: 35px;
+	overflow: hidden;
+	position: absolute;
+	border: 1px solid #DDD;
+	z-index: 1000;
+	-webkit-transition: all .35s ease-out;
+}
+
+.promo-invalid, .mobile-invalid, .card-declined, .bar-closed, .account-invalid, .exists-invalid, .login-invalid, .register-invalid, .forgot-invalid, .table-invalid {
+	background: rgba(128,0,0,0.3);
+}
+
+.order-confirm p, .max-drinks p, .promo-valid p, .promo-invalid p, .mobile-invalid p, .card-accepted p, .card-declined p, .bar-closed p, .account-valid p, .account-invalid p, .exists-invalid p, .login-valid p, .register-valid p, .login-invalid p, .register-invalid p, .forgot-valid p, .forgot-invalid p, .msg-sent p, .table-invalid p, .card-delete p, .wifi-alert p, .text-remind p {
+	color: #555;
+	font-size: 16px;
+	line-height: 33px;
+	display: inline-block;
+	text-shadow: 1px 1px 1px white;
+	font-weight: 700;
+}
+
+.green-check, .green-wifi {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -637px -225px;
+	width: 24px;
+	z-index: 1000;
+	display: inline-block;
+	float: none;
+	height: 23px;
+	margin-right: 5px;
+	margin-bottom: -4px;
+}
+
+.green-wifi {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -763px -225px;
+	width: 30px;
+}
+
+.red-x {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -606px -224px;
+	width: 24px;
+	z-index: 1000;
+	display: inline-block;
+	float: none;
+	height: 23px;
+	margin-right: 5px;
+	margin-bottom: -6px;
+}
+
+.center {
+	text-align: center;
+}
+
+.count {
+    background: none repeat scroll 0 0 red;
+    border: 2px solid white;
+    border-radius: 7px;
+    color: white;
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+    position: absolute;
+    right: 68px;
+    text-align: center;
+    top: -20px;
+    width: 19px;
+    font-weight: 700;
+    -webkit-transition: all .30s ease-out;
+}
+
+#send-text, #submit-suggestion, #submit-bug, #submit-affilite {
+	box-shadow: inset 0px 1px 0px 0px #BBDAF7;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79BBFF), color-stop(1, #378DE5) );
+	background-color: #79BBFF;
+	border-radius: 6px;
+	border: 1px solid #84BBF3;
+	display:inline-block;
+	color: white;
+	font-family:'Open Sans', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	width: 100%;
+	margin: 20px 0;
+	height: 24px;
+	padding:8px 0;
+	text-align: center;
+	position: relative;
+}
+
+#variations {
+    height: 21px;
+    left: 70px;
+    margin: 28px 0 0 55px;
+    overflow: hidden;
+    position: absolute;
+    width: 140px;
+    opacity: .80;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+#variations-select {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -511px -156px;
+	background-size: 690px;
+	color: #383838;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	width: 161px;
+	height: 22px;
+	border: none;
+	padding-left: 3px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+}
+
+.buy-button {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -523px -94px;
+	background-size: 695px;
+	border: none;
+	border-radius: 18px;
+	color: white;
+	font-size: 0;
+	height: 37px;
+	width: 37px;
+	margin-top: 15px;
+	position: absolute;
+	padding: 0;
+	right: 8px;
+	z-index: 999990;
+	opacity: .85;
+	-webkit-transition: all 0.5s ease;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#custom .buy-button {
+	margin-top: 18px;
+}
+
+/* iSCROLL */
+
+.shake {
+	-webkit-transform:translate3d(0,0,0);
+}
+
+.myScrollbarH {
+	position:absolute;
+	z-index:100;
+	height:7px;
+	bottom:1px;
+	left:2px;
+	right:7px
+}
+
+.myScrollbarH > div {
+	height:100%;
+}
+
+.myScrollbarV {
+	position:absolute;
+	z-index:100;
+	width:7px;bottom:7px;top:2px;right:1px
+}
+
+.myScrollbarV > div {
+	width:100%;
+}
+
+.myScrollbarH > div,
+.myScrollbarV > div {
+	position:absolute;
+	z-index:100;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	border-width:3px;
+	/*-webkit-border-image:url(img/scrollbar.png) 6 6 6 6;*/
+	/*border-image:url(img/scrollbar.png) 6 6 6 6;*/
+}
+
+#about-w, #locations-w, #categories-w, #beer-w, #wine-w, #cocktails-w, #featured-w, #well-w, #premium-w, #custom-w, #shooters-w, #vodka-w, #rum-w, #whiskey-w, #tequila-w, #other-w, #soft-drinks-w, #food-w, #security-w, #affiliate-w {
+	position:absolute;
+	top:44px;bottom:0;left:0;
+	width:100%;
+	height:auto;
+	z-index:1;
+	overflow:auto;
+}
+
+#custom-w {
+	top: 122px;
+}
+
+.scroller {
+	position:relative;
+	float:left;
+	width:100%;
+	padding:0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+#locations .scroller {
+	-webkit-transform: translate(0px, -51px) scale(1) translateZ(0px);
+}
+
+.scroller li {
+	padding:0 10px;
+	height:40px;
+	line-height:40px;
+}
+
+.scroller li > a {
+	display:block;
+}
+
+/* REVIEW */
+
+#hash-line {
+    position: relative;
+    width: 100%;
+}
+
+#loading {
+    left: 45%;
+    opacity: 0.75;
+    position: absolute;
+    top: 41%;
+    width: 10%;
+    z-index: 10000;
+    display: none;
+}
+
+.cart-qty, .cart-name, .single-price, .group-price, .total_price, .exp, .saved-card {
+    font-family: 'Open Sans';
+    color: #666555;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.qty-minus, .qty-plus {
+	display: inline-block;
+	position: absolute;
+	margin-top: 0;
+	height: 20px;
+	left: 12px;
+}
+
+.qty-plus {
+	left: 54px;
+}
+
+.update-plus, .update-minus {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -452px -225px;
+	background-size: 600px;
+	position: absolute;
+	top: -21px; left: 0;
+	height: 22px;
+	width: 22px;
+	border: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,.15);
+}
+
+.update-plus {
+	left: 2px;
+	background-position: -483px -225px;
+}
+
+.cart-qty {
+	left: 41px;
+	margin-top: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.cart-name {
+	left: 83px;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	width: 170px;
+	text-align: left;
+}
+
+.cart-price {
+    margin-top: -11px;
+    position: absolute;
+    right: 64px;
+    text-align: right;
+    width: 54px;
+    display: none;
+}
+
+.group-price {
+    right: 16px;
+    position: absolute;
+	margin-top: -20px;
+    text-align: right;
+    width: 54px;
+}
+
+.total_price {
+    color: #666555;
+    font-size: 15px;
+    font-weight: 400;
+    left: 0;
+    margin-top: -45px;
+    position: relative;
+    width: 100%;
+}
+
+#cart #header {
+    color: #666555;
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    height: 28px;
+    position: relative;
+    width: 100%;
+    margin: 5px 0;
+    display: none;
+}
+
+.checkout-header1 {
+    left: 34px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+}
+
+.checkout-header2 {
+    left: 82px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+}
+
+.checkout-header3 {
+    position: absolute;
+    right: 65px;
+    text-align: right;
+    top: 0;
+    display: none;
+}
+
+.checkout-header4 {
+    position: absolute;
+    right: 15px;
+    text-align: right;
+    top: 0;
+}
+
+#promo-row {
+	width: 100%;
+	margin: 16px 0;
+	display: block;
+	height: 38px;
+}
+
+#subtotal-wrap, $tax-wrap, #discount-wrap, #gratuity-wrap, .total-wrap {
+	width: 100%;
+}
+
+#discount-wrap, #subtotal-wrap {
+	/* display: none; */
+}
+
+#checkout .total-wrap {
+ 	/* display: none; */
+}
+
+#subtotal-label, #tax-label, #discount-label, #gratuity-label, #subtotal-amount, #tax-amount, #discount-amount, #gratuity-amount, .total-label, .total-amount, #table-text {
+    color: #666555;
+	height: 27px;
+    display: block;
+    float: left;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 15px;
+    text-align: left;
+}
+
+#subtotal-amount, #tax-amount, #discount-amount, #gratuity-amount, .total-amount {
+	margin-right: 15px;
+    text-align: right;
+    float: right;
+}
+
+#discount-label, #discount-amount {
+	color: forestGreen;
+}
+
+#cart .total-label, #cart .total-amount {
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 3px;
+}
+
+#checkout .total-label, #checkout .total-amount {
+	font-weight: 700;
+	font-size: 23px;
+	margin: 0 30px 15px;
+}
+
+/* CHECKOUT */
+
+.checkout-wrap {
+	text-align: center;
+}
+
+.stripe-wrap {
+	width: 320px;
+	margin: 30px auto 0;
+	position: relative;
+	text-align: center;
+	height: 155px;
+}
+
+.name-input {
+    font-size: 18px;
+    left: 5px;
+    padding-top: 4px;
+    padding-left: 5px;
+    width: 265px;
+    display: none;
+}
+
+.name-input, .cc-input, .month-input, .year-input, .cvv-input, #coupon_num, #table-num {
+	background: none repeat scroll 0 0 #F9F9F9;
+    border-radius: 5px 5px 5px 5px;
+    color: #666555;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    height: 27px;
+    position: absolute;
+    padding: 4px 6px 6px 6px;
+	border: 1px solid #AAAAAA;
+}
+
+#coupon_num {
+	font-size: 18px;
+	left: 12px;
+	padding-bottom: 6px;
+	position: relative;
+	width: 175px;
+	float: left;
+}
+
+.cc-input {
+	position: relative;
+	font-size: 19px;
+	margin: 15px auto;
+	padding-top: 5px;
+	padding-bottom: 6px;
+	width: 258px;
+}
+
+.exp {
+	position: absolute;
+	font-size: 18px;
+	left: 27px;
+	top: 121px;
+}
+
+.month-input {
+	position: absolute;
+	font-size: 18px;
+	left:77px;
+	top: 115px;
+	width:42px;
+}
+
+.year-input {
+	position: absolute;
+	font-size: 18px;
+	left: 148px;
+	top:115px;
+	position:absolute;
+	width: 44px;
+}
+
+.cvv-input {
+	position: absolute;
+	font-size: 18px;
+	left: 236px;
+	top: 115px;
+	width: 45px;
+}
+
+.coupon_num {
+	font-size: 18px;
+	left: 12px;
+	padding-bottom: 6px;
+	position: relative;
+	width: 175px;
+	float: left;
+}
+
+#table-block {
+	width: 320px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#pickup-btn, #table-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -246px -225px;
+	width: 126px;
+	height: 35px;
+	float: left;
+	margin: 10px 13px;
+	opacity: .65;
+}
+
+#table-btn {
+	background-position: -376px -225px;
+	float: right;
+}
+
+#pickup-btn.pickup-clicked {
+	background-position: -246px -266px;
+}
+
+#table-btn.table-clicked {
+	background-position: -376px -266px;
+}
+
+#table-text {
+	margin-top: 7px;
+	margin-left: -25px;
+	font-size: 16px;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+	-webkit-transition: all .35s ease-out;
+}
+
+#table-num {
+	margin: -6px 13px 0;
+	font-size: 17px;
+	width: 25px;
+	height: 21px;
+	opacity: 0;
+	-webkit-transition: all .35s ease-out;
+}
+
+.make-purchase {
+	box-shadow:inset 0px 1px 0px -2px #d9fbbe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52) );
+	background-color:#b8e356;
+	border-radius:6px;
+	border:1px solid #83c41a;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	margin: 15px 0;
+	height: 48px;
+	left: 5%;
+	width: 90%;
+	font-weight:bold;
+	padding:9px 50px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #86ae47;
+	-webkit-tap-highlight-color:rgba(0,0,0,.15);
+}
+
+/* AUTHORIZE */
+
+.mini-card {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -488px -212px;
+	background-size: 570px;
+	position: absolute;
+	top: 12px;
+	left: 16px;
+	width: 42px;
+	height: 28px;
+	opacity: .85;
+}
+
+.brands, .saved-card {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -452px -320px;
+	background-size: 750px;
+	position: relative;
+	width: 265px;
+	height: 45px;
+	margin: 0 auto;
+	opacity: .60;
+}
+
+.saved-card {
+	background: none;
+	opacity: .90;
+	display: none;
+}
+
+.stripe-last4 {
+	font-size: 22px;
+	top: 8px;
+	position: absolute;
+	left: 64px;
+	margin-left: 5px;
+}
+
+.powered {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -603px -266px;
+	width: 119px;
+	height: 26px;
+	position: relative;
+	margin: 0 auto;
+	opacity: .5;
+}
+
+.ssl-text {
+	font-size: 11px;
+	color: green;
+	margin: 0 auto 12px;
+	text-align: center;
+	width: 98px;
+	opacity: .60;
+	position: absolute;
+	left: 206px;
+	margin-top: 3px;
+}
+
+.ssl-icon {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -674px -229px;
+	height: 15px;
+	width: 12px;
+	top: 14px;
+	position: absolute;
+	left: 17px;
+}
+
+/* REVIEW */
+
+#coupon-form {
+	margin: 15px 0;
+}
+
+.product_row {
+	display: block;
+	margin: 5px 0;
+}
+
+#promo-update {
+	box-shadow: inset 0px 1px 0px 0px #BBDAF7;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79BBFF), color-stop(1, #378DE5) );
+	background-color: #79BBFF;
+	border-radius: 6px;
+	border: 1px solid #84BBF3;
+	display: inline-block;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 14px;
+	width: 75px;
+	height: 16px;
+	padding: 8px 0;
+	text-decoration: none;
+	position: absolute;
+	text-align: center;
+	margin-top: 2px;
+	right: 12px;
+	-webkit-tap-highlight-color: rgba(0,0,0,.15);
+}
+
+#promo-submit {
+	display: none;
+}
+
+.discount {
+    color: #FF9900;
+}
+
+.line {
+	background: #CCC;
+	width: 270px;
+	margin: 15px auto 10px;
+	clear: both;
+	height: 1px;
+}
+
+#log-ask {
+    color: #666555;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    margin-top: -54px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+#log-ask p {
+    left: 15px;
+    margin-top: -8px;
+    position: absolute;
+    width: 280px;
+}
+
+#log-ask a {
+    color: #78CDFF;
+    font-size: 16px;
+}
+
+#gratuity-plus, #gratuity-minus {
+	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -506px -253px;
+	background-size: 670px;
+	display: inline-block;
+	margin: 0 2px -5px 5px;
+	height: 24px;
+	width: 24px;
+}
+
+#gratuity-plus {
+	background-position: -541px -253px;
+}
+
+.disabled, .cvv-input {
+	opacity: .40;
+}
+
+/* SUCCESS */
+
+.text-box {
+	text-align: center;
+    position: relative;
+    width: 94%;
+    left: 3%;
+}
+
+.text-box p {
+	color: #777;
+	font-family: 'Open Sans';
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 27px;
+	text-align: center;
+	margin: 25px auto;
+	width: 260px;
+}
+
+#green {
+	color: #77CA48;
+    font-size: 30px;
+    text-shadow: 1px 1px 0 #DDDDDD;
+    padding: 15px 0 0;
+}
+
+#responsibly {
+	position: relative;
+	max-width: 260px;
+	margin: 0 auto;
+}
+
+#location, .strong {
+	font-weight: bold;
+}
+
+/* Slide Left */
+
+#jqt .slideleft.in {
+	-webkit-animation-name: slideLeftIn;
+}
+
+#jqt .slideleft.out {
+	-webkit-animation-name: slideLeftOut;
+}
+
+@-webkit-keyframes slideLeftIn {
+	0% {
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes slideLeftOut {
+	0% {
+		-webkit-transform: translateX(0px);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
+}
+
+/* Slide Right */
+
+#jqt .slideright.in {
+	-webkit-animation-name: slideRightIn;
+}
+
+#jqt .slideright.out {
+	-webkit-animation-name: slideRightOut;
+}
+
+@-webkit-keyframes slideRightIn {
+	0% {
+		-webkit-transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes slideRightOut {
+	0% {
+		-webkit-transform: translateX(0);
+	}
+	100% {
+		-webkit-transform: translateX(100%);
+	}
+}
+
+/* Slide Up */
+
+#jqt .slideup.in {
+	z-index: 10;
+	-webkit-animation-name: slideUpIn;
+}
+#jqt .slideup.out {
+	z-index: 0;
+	-webkit-animation-name: slideUpOut;
+}
+
+@-webkit-keyframes slideUpIn {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes slideUpOut {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
+/* Slide Down */
+
+#jqt .slidedown.in {
+	z-index: 0;
+	-webkit-animation-name: slideDownIn;
+}
+#jqt .slidedown.out {
+	z-index: 10;
+	-webkit-animation-name: slideDownOut;
+}
+
+@-webkit-keyframes slideDownIn {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes slideDownOut {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(100%);
+	}
+}
+
+/* Flip Left */
+
+#jqt .flipleft {
+	-webkit-backface-visibility: hidden;
+}
+
+#jqt .flipleft.in {
+	-webkit-animation-name: flipLeftIn;
+}
+
+#jqt .flipleft.out {
+	-webkit-animation-name: flipLeftOut;
+}
+
+@-webkit-keyframes flipLeftIn {
+	0% {
+		-webkit-transform: rotateY(180deg) scale(0.8);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg) scale(1);
+	}
+}
+
+@-webkit-keyframes flipLeftOut {
+	0% {
+		-webkit-transform: rotateY(0deg) scale(1);
+	}
+	100% {
+		-webkit-transform: rotateY(-180deg) scale(0.8);
+	}
+}
+
+/* Flip Right */
+
+#jqt .flipright {
+	-webkit-backface-visibility: hidden;
+}
+
+#jqt .flipright.in {
+	-webkit-animation-name: flipRightIn;
+}
+
+#jqt .flipright.out {
+	-webkit-animation-name: flipRightOut;
+}
+
+@-webkit-keyframes flipRightIn {
+	0% {
+		-webkit-transform: rotateY(-180deg) scale(0.8);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg) scale(1);
+	}
+}
+
+@-webkit-keyframes flipRightOut {
+	0% {
+		-webkit-transform: rotateY(0deg) scale(1);
+	}
+	
+	100% {
+		-webkit-transform: rotateY(180deg) scale(0.8);
+	}
+}

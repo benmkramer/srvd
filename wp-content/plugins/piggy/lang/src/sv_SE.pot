@@ -1,0 +1,447 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "%d digits"
+msgstr "%d siffror"
+
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d produkt"
+msgstr[1] "%d produkter"
+
+msgid "%s sales"
+msgstr "%s sälj"
+
+msgid "%s sales &#155; Avg %s%0.2f"
+msgstr "%s försäljning &#155; genomsnitt %s%0.2f"
+
+msgid "%s%d%s license(s) remaining."
+msgstr "%s%d%s licens(er) kvar."
+
+msgid "* You can reset all support and auto-upgrade licenses once every %d days."
+msgstr "* Du kan återställa all support och auto-uppgraderade licenser var %d dag."
+
+msgid "API Keys"
+msgstr "API-nycklar"
+
+msgid "About"
+msgstr "Om"
+
+msgid "Account"
+msgstr "Konto"
+
+msgid "Account + Licenses"
+msgstr "Konto + Licenser"
+
+msgid "Account E-Mail"
+msgstr "E-post för konto"
+
+msgid "Account Information"
+msgstr "Kontoinformation"
+
+msgid "Activate This WordPress installation &raquo;"
+msgstr "Aktivera denna WordPress-installation &raquo;"
+
+msgid "Activating license, please wait..."
+msgstr "Aktiverar licens, vänta..."
+
+msgid "Adjust All-Time Sales Count"
+msgstr "Ändra talet för toppförsäljning"
+
+msgid "Adjust All-Time Sales Total"
+msgstr "Ändra summan för bästa totalförsäljning"
+
+msgid "Advanced"
+msgstr "Avancerat"
+
+msgid "All Time"
+msgstr "Totalt sedan start"
+
+msgid "All Time Sales"
+msgstr "Total försäljning"
+
+msgid "Back"
+msgstr "Tillbaka"
+
+msgid "Best All Time"
+msgstr "Alla tiders bästa"
+
+msgid "Best Sellers"
+msgstr "Bästsäljare"
+
+msgid "Best This Month"
+msgstr "Bäst den här månaden"
+
+msgid "Best This Year"
+msgstr "Bäst i år"
+
+msgid "Black Skies"
+msgstr "Svarta skyar"
+
+msgid "Blue Skies"
+msgstr "Blå himmel"
+
+msgid "Close"
+msgstr "Stäng"
+
+msgid "Configure a push-notification service to deliver real-time push updates of e-Commerce sales to your Mac or iOS device. Requires Prowl or Howl iOS apps installed and configured on each device."
+msgstr "Konfigurera ett pushmeddelande för att skicka pushuppdateringar om e-handel i realtid till din Mac eller iOS-enhet. Kräver att Prowl eller Howl iOS-appar är installerade och konfigurerade på varje enhet."
+
+msgid "Currency symbol"
+msgstr "Valutasymbol"
+
+msgid "Current"
+msgstr "Aktuell"
+
+msgid "Docs"
+msgstr "Dokument"
+
+msgid "Dollar ($)"
+msgstr "Dollar ($)"
+
+msgid "Done"
+msgstr "Klar"
+
+msgid "Enter a number here to adjust the all-time sales count. This can be used to account for sales from another e-Commerce engine."
+msgstr "Ange ett nummer här för att ändra siffran för topp-försäljning. Detta kan användas för att redovisa försäljning från en annan e-handelsmotor."
+
+msgid "Enter a number here to adjust the all-time sales total. This can be used to account for sales from another e-Commerce engine."
+msgstr "Ange ett nummer här för att ändra totalsumman för toppförsäljning. Denna kan användas för att redovisa försäljning från en annan e-handelsmotor."
+
+msgid "Enter your passcode to view Piggy"
+msgstr "Ange din lösenkod för att se Piggy"
+
+msgid "Euro (€)"
+msgstr "Euro (€)"
+
+msgid "FAQ"
+msgstr "Vanliga frågor"
+
+msgid "Follow @PiggyPlugin on Twitter!"
+msgstr "Följ @PiggyPlugin på Twitter!"
+
+msgid "Frequently asked questions"
+msgstr "Vanliga frågor"
+
+msgid "From the BraveNewCode Blog"
+msgstr "Från BraveNewCode-bloggen"
+
+msgid "General"
+msgstr "Allmänt"
+
+msgid "Howl"
+msgstr "Howl"
+
+msgid "Howl Settings"
+msgstr "Howl-inställningar"
+
+msgid "Howl Username"
+msgstr "Howl-användarnamn"
+
+msgid "Language"
+msgstr "Språk"
+
+msgid "Last checked for updates:"
+msgstr "Senaste sökning efter uppdateringar:"
+
+msgid "Last updated"
+msgstr "Senast uppdaterad"
+
+msgid "Learn More"
+msgstr "Lär dig mer"
+
+msgid "License Key"
+msgstr "Licensnyckel"
+
+msgid "License accepted, thank you for supporting Piggy!"
+msgstr "Licensen accepterades, tack för att du stöder Piggy!"
+
+msgid "Loading licenses from the BNC server..."
+msgstr "Laddar licenser från BNC-servern..."
+
+msgid "Loading..."
+msgstr "Laddar..."
+
+msgid "Log in"
+msgstr "Logga in"
+
+msgid "Log out"
+msgstr "Logga ut"
+
+msgid "Looks like it's working!"
+msgstr "Det verkar fungera!"
+
+msgid "Manage Licenses"
+msgstr "Hantera licenser"
+
+msgid "Maximum number of 'Best Sellers' to display"
+msgstr "Max antal 'Bästsäljare' att visa"
+
+msgid "Modify the appearance of Piggy and Home Screen bookmark icon."
+msgstr "Ändra utseende på Piggy och startsidans bokmärkesikon."
+
+msgid "My Account"
+msgstr "Mitt konto"
+
+msgid "New eCommerce Sale!"
+msgstr "Ny e-handelförsäljning!"
+
+msgid "No sales this week."
+msgstr "Ingen försäljning den här veckan."
+
+msgid "No sales today."
+msgstr "Ingen försäljning idag."
+
+msgid "None"
+msgstr "Inga"
+
+msgid "Notification message title"
+msgstr "Meddelandetitel"
+
+msgid "Notification service"
+msgstr "Meddelandetjänst"
+
+msgid "Notifications"
+msgstr "Meddelanden"
+
+msgid "Number of digits for the passcode"
+msgstr "Antal siffror i lösenordet"
+
+msgid "Numeric passcode to access Piggy"
+msgstr "Numeriskt lösenord för åtkomst till Piggy"
+
+msgid "OinkBoard"
+msgstr "OinkBoard"
+
+msgid "Oops! Try saving again."
+msgstr "Oj! Försök spara igen."
+
+msgid "Other"
+msgstr "Annat"
+
+msgid "Overview"
+msgstr "Överblick"
+
+msgid "Panels"
+msgstr "Paneler"
+
+msgid "Password"
+msgstr "Lösenord"
+
+msgid "Piggy Changelog"
+msgstr "Piggy ändringslogg"
+
+msgid "Piggy News"
+msgstr "Piggy-nyheter"
+
+msgid "Piggy Theme"
+msgstr "Piggy-tema"
+
+msgid "Piggy URL"
+msgstr "Piggy-URL"
+
+msgid "Piggy adds a web-app to your website for monitoring WP E-Commerce, Cart66 and Shopp sales and statistics in real-time."
+msgstr "Piggy lägger till en webbapp på din webbplats för att övervaka WP e-handel, Cart66- och Shopp-försäljning och statistik i realtid."
+
+msgid "Piggy will respect this zone for its date/time statistics counting."
+msgstr "Piggy kommer ta hänsyn till den här zonen för statistikräkning gällande datum/tid."
+
+msgid "Piggy will use a startup background while loading, matching the Piggy Theme chosen above."
+msgstr "Piggy kommer använda en uppstartsbakgrund då den laddas som matchar det valda Piggy-temat ovan."
+
+msgid "Pink Pop"
+msgstr "Rosa läsk"
+
+msgid "Please enter your Account E-Mail and License Key to begin the license activation process, or %spurchase a license &raquo;%s"
+msgstr "Ange e-post för kontot och licensnyckel för att starta licensaktiveringsprocessen eller %spurchase a license &raquo;%s"
+
+msgid "Pretty Permalinks have not been set for this website."
+msgstr "Pretty Permalinks har inte ställts in för denna webbplats."
+
+msgid "Products This Month"
+msgstr "Den här månadens produkter"
+
+msgid "Products This Week"
+msgstr "Veckans produkter"
+
+msgid "Projected"
+msgstr "Projekterad"
+
+msgid "Prowl"
+msgstr "Prowl"
+
+msgid "Prowl API Key"
+msgstr "Prowl API-nyckel"
+
+msgid "Prowl Settings"
+msgstr "Prowl-inställningar"
+
+msgid "Purchase More Licenses"
+msgstr "Köp fler licenser"
+
+msgid "Push Notifications"
+msgstr "Pushmeddelanden"
+
+msgid "Remove license?"
+msgstr "Ta bort licens?"
+
+msgid "Require passcode on each launch"
+msgstr "Kräv lösenord vid varje start"
+
+msgid "Reset Licenses Now"
+msgstr "Återställ licenser nu"
+
+msgid "Reset Settings"
+msgstr "Återställ inställningar"
+
+msgid "Reset all Piggy admin settings? This operation cannot be undone."
+msgstr "Återställ alla administrationsinställningar för Piggy? Detta går inte att ångra."
+
+msgid "Revenue"
+msgstr "Intäkt"
+
+msgid "Right Now"
+msgstr "Nu"
+
+msgid "Ruby Red"
+msgstr "Rubinröd"
+
+msgid "Sales"
+msgstr "Försäljning"
+
+msgid "Sales This Month"
+msgstr "Försäljning den här månaden"
+
+msgid "Sales This Week"
+msgstr "Försäljning den här veckan"
+
+msgid "Sales This Year"
+msgstr "Försäljning i år"
+
+msgid "Sales Today"
+msgstr "Försäljning idag"
+
+msgid "Sales at a Glance"
+msgstr "Överblick av försäljning"
+
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+msgid "Saving..."
+msgstr "Sparar..."
+
+msgid "Security"
+msgstr "Säkerhet"
+
+msgid "Send test notification message"
+msgstr "Skicka testmeddelande"
+
+msgid "Settings"
+msgstr "Inställningar"
+
+msgid "Sorry, Piggy is not yet compatible with %s"
+msgstr "Tyvärr, Piggy är ännu inte kompatibel med %s"
+
+msgid "Sorry, Piggy is not yet viewable in browsers"
+msgstr "Tyvärr, Piggy kan ännu inte ses i webbläsare"
+
+msgid "Support Forums"
+msgstr "Supportforum"
+
+msgid "Terms &amp; Legal"
+msgstr "Villkor &amp; Juridiska"
+
+msgid "Test Notification"
+msgstr "Testmeddelande"
+
+msgid "The Account E-Mail you have entered is invalid. Please try again."
+msgstr "Den angivna e-postadressen för kontot är ogiltig. Försök igen."
+
+msgid "The Account E-Mail you have entered is not associated with a valid license.  Please check your Account E-Mail and try again."
+msgstr "E-postadressen du har angivit för kontot är kopplad till en giltig licens.  Kontrollera e-postadressen för ditt konto och försök igen."
+
+msgid "The BraveNewCode Blog timed out."
+msgstr "Tiden för BraveNewCode-bloggen förföll."
+
+msgid "They must be enabled to access Piggy."
+msgstr "De måste vara aktiverade för att komma åt Piggy."
+
+msgid "This Account/License Key combination you have entered was rejected by the BraveNewCode server. Please try again."
+msgstr "Kombinationen av konto/licensnyckel nekades av BraveNewCode-servern. Försök igen."
+
+msgid "This Month"
+msgstr "Den här månaden"
+
+msgid "This Week"
+msgstr "Den här veckan"
+
+msgid "This Year"
+msgstr "I år"
+
+msgid "This link will open in Safari."
+msgstr "Denna länk kommer att öppnas i Safari."
+
+msgid "Timezone"
+msgstr "Tidszon"
+
+msgid "To access Piggy,  visit the URL in mobile Safari on iOS devices, or the web browser on Android"
+msgstr "För åtkomst till Piggy,  besök URL:et i mobil Safari på iOS-enheter eller webbläsaren på Android"
+
+msgid "To install this web app on your %device: tap %icon then \"<strong>Add to Home Screen</strong>\"."
+msgstr "För att installera denna webbapp på din %device: knacka på %icon och sen \"<strong>Add to Home Screen</strong>\"."
+
+msgid "Today"
+msgstr "Idag"
+
+msgid "Try again."
+msgstr "Försök igen."
+
+msgid "Twitter &rsaquo; BNC"
+msgstr "Twitter &rsaquo; BNC"
+
+msgid "URL fragment that Piggy should use to be accessed on your website, e.g. \"/stats/\" or \"/piggy/\"."
+msgstr "URL-fragment som Piggy ska använda för att kunna nås på din webbsida, t.ex. \"/stats/\" eller \"/piggy/\"."
+
+msgid "Upgrade to Piggy Pro!"
+msgstr "Uppgradera till Piggy Pro!"
+
+msgid "Use startup image"
+msgstr "Använd uppstartsbild"
+
+msgid "Username"
+msgstr "Användarnamn"
+
+msgid "Warning"
+msgstr "Varning"
+
+msgid "When checked the passcode will always be required on launch. If unchecked, the passcode will be valid until the user logs out."
+msgstr "När den är markerad kommer lösenordet alltid krävas vid start. När den är omarkerad gäller lösenordet tills användaren loggar ut."
+
+msgid "You have activated these sites for automatic upgrades & support:"
+msgstr "Du har aktiverat dessa sidor för automatiska uppdateringar och support:"
+
+msgid "You have not activated a license for this WordPress installation."
+msgstr "Du har inte aktiverat någon licens för denna WordPress-installation."
+
+msgid "You will be able to reset licenses again in %d day(s)."
+msgstr "Du kommer kunna återställa licenser igen om %d dag(ar)."
+
+msgid "Your Account E-Mail and License Key are required to enable site licenses for support and auto-upgrades with Piggy."
+msgstr "Ditt kontos e-post och licensnyckel krävs för att aktivera platslicenser för support och autouppgraderingar med Piggy."
+
+msgid "Your Account and License Key have been accepted. <br />Next, %sconnect a site license%s to this domain to enable support and automatic upgrades."
+msgstr "Ditt konto och din licensnyckel har accepterats. <br />%sconnect a site license%s till denna domän för att aktivera stöd för support och automatiska uppgraderingar."
+
+msgid "Your changes will take effect the next time you launch Piggy"
+msgstr "Dina ändringar kommer att visas nästa gång du startar Piggy"
+
+msgid "Your current Piggy URL is"
+msgstr "Ditt aktuella Piggy-URL är"
+
+msgid "by BraveNewCode Inc."
+msgstr "av BraveNewCode Inc."
+
+msgid "eCommerce Platform"
+msgstr "e-handelsplattform"

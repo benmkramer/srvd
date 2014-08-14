@@ -1,0 +1,447 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "%d digits"
+msgstr "%d 桁"
+
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d 製品"
+msgstr[1] "%d 製品"
+
+msgid "%s sales"
+msgstr "%s 売上"
+
+msgid "%s sales &#155; Avg %s%0.2f"
+msgstr "%s 売上 &#155; 平均 %s%0.2f"
+
+msgid "%s%d%s license(s) remaining."
+msgstr "%s%d%s ライセンス残余期間"
+
+msgid "* You can reset all support and auto-upgrade licenses once every %d days."
+msgstr "* %d日毎にすべてのサポートと自動アップグレードライセンスをリセットできます。"
+
+msgid "API Keys"
+msgstr "API キー"
+
+msgid "About"
+msgstr "製品について"
+
+msgid "Account"
+msgstr "アカウント"
+
+msgid "Account + Licenses"
+msgstr "アカウント + ライセンス"
+
+msgid "Account E-Mail"
+msgstr "アカウントメール"
+
+msgid "Account Information"
+msgstr "アカウント情報"
+
+msgid "Activate This WordPress installation &raquo;"
+msgstr "このWordPressインストレーションをアクティベート &raquo;"
+
+msgid "Activating license, please wait..."
+msgstr "ライセンスをアクティベート中です。少々お待ちください..."
+
+msgid "Adjust All-Time Sales Count"
+msgstr "これまでの売上回数を調整"
+
+msgid "Adjust All-Time Sales Total"
+msgstr "これまでの売上合計を調整"
+
+msgid "Advanced"
+msgstr "上級"
+
+msgid "All Time"
+msgstr "これまで"
+
+msgid "All Time Sales"
+msgstr "販売開始以来"
+
+msgid "Back"
+msgstr "戻る"
+
+msgid "Best All Time"
+msgstr "これまでの最高"
+
+msgid "Best Sellers"
+msgstr "ベストセラー"
+
+msgid "Best This Month"
+msgstr "今月の最高"
+
+msgid "Best This Year"
+msgstr "今年最高"
+
+msgid "Black Skies"
+msgstr "ブラックスカイ"
+
+msgid "Blue Skies"
+msgstr "ブルースカイ"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Configure a push-notification service to deliver real-time push updates of e-Commerce sales to your Mac or iOS device. Requires Prowl or Howl iOS apps installed and configured on each device."
+msgstr "MacまたはiOSデバイスにeコマース売上のリアルタイム更新を届けるために、プッシュ通知サービスを設定します。各デバイスにProwl または Howl iOS アプリをインストールし、設定する必要があります。"
+
+msgid "Currency symbol"
+msgstr "通貨シンボル"
+
+msgid "Current"
+msgstr "現在"
+
+msgid "Docs"
+msgstr "ドキュメント"
+
+msgid "Dollar ($)"
+msgstr "ドル($)"
+
+msgid "Done"
+msgstr "完了"
+
+msgid "Enter a number here to adjust the all-time sales count. This can be used to account for sales from another e-Commerce engine."
+msgstr "これまでの売上回数を調整するためにここに数値を入力してください。他のEコマースエンジンの売上アカウントにも使用できます。"
+
+msgid "Enter a number here to adjust the all-time sales total. This can be used to account for sales from another e-Commerce engine."
+msgstr "これまでの売上合計を調整するには、ここに数値を入力してください。これは他のEコマースエンジンの売上アカウントにも使用できます。"
+
+msgid "Enter your passcode to view Piggy"
+msgstr "Piggyを閲覧するにはパスコードを入力"
+
+msgid "Euro (€)"
+msgstr "ユーロ(€)"
+
+msgid "FAQ"
+msgstr "Q&A"
+
+msgid "Follow @PiggyPlugin on Twitter!"
+msgstr "@PiggyPluginをTwitterでフォロー！"
+
+msgid "Frequently asked questions"
+msgstr "よくある質問"
+
+msgid "From the BraveNewCode Blog"
+msgstr "BraveNewCode ブログより"
+
+msgid "General"
+msgstr "一般"
+
+msgid "Howl"
+msgstr "Howl"
+
+msgid "Howl Settings"
+msgstr "Howl 設定"
+
+msgid "Howl Username"
+msgstr "Howl ユーザーネーム"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Last checked for updates:"
+msgstr "アップデートの最後のチェック:"
+
+msgid "Last updated"
+msgstr "最後のアップデート"
+
+msgid "Learn More"
+msgstr "詳細を見る"
+
+msgid "License Key"
+msgstr "ライセンスキー"
+
+msgid "License accepted, thank you for supporting Piggy!"
+msgstr "ライセンスが承認されました。Piggyをご支援いただきありがとうございました！"
+
+msgid "Loading licenses from the BNC server..."
+msgstr "BNC サーバーからライセンスを読み込み中..."
+
+msgid "Loading..."
+msgstr "読み込み中..."
+
+msgid "Log in"
+msgstr "ログイン"
+
+msgid "Log out"
+msgstr "ログアウト"
+
+msgid "Looks like it's working!"
+msgstr "正常に作動しているようです！"
+
+msgid "Manage Licenses"
+msgstr "ライセンス管理"
+
+msgid "Maximum number of 'Best Sellers' to display"
+msgstr "表示する'ベストセラー' の最高数"
+
+msgid "Modify the appearance of Piggy and Home Screen bookmark icon."
+msgstr "Piggy とホーム画面ブックマークアイコンの外見を変更"
+
+msgid "My Account"
+msgstr "マイアカウント"
+
+msgid "New eCommerce Sale!"
+msgstr "新しいeコマース販売中！"
+
+msgid "No sales this week."
+msgstr "今週の売上はありません。"
+
+msgid "No sales today."
+msgstr "今日の売上はありません。"
+
+msgid "None"
+msgstr "なし"
+
+msgid "Notification message title"
+msgstr "通知メッセージタイトル"
+
+msgid "Notification service"
+msgstr "通知サービス"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Number of digits for the passcode"
+msgstr "パスコードの桁数"
+
+msgid "Numeric passcode to access Piggy"
+msgstr "Piggyにアクセスする数字のパスコード"
+
+msgid "OinkBoard"
+msgstr "OinkBoard"
+
+msgid "Oops! Try saving again."
+msgstr "おっと! もう一度保存してください。"
+
+msgid "Other"
+msgstr "その他"
+
+msgid "Overview"
+msgstr "概要"
+
+msgid "Panels"
+msgstr "パネル"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Piggy Changelog"
+msgstr "Piggy 変更ログ"
+
+msgid "Piggy News"
+msgstr "Piggy ニュース"
+
+msgid "Piggy Theme"
+msgstr "Piggy テーマ"
+
+msgid "Piggy URL"
+msgstr "Piggy URL"
+
+msgid "Piggy adds a web-app to your website for monitoring WP E-Commerce, Cart66 and Shopp sales and statistics in real-time."
+msgstr "Piggyは リアルタイムのWP E-Commerce, Cart66、Shopp売上と統計用ウェブアプリをあなたのウェブサイトに追加しました。"
+
+msgid "Piggy will respect this zone for its date/time statistics counting."
+msgstr "Piggy はこの地域の日時統計カウントを尊重します。"
+
+msgid "Piggy will use a startup background while loading, matching the Piggy Theme chosen above."
+msgstr "Piggyは読み込み中、上記のPiggyテーマにマッチするスタートアップバックグラウンドを使用します。"
+
+msgid "Pink Pop"
+msgstr "ピンクポップ"
+
+msgid "Please enter your Account E-Mail and License Key to begin the license activation process, or %spurchase a license &raquo;%s"
+msgstr "ライセンスアクティベーションプロセスを開始する、あるいは%sライセンスを購入&raquo;%s　するには、あなたのアカウントメールとライセンスキーを入力してください"
+
+msgid "Pretty Permalinks have not been set for this website."
+msgstr "可愛いパーマリンクがこのウェブサイトに設定されました。"
+
+msgid "Products This Month"
+msgstr "今月の商品"
+
+msgid "Products This Week"
+msgstr "今週の商品"
+
+msgid "Projected"
+msgstr "予想"
+
+msgid "Prowl"
+msgstr "Prowl"
+
+msgid "Prowl API Key"
+msgstr "Prowl API キー"
+
+msgid "Prowl Settings"
+msgstr "Prowl 設定"
+
+msgid "Purchase More Licenses"
+msgstr "もっとライセンスを購入"
+
+msgid "Push Notifications"
+msgstr "プッシュ通知"
+
+msgid "Remove license?"
+msgstr "ライセンスを削除しますか？"
+
+msgid "Require passcode on each launch"
+msgstr "各起動にパスコードを必要とします"
+
+msgid "Reset Licenses Now"
+msgstr "今すぐライセンスをリセット"
+
+msgid "Reset Settings"
+msgstr "設定をリセット"
+
+msgid "Reset all Piggy admin settings? This operation cannot be undone."
+msgstr "Piggy 管理設定をすべてリセットしますか? この操作は元に戻せません。"
+
+msgid "Revenue"
+msgstr "収入"
+
+msgid "Right Now"
+msgstr "今すぐ"
+
+msgid "Ruby Red"
+msgstr "ルビーレッド"
+
+msgid "Sales"
+msgstr "売上"
+
+msgid "Sales This Month"
+msgstr "今月の売上"
+
+msgid "Sales This Week"
+msgstr "今週の売上"
+
+msgid "Sales This Year"
+msgstr "今年の売上"
+
+msgid "Sales Today"
+msgstr "今日の売上"
+
+msgid "Sales at a Glance"
+msgstr "売上一覧"
+
+msgid "Save Changes"
+msgstr "変更を保存"
+
+msgid "Saving..."
+msgstr "保存中..."
+
+msgid "Security"
+msgstr "セキュリティ"
+
+msgid "Send test notification message"
+msgstr "テスト通知メッセージを送信"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Sorry, Piggy is not yet compatible with %s"
+msgstr "申し訳ありませんが、Piggyはまだ%sと互換性がありません"
+
+msgid "Sorry, Piggy is not yet viewable in browsers"
+msgstr "申し訳ありませんが、Piggyはまだブラウザで閲覧できません。"
+
+msgid "Support Forums"
+msgstr "サポートフォーラム"
+
+msgid "Terms &amp; Legal"
+msgstr "期間 &amp; 法的"
+
+msgid "Test Notification"
+msgstr "テスト通知"
+
+msgid "The Account E-Mail you have entered is invalid. Please try again."
+msgstr "あなたが入力したアカウントのメールは無効です。もう一度お試しください。"
+
+msgid "The Account E-Mail you have entered is not associated with a valid license.  Please check your Account E-Mail and try again."
+msgstr "入力したアカウントメールは有効なライセンスとの関連がありません。アカウントメールを調べて、もう一度お試しください。"
+
+msgid "The BraveNewCode Blog timed out."
+msgstr "BraveNewCode ブログがタイムアウトしました。"
+
+msgid "They must be enabled to access Piggy."
+msgstr "Piggyにアクセスするにはこれらを有効にしなくてはなりません。"
+
+msgid "This Account/License Key combination you have entered was rejected by the BraveNewCode server. Please try again."
+msgstr "このアカウント/ライセンスキーの組み合わせは BraveNewCode のサーバーに拒否されました。もう一度お試しください。"
+
+msgid "This Month"
+msgstr "今月"
+
+msgid "This Week"
+msgstr "今週"
+
+msgid "This Year"
+msgstr "今年"
+
+msgid "This link will open in Safari."
+msgstr "このリンクはSafariで開きます。"
+
+msgid "Timezone"
+msgstr "時間帯"
+
+msgid "To access Piggy,  visit the URL in mobile Safari on iOS devices, or the web browser on Android"
+msgstr "PiggyにアクセスするにはiOS デバイスのモバイルSafariから、あるいはアンドロイドのブラウザからURLを訪問してください。"
+
+msgid "To install this web app on your %device: tap %icon then \"<strong>Add to Home Screen</strong>\"."
+msgstr "%d デバイスにこのウェブアプリをインストールするには% アイコンをタップし、 \"<strong>ホーム画面に追加してください</strong>\"。"
+
+msgid "Today"
+msgstr "今日"
+
+msgid "Try again."
+msgstr "もう一度お試しください。"
+
+msgid "Twitter &rsaquo; BNC"
+msgstr "Twitter &rsaquo; BNC"
+
+msgid "URL fragment that Piggy should use to be accessed on your website, e.g. \"/stats/\" or \"/piggy/\"."
+msgstr "あなたのウェブサイトにアクセスするために、Piggyが使用するべきURL の部分 例、 \"/統計/\" または \"/piggy/\"。"
+
+msgid "Upgrade to Piggy Pro!"
+msgstr "Piggy Proにアップグレード！"
+
+msgid "Use startup image"
+msgstr "スタートアップの画像を使用"
+
+msgid "Username"
+msgstr "ユーザーネーム"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "When checked the passcode will always be required on launch. If unchecked, the passcode will be valid until the user logs out."
+msgstr "調べる時、パスコードは常に起動しなくてはなりません。調べない場合、パスコードはユーザーがログアウトするまで有効です。"
+
+msgid "You have activated these sites for automatic upgrades & support:"
+msgstr "あなたはこれらのサイトの自動アップグレードとサポートをアクティベートしました:"
+
+msgid "You have not activated a license for this WordPress installation."
+msgstr "あなたはこのWordPress インストレーションのライセンスをアクティベートしていません。"
+
+msgid "You will be able to reset licenses again in %d day(s)."
+msgstr "ライセンスは %d 日以内にまたリセットできます。"
+
+msgid "Your Account E-Mail and License Key are required to enable site licenses for support and auto-upgrades with Piggy."
+msgstr "サイトライセンスとPiggyの自動アップグレードを有効にするには、あなたのアカウントのメールとライセンスキーが必要です。"
+
+msgid "Your Account and License Key have been accepted. <br />Next, %sconnect a site license%s to this domain to enable support and automatic upgrades."
+msgstr "あなたのアカウントとライセンスキーが承認されました。 <br />次に %sサイトライセンスキー%s をこのドメインに接続し、サポートと自動アップグレードを有効にしてください。"
+
+msgid "Your changes will take effect the next time you launch Piggy"
+msgstr "変更は次回Piggyを起動した時、有効になります。"
+
+msgid "Your current Piggy URL is"
+msgstr "現在のあなたのPiggy URL は"
+
+msgid "by BraveNewCode Inc."
+msgstr "BraveNewCode Inc.製作"
+
+msgid "eCommerce Platform"
+msgstr "Eコマースプラットフォーム"

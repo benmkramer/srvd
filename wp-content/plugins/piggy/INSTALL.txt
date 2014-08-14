@@ -1,0 +1,49 @@
+
+== Installation ==
+
+Installing Piggy is just like any other WordPress plugin, with the addition of a couple extra steps to activate your upgrade & support license.
+
+= Piggy Minimum Requirements: =
+
+WordPress 3.1 or later (self-hosted installations only)
+PHP 5 or later
+MySQL 4.23 or later
+WP E-Commerce 3.7.2 or later
+Administrative access in the WordPress admin to install plugins
+
+= Uploading the Plugin =
+
+You can upload the plugin 1 of 2 ways, via FTP/SFTP/SSH upload or through the WordPress administration panel.
+
+It is strongly recommended for security, installation speed and reliability that you use the WordPress admin to upload Piggy.
+
+= Uploading via the WordPress admin panel: = 
+
+1. Visit Plugins->Add New in the admin.
+2. Click ‘Upload’ from the horizontal list of options below the page title.
+3. Select the location of your piggy.zip in the file uploader input.
+4. Click Upload, and the plugin will be uploaded and installed for you quickly and easily.
+5. You will now be asked if you want to activate the plugin, choose yes.
+
+= Uploading via FTP or SSH =
+
+It is assumed for the purposes of this document that if you choose to upload Piggy via FTP or SSH that you know how to do so, and are comfortable with the process of configuring permissions, etc.
+
+= Activating the License w/ Piggy =
+
+Activating your Piggy license is easy.
+
+To verify your account/license credentials, first visit the Piggy administration page, found in your WordPress install at:
+
+(Left Side Menu) -> WP E-Commerce -> Piggy
+
+When the Piggy admin page loads, you’ll see a notice banner with a link to begin the activation process: click it.
+
+You’ll now be taken to the account tab, and see two text inputs. Enter your account email address then License Key, and click the ‘Save Changes’ button at the bottom of the form.
+
+When completed and successful, your Piggy installation will confirm a license for the site, and activation will be complete - enjoy Piggy!
+
+= Seeing Piggy on Your iOS or Android Device = 
+
+Piggy shows you your Web URL on the General tab of its settings. Visit this URL on your device and enter the passcode you have chosen in Piggy's settings, or, if you haven't set one yet, it's default passcode number is 12345.
+

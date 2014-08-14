@@ -1,0 +1,98 @@
+/* @override http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/admin/css/piggy-admin-fresh.css?ver=56765472680401499c79732468ba4340 */
+
+/* Piggy Admin CSS > Fresh Styles (Grey)  */
+
+/* @group Fresh Styles */
+
+a#piggy-twitter {
+	background: #f5f5f5 url(../../images/piggy-twitter.png) no-repeat 10px center;
+	border: 1px solid #dfdfdf;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-style: none;
+}
+
+#bnc .left-area ul li {
+	border-bottom: 1px solid #dfdfdf;
+}
+
+#bnc .left-area ul li a.active {
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+}
+
+#bnc fieldset {
+	border: 1px solid #ddd;
+	background: #f6f6f6;
+}
+
+#bnc .box-holder h3 {
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.fresh.beta #piggy-admin-top h2 {
+	background: url(../images/admin-piggy-fresh-beta.png) no-repeat left center;
+}
+
+.fresh.normal #piggy-admin-top h2 {
+	background: url(../images/admin-piggy-fresh.png) no-repeat left center;
+}
+
+#bnc.fresh ul#piggy-top-menu li a.active {
+	background: url(../images/up-arrow-fresh.png) no-repeat center bottom;
+	color: #d54e21;
+}
+
+#bnc #piggy-tabbed-area {
+	border: 1px solid #dfdfdf;
+	padding: 8px 8px 0;
+	background-color: #f5f5f5;
+}
+
+#bnc .box-holder h3, #bnc .piggy-right-align {
+	background: #eee url(../images/gray-grad.png) repeat-x left top;
+}
+
+#bnc legend {
+	color: #444;
+	text-transform: capitalize;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#bnc h4 {
+	color: #444;
+	margin-bottom: 13px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#bnc input[type=text]:focus {
+	background: 
+	-webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+	background: -moz-linear-gradient(top, #fff, #fff);
+	border: 1px solid #aaa;
+}
+
+#bnc textarea.textarea:focus {
+	background: 
+	-webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+	background: -moz-linear-gradient(top, #fff, #fff);
+	border: 1px solid #aaa;
+}
+
+#bnc #touchboard .box-holder {
+	background-color: #f6f6f6;
+	border: 1px solid #dfdfdf;
+}
+
+#bnc #piggy-tabbed-area .right-area {
+	border: 1px solid #dfdfdf;
+}
+
+/* @end */

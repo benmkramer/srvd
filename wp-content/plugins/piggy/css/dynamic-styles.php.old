@@ -1,0 +1,26 @@
+<?php
+	header( 'Content-type: text/css' );
+	 	
+	/* This file generates CSS for Piggy based on skin options chosen in the settings */
+	
+	$settings = $this->get_settings();
+	$path = PIGGY_URL;
+	$skin_name = piggy_get_current_skin();
+
+	$back_button_url = PIGGY_URL . '/images/back-buttons/' . $skin_name . '.png';
+	$back_button_active_url = PIGGY_URL . '/images/back-buttons/' . $skin_name . '-active.png';
+	$spinner_url = PIGGY_URL . '/images/spinners/spinner-' . $skin_name . '.gif';
+?>
+
+a.back.button {
+	-webkit-border-image: url(<?php echo $back_button_url; ?>) 3 3 4 3 !important;
+}
+
+.toolbar a.back.button.active {
+	-webkit-border-image: url(<?php echo $back_button_active_url; ?>) 3 3 4 3 !important;
+}
+
+#refresh.active {
+	background: rgba(0,0,0,.5) url(<?php echo $spinner_url; ?>)  no-repeat center center;
+	background-size: 16px 16px;
+}

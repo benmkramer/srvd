@@ -1,0 +1,28 @@
+.toolbar {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FA99E6), to(#BD3790), color-stop(.5,#E632AA),color-stop(.5,#C72E7F));
+}
+
+.filterbar {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FA99E6), to(#BD3790));
+}
+
+.filterbar li {
+	-webkit-box-shadow: rgba(255,255,255,.2) 0px 1px 0px;
+}
+
+.theme-color, ul.main-list li a, #projected-pane li, ul.main-list li.sub-pane, #info-inner p.title, ul.faq-list li strong {
+	color: #E632AA;
+}
+
+a.back.button {
+	-webkit-border-image: url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/back-buttons/pink-pop.png) 3 3 4 3 !important;
+}
+
+.toolbar a.back.button.active {
+	-webkit-border-image: url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/back-buttons/pink-pop-active.png) 3 3 4 3 !important;
+}
+
+#refresh.active {
+	background: rgba(0,0,0,.5) url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/spinners/spinner-pink-pop.gif)  no-repeat center center;
+	background-size: 16px 16px;
+}

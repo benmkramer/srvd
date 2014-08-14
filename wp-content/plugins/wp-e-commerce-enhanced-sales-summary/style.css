@@ -1,0 +1,31 @@
+#wpsc_ss_dashboard_widget #leftColumn {
+	width: 33%;
+	float: left;
+	text-align: right;
+	border-right: 1px #999999 solid;
+}
+#wpsc_ss_dashboard_widget #middleColumn {
+	width: 33%;
+	float: left;
+	text-align: right;
+	border-right: 1px #999999 solid;
+}
+#wpsc_ss_dashboard_widget #rightColumn {
+	width: 30%;
+	float: left;
+	text-align: right;
+}
+
+#wpsc_ss_dashboard_widget .dashboardHeading {
+	padding-right: 30px;
+}
+#wpsc_ss_dashboard_widget #rightColumn .dashboardHeading {
+	padding-right: 0;
+}
+#wpsc_ss_dashboard_widget #rightColumn .dashboardWidget {
+	padding-right: 0;
+}
+
+#wpsc_ss_dashboard_widget .wpsc-3_7 span.pricedisplay {
+	float:none;
+}

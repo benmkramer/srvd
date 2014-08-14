@@ -1,0 +1,14 @@
+/* All other styles are in style.css for default skin */
+
+a.back.button {
+	-webkit-border-image: url(../../images/back-buttons/default.png) 3 3 4 3 !important;
+}
+
+.toolbar a.back.button.active {
+	-webkit-border-image: url(../../images/back-buttons/default-active.png) 3 3 4 3 !important;
+}
+
+#refresh.active {
+	background: rgba(0,0,0,.5) url(../../images/spinners/spinner-default.gif)  no-repeat center center;
+	background-size: 16px 16px;
+}

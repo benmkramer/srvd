@@ -1,0 +1,447 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "%d digits"
+msgstr "%d位數"
+
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d產品"
+msgstr[1] "%d產品"
+
+msgid "%s sales"
+msgstr "%s銷售"
+
+msgid "%s sales &#155; Avg %s%0.2f"
+msgstr "%s銷售&#155; 平均%s%0.2f"
+
+msgid "%s%d%s license(s) remaining."
+msgstr "剩餘%s%d%s授權。"
+
+msgid "* You can reset all support and auto-upgrade licenses once every %d days."
+msgstr "* 您可以每%d天重設所有支持和自動更新授權一次。"
+
+msgid "API Keys"
+msgstr "API金鑰"
+
+msgid "About"
+msgstr "關於"
+
+msgid "Account"
+msgstr "帳戶"
+
+msgid "Account + Licenses"
+msgstr "帳戶+授權"
+
+msgid "Account E-Mail"
+msgstr "帳戶電子郵件"
+
+msgid "Account Information"
+msgstr "帳戶資訊"
+
+msgid "Activate This WordPress installation &raquo;"
+msgstr "激活此WordPress安裝&raquo;"
+
+msgid "Activating license, please wait..."
+msgstr "正在激活授權，請稍候..."
+
+msgid "Adjust All-Time Sales Count"
+msgstr "調整所有時間銷售計數"
+
+msgid "Adjust All-Time Sales Total"
+msgstr "調整所有時間銷售總額"
+
+msgid "Advanced"
+msgstr "進階"
+
+msgid "All Time"
+msgstr "所有時間"
+
+msgid "All Time Sales"
+msgstr "所有時間銷售"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Best All Time"
+msgstr "所有時間最佳"
+
+msgid "Best Sellers"
+msgstr "暢銷產品"
+
+msgid "Best This Month"
+msgstr "本月最佳"
+
+msgid "Best This Year"
+msgstr "今年最佳"
+
+msgid "Black Skies"
+msgstr "黑色天空"
+
+msgid "Blue Skies"
+msgstr "藍色天空"
+
+msgid "Close"
+msgstr "關閉"
+
+msgid "Configure a push-notification service to deliver real-time push updates of e-Commerce sales to your Mac or iOS device. Requires Prowl or Howl iOS apps installed and configured on each device."
+msgstr "配置推通知服務，以即時推送電子商務銷售更新至您的Mac或IOS裝置。需要在每個裝置上安裝和配置Prowl或Howl iOS應用程式。"
+
+msgid "Currency symbol"
+msgstr "貨幣符號"
+
+msgid "Current"
+msgstr "當前"
+
+msgid "Docs"
+msgstr "文件"
+
+msgid "Dollar ($)"
+msgstr "美元($)"
+
+msgid "Done"
+msgstr "完成"
+
+msgid "Enter a number here to adjust the all-time sales count. This can be used to account for sales from another e-Commerce engine."
+msgstr "在這裡輸入一個數字以調整所有時間的銷售計數。這可以用來說明來自另一個電子商務引擎的銷售。"
+
+msgid "Enter a number here to adjust the all-time sales total. This can be used to account for sales from another e-Commerce engine."
+msgstr "在這裡輸入一個數字以調整所有時間的銷售總額。這可以用來說明來自另一個電子商務引擎的銷售。"
+
+msgid "Enter your passcode to view Piggy"
+msgstr "輸入您的密碼以檢視Piggy"
+
+msgid "Euro (€)"
+msgstr "歐元(€)"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "Follow @PiggyPlugin on Twitter!"
+msgstr "在Twitter上關注@PiggyPlugin！"
+
+msgid "Frequently asked questions"
+msgstr "常見問題解答"
+
+msgid "From the BraveNewCode Blog"
+msgstr "來自BraveNewCode網誌"
+
+msgid "General"
+msgstr "通用"
+
+msgid "Howl"
+msgstr "Howl"
+
+msgid "Howl Settings"
+msgstr "Howl設定"
+
+msgid "Howl Username"
+msgstr "Howl使用者名稱"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Last checked for updates:"
+msgstr "最後檢查更新："
+
+msgid "Last updated"
+msgstr "最後更新"
+
+msgid "Learn More"
+msgstr "瞭解更多"
+
+msgid "License Key"
+msgstr "授權金鑰"
+
+msgid "License accepted, thank you for supporting Piggy!"
+msgstr "授權已被接受，感謝您支援Piggy！"
+
+msgid "Loading licenses from the BNC server..."
+msgstr "正在從BNC伺服器載入授權..."
+
+msgid "Loading..."
+msgstr "載入中..."
+
+msgid "Log in"
+msgstr "登入"
+
+msgid "Log out"
+msgstr "登出"
+
+msgid "Looks like it's working!"
+msgstr "看起來有效！"
+
+msgid "Manage Licenses"
+msgstr "管理授權"
+
+msgid "Maximum number of 'Best Sellers' to display"
+msgstr "「暢銷產品」最大顯示數量"
+
+msgid "Modify the appearance of Piggy and Home Screen bookmark icon."
+msgstr "修改Piggy外觀和主螢幕書籤圖示。"
+
+msgid "My Account"
+msgstr "我的帳戶"
+
+msgid "New eCommerce Sale!"
+msgstr "新的電子商務銷售！"
+
+msgid "No sales this week."
+msgstr "本週無銷售。"
+
+msgid "No sales today."
+msgstr "今日無銷售。"
+
+msgid "None"
+msgstr "無"
+
+msgid "Notification message title"
+msgstr "通知訊息的標題"
+
+msgid "Notification service"
+msgstr "通知服務"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Number of digits for the passcode"
+msgstr "密碼位數"
+
+msgid "Numeric passcode to access Piggy"
+msgstr "用於存取Piggy的數字密碼"
+
+msgid "OinkBoard"
+msgstr "OinkBoard"
+
+msgid "Oops! Try saving again."
+msgstr "哎呀！請再次嘗試儲存。"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Overview"
+msgstr "概述"
+
+msgid "Panels"
+msgstr "面板"
+
+msgid "Password"
+msgstr "密碼"
+
+msgid "Piggy Changelog"
+msgstr "Piggy變更日誌"
+
+msgid "Piggy News"
+msgstr "Piggy新聞"
+
+msgid "Piggy Theme"
+msgstr "Piggy主題"
+
+msgid "Piggy URL"
+msgstr "Piggy網址"
+
+msgid "Piggy adds a web-app to your website for monitoring WP E-Commerce, Cart66 and Shopp sales and statistics in real-time."
+msgstr "Piggy將Web應用程式添加到您的網站，用於實時監測WP E-Commerce、Cart66和Shopp的銷售和統計資料。"
+
+msgid "Piggy will respect this zone for its date/time statistics counting."
+msgstr "Piggy會遵照此時區進行日期/時間統計。"
+
+msgid "Piggy will use a startup background while loading, matching the Piggy Theme chosen above."
+msgstr "Piggy在載入時將使用啟動背景，與上面選擇的Piggy主題相配對。"
+
+msgid "Pink Pop"
+msgstr "粉色流行"
+
+msgid "Please enter your Account E-Mail and License Key to begin the license activation process, or %spurchase a license &raquo;%s"
+msgstr "請輸入您的電子郵件和授權金鑰以開始激活授權，或%s購買授權&raquo;%s"
+
+msgid "Pretty Permalinks have not been set for this website."
+msgstr "尚未給此網站設定Pretty永久連結。"
+
+msgid "Products This Month"
+msgstr "本月產品"
+
+msgid "Products This Week"
+msgstr "本週產品"
+
+msgid "Projected"
+msgstr "預計"
+
+msgid "Prowl"
+msgstr "Prowl"
+
+msgid "Prowl API Key"
+msgstr "Prowl API金鑰"
+
+msgid "Prowl Settings"
+msgstr "Prowl設定"
+
+msgid "Purchase More Licenses"
+msgstr "購買更多授權"
+
+msgid "Push Notifications"
+msgstr "推送通知"
+
+msgid "Remove license?"
+msgstr "移除授權？"
+
+msgid "Require passcode on each launch"
+msgstr "每次啟動都需要密碼"
+
+msgid "Reset Licenses Now"
+msgstr "立即重設授權"
+
+msgid "Reset Settings"
+msgstr "重設設定"
+
+msgid "Reset all Piggy admin settings? This operation cannot be undone."
+msgstr "重設所有Piggy管理設定？此操作無法復原。"
+
+msgid "Revenue"
+msgstr "收入"
+
+msgid "Right Now"
+msgstr "立即"
+
+msgid "Ruby Red"
+msgstr "寶石紅"
+
+msgid "Sales"
+msgstr "銷售"
+
+msgid "Sales This Month"
+msgstr "本月銷售"
+
+msgid "Sales This Week"
+msgstr "本週銷售"
+
+msgid "Sales This Year"
+msgstr "今年銷售"
+
+msgid "Sales Today"
+msgstr "今日銷售"
+
+msgid "Sales at a Glance"
+msgstr "銷售概覽"
+
+msgid "Save Changes"
+msgstr "儲存變更"
+
+msgid "Saving..."
+msgstr "正在儲存..."
+
+msgid "Security"
+msgstr "安全"
+
+msgid "Send test notification message"
+msgstr "發送測試通知訊息"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Sorry, Piggy is not yet compatible with %s"
+msgstr "很抱歉，Piggy尚未與%s相容"
+
+msgid "Sorry, Piggy is not yet viewable in browsers"
+msgstr "很抱歉，還不能在瀏覽器中檢視Piggy"
+
+msgid "Support Forums"
+msgstr "支援論壇"
+
+msgid "Terms &amp; Legal"
+msgstr "法律條款"
+
+msgid "Test Notification"
+msgstr "測試通知"
+
+msgid "The Account E-Mail you have entered is invalid. Please try again."
+msgstr "您輸入的帳戶電子郵件無效。請再試一次。"
+
+msgid "The Account E-Mail you have entered is not associated with a valid license.  Please check your Account E-Mail and try again."
+msgstr "您輸入的帳戶電子郵件沒有與有效的授權相關聯。請檢查您的帳戶電子郵件，然後再試一次。"
+
+msgid "The BraveNewCode Blog timed out."
+msgstr "BraveNewCode網誌逾時。"
+
+msgid "They must be enabled to access Piggy."
+msgstr "必須啟用它們以存取Piggy。"
+
+msgid "This Account/License Key combination you have entered was rejected by the BraveNewCode server. Please try again."
+msgstr "您輸入的這個帳戶/授權金鑰組合被BraveNewCode伺服器拒絕。請再試一次。"
+
+msgid "This Month"
+msgstr "本月"
+
+msgid "This Week"
+msgstr "本週"
+
+msgid "This Year"
+msgstr "今年"
+
+msgid "This link will open in Safari."
+msgstr "此連結將在Safari中開啟。"
+
+msgid "Timezone"
+msgstr "時區"
+
+msgid "To access Piggy,  visit the URL in mobile Safari on iOS devices, or the web browser on Android"
+msgstr "要訪問Piggy，請使用iOS設備上的移動版Safari或Android上的網路瀏覽器訪問此網址"
+
+msgid "To install this web app on your %device: tap %icon then \"<strong>Add to Home Screen</strong>\"."
+msgstr "要將此Web應用程式安裝到您的%device：請觸按%icon，然後\"<strong>新增到主螢幕</strong>\"。"
+
+msgid "Today"
+msgstr "今天"
+
+msgid "Try again."
+msgstr "再試一次。"
+
+msgid "Twitter &rsaquo; BNC"
+msgstr "Twitter &rsaquo; BNC"
+
+msgid "URL fragment that Piggy should use to be accessed on your website, e.g. \"/stats/\" or \"/piggy/\"."
+msgstr "用於存取您網站上的Piggy的網址片段，如 \"/stats/\"或\"/piggy/\"。"
+
+msgid "Upgrade to Piggy Pro!"
+msgstr "升級到Piggy Pro！"
+
+msgid "Use startup image"
+msgstr "使用啟動影像"
+
+msgid "Username"
+msgstr "使用者名稱"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "When checked the passcode will always be required on launch. If unchecked, the passcode will be valid until the user logs out."
+msgstr "選中後，每次啟動都會要求輸入密碼。如果取消選擇，密碼將一直有效，直至使用者登出。"
+
+msgid "You have activated these sites for automatic upgrades & support:"
+msgstr "您已為這些網站激活自動升級和支援："
+
+msgid "You have not activated a license for this WordPress installation."
+msgstr "您還沒有為安裝的這個WordPress激活授權。"
+
+msgid "You will be able to reset licenses again in %d day(s)."
+msgstr "您可在%d日後再次重設授權。"
+
+msgid "Your Account E-Mail and License Key are required to enable site licenses for support and auto-upgrades with Piggy."
+msgstr "需要用您的帳戶電子郵件和授權密鑰以啟用網站授權來獲得支持和Piggy自動升級。"
+
+msgid "Your Account and License Key have been accepted. <br />Next, %sconnect a site license%s to this domain to enable support and automatic upgrades."
+msgstr "您的帳戶和授權金鑰已被接受。<br />接下來，%s將站點授權%s連線至此網域，以啟用支援和自動升級。"
+
+msgid "Your changes will take effect the next time you launch Piggy"
+msgstr "您所做的變更將在下一次啟動Piggy時生效"
+
+msgid "Your current Piggy URL is"
+msgstr "您當前的Piggy網址是"
+
+msgid "by BraveNewCode Inc."
+msgstr "由BraveNewCode Inc.提供"
+
+msgid "eCommerce Platform"
+msgstr "eCommerce平台"

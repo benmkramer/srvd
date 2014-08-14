@@ -1,0 +1,28 @@
+.toolbar {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.9)), to(rgba(0,0,0,.5)), color-stop(0.02, #e50000), color-stop(0.49, #961212), color-stop(0.5, #860b0b), color-stop(0.97, #6c0505));
+}
+
+.filterbar {
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffb4b4), to(rgba(0,0,0,.5)), color-stop(0.02, #e50000), color-stop(0.97, #6c0505));
+}
+
+.filterbar li {
+	-webkit-box-shadow: rgba(255,255,255,.2) 0px 1px 0px;
+}
+
+.theme-color, ul.main-list li a, #projected-pane li, ul.main-list li.sub-pane, #info-inner p.title, ul.faq-list li strong {
+	color: #e50000;
+}
+
+a.back.button {
+	-webkit-border-image: url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/back-buttons/ruby-red.png) 3 3 4 3 !important;
+}
+
+.toolbar a.back.button.active {
+	-webkit-border-image: url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/back-buttons/ruby-red-active.png) 3 3 4 3 !important;
+}
+
+#refresh.active {
+	background: rgba(0,0,0,.5) url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/spinners/spinner-ruby-red.gif)  no-repeat center center;
+	background-size: 16px 16px;
+}

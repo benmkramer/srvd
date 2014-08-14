@@ -1,0 +1,28 @@
+.toolbar {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#20C0FA), to(#157ECF), color-stop(.5,#36AEFF),color-stop(.5,#1AAAE8),color-stop(0,#82E2FF));
+}
+
+.filterbar {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#20C0FA), to(#157ECF), color-stop(.5,#36AEFF),color-stop(.5,#1AAAE8),color-stop(0,#82E2FF));
+}
+
+.filterbar li {
+	-webkit-box-shadow: rgba(255,255,255,.2) 0px 1px 0px;
+}
+
+.theme-color, ul.main-list li a, #projected-pane li, ul.main-list li.sub-pane, #info-inner p.title, ul.faq-list li strong {
+	color: #157ECF;
+}
+
+a.back.button {
+	-webkit-border-image: url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/back-buttons/blue-skies.png) 3 3 4 3 !important;
+}
+
+.toolbar a.back.button.active {
+	-webkit-border-image: url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/back-buttons/blue-skies-active.png) 3 3 4 3 !important;
+}
+
+#refresh.active {
+	background: rgba(0,0,0,.5) url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/spinners/spinner-blue-skies.gif)  no-repeat center center;
+	background-size: 16px 16px;
+}

@@ -1,0 +1,28 @@
+.toolbar {
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(0,0,0,.5)), color-stop(0.02, #777), color-stop(0.49, #333), color-stop(0.5, #222), color-stop(0.97, #232323));
+}
+
+.filterbar {
+	background: -webkit-gradient(linear, left top, left bottom, from(#777), to(rgba(0,0,0,.5)), color-stop(0.02, #444), color-stop(0.49, #333), color-stop(0.5, #333), color-stop(0.97, #232323));
+}
+
+.filterbar li {
+	-webkit-box-shadow: rgba(255,255,255,.1) 0px 1px 0px;
+}
+
+.theme-color, ul.main-list li a, #projected-pane li, ul.main-list li.sub-pane, #info-inner p.title, ul.faq-list li strong {
+	color: #CCC;
+}
+
+a.back.button {
+	-webkit-border-image: url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/back-buttons/black-skies.png) 3 3 4 3 !important;
+}
+
+.toolbar a.back.button.active {
+	-webkit-border-image: url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/back-buttons/black-skies-active.png) 3 3 4 3 !important;
+}
+
+#refresh.active {
+	background: rgba(0,0,0,.5) url(http://beta.bravenewcode.com/wordpress/wp-content/plugins/piggy/images/spinners/spinner-black-skies.gif)  no-repeat center center;
+	background-size: 16px 16px;
+}

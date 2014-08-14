@@ -1,0 +1,41 @@
+.scrollwrap {
+	background: url(../../images/backgrounds/linen.png);
+	background-size: 50%;
+}
+
+.toolbar {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(0,0,0,.4)), color-stop(0.49, rgba(255,255,255,.06)), color-stop(0.5, rgba(0,0,0,.05))), url(../../images/backgrounds/linen.png);
+}
+
+.toolbar h1, span.stat-total {
+	color: rgba(255,255,255,.8);
+}
+
+.filterbar {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(0,0,0,.4)), color-stop(0.49, rgba(255,255,255,.06)), color-stop(0.5, rgba(0,0,0,.05))), url(../../images/backgrounds/linen.png);
+}
+
+.filterbar li {
+	-webkit-box-shadow: rgba(255,255,255,.2) 0px 1px 0px;
+}
+
+.theme-color, ul.main-list li a, #projected-pane li, ul.main-list li.sub-pane, #info-inner p.title, ul.faq-list li strong {
+	color: #97d0ea;
+}
+
+a.back.button {
+	-webkit-border-image: url(../../images/back-buttons/ios-linen.png) 3 3 4 3 !important;
+}
+
+.toolbar a.back.button.active {
+	-webkit-border-image: url(../../images/back-buttons/ios-linen-active.png) 3 3 4 3 !important;
+}
+
+#refresh.active {
+	background: rgba(0,0,0,.5) url(../../images/spinners/spinner-ios-linen.gif) no-repeat center center;
+	background-size: 16px 16px;
+}
+
+a#info, #refresh, .filterbar ul {
+	opacity: 0.7;
+}

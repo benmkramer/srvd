@@ -1,0 +1,143 @@
+#tb, #queue, #right-box, #top-wrap, .bottom-wrap, #activeshift-div, #void-alert-wrap, #stock-alert-wrap, #close-alert-wrap, #batch-out-wrap, #manager-verify-wrap, #name-verify-wrap, #print-alert-wrap, .logo, .shifts-box {
+	visibility: hidden;
+	display: none;
+}
+
+body {
+	background: none !important;
+	color: black !important;
+	font-size: 12px !important;
+}
+
+#ft-print {
+	width: 150px;
+	height: 55px;
+	display: block;
+	margin: 25px auto 15px;
+	visibility: visible;
+}
+
+/* ADDRESS */
+
+.addy-wrap {
+	display: block;
+	font-family: 'Open Sans';
+	width: 100%;
+}
+
+.addy-line {
+	text-align: center;
+	font-size: 12px;
+	line-height: 17px;
+	margin: 0;
+}
+
+#addy1 {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+#addy6 {
+	font-style: italic;
+	margin: 10px 0;
+}
+
+#left-box {
+	position: relative;
+	border: 1px solid #EFEFEF;
+	border-radius: 10px;
+	padding-bottom: 20px;
+	width: 400px;
+}
+
+/* SHIFTS */
+
+#piggyshifts-div {
+	height: 75px;
+	overflow: hidden;
+}
+
+#shifts-wrapper {
+	margin-top: 0;
+}
+
+.shifts-box {
+	position: relative;
+	width: 84%;
+	height: 50px;
+	border-radius: 6px;
+	font-family: 'Open Sans';
+	line-height: 38px;
+	color: black;
+	text-decoration: none;
+	border: none !important;
+	margin: 10px 8% !important;
+	background: none !important;
+	padding: 0 !important;
+	display: none !important;
+}
+
+#shifts .active {
+	display: block !important;
+	visibility: visible !important;
+}
+
+#tables-box {
+	margin: 30px auto 20px;
+}
+
+#shifts-wrapper .active {
+	border: 5px solid #BBDAF7;
+}
+
+.shift-h1, .shift-h2, .shift-h3, .shift-h4, .shift-h5, .shift-h6, .shift-empty {
+	font-size: 12px;
+	float: left;
+	margin: 0 1%;
+	width: 14%;
+	line-height: 30px;
+	font-weight: bold;
+	color: black;
+}
+
+.shift-h1, .shift-name {
+	width: 19% !important;
+}
+
+.shift-h2, .shift-orders {
+	width: 13% !important
+}
+
+.shift-empty {
+	line-height: 60px;
+}
+
+.shift-name, .shift-orders, .shift-start, .shift-end, .shift-sales, .shift-gratuity {
+	font-size: 12px;
+	float: left;
+	margin: 0 1%;
+	width: 14%;
+	line-height: 25px;
+	color: black;
+	font-weight: normal;
+}
+
+/* FOOTER */
+
+#footer-print {
+	display: block;
+	padding: 10px 0;
+}
+
+#merchant-record {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 5px 0;
+}
+
+#footer-print p {
+	font-size: 10px;
+}

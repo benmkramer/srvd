@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+}
+
+#info-left {
+	width: 50%;
+	height: 115px;
+	float: left;
+}
+
+#info-right {
+	width: 50%;
+	height: 115px;
+	float: right;
+	text-align: right;
+}
+
+.bar-info, #item-wrap, .item-row, #totals-wrap {
+	font-size: 14px;
+	font-family: 'Open Sans';
+	color: #444;
+}
+
+.bar-info {
+	line-height: 8px;
+}
+
+.date, .order-id {
+	text-align: right;
+}
+
+.name, .total {
+	font-weight: bold;
+}
+
+#item-wrap {
+	margin-top: 25px;
+	padding-top: 15px;
+	border-top: 1px solid #CCC;
+	clear: both;	
+}
+
+.item-title {
+	line-height: 30px;
+	height: 25px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.item-row {
+	width: 100%;
+	clear: both;
+	line-height: 25px;
+	height: 25px;
+}
+
+.qty {
+	display: block;
+	width: 15%;
+	height: 25px;
+	float: left;
+}
+
+.product {
+	display: block;
+	width: 70%;
+	height: 25px;
+	float: left;
+}
+
+.price {
+	display: block;
+	width: 15%;
+	height: 25px;
+	float: left;
+	text-align: right;
+}
+
+#totals-wrap {
+	margin: 20px 0 0;
+	padding: 15px 0 0;
+	border-top: 1px solid #CCC;
+}
+
+.item-totals {
+	line-height: 25px;
+	height: 25px;
+	width: 100%;
+	margin: 0;
+}
+
+.total-left {
+	float: left;
+	text-align: left !important;
+	display: block;
+	height: 25px;
+	width: 49%;
+}
+
+.total-right {
+	float: right;
+	text-align: right !important;
+	display: block;
+	height: 25px;
+	width: 49%;
+}
+
+.green {
+	color: green;
+}

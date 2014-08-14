@@ -1,0 +1,1728 @@
+/* MAIN */
+
+body {
+	background: url("http://cdn.flowtab.mobi/img/pattern.png") repeat;
+}
+
+#jqt {
+	position: absolute;
+	top: 0;	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	opacity: 0;
+}
+
+body *, body, html, div, span, img, ul {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img, div, ul {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#content {
+	position: absolute;
+	width: 100%;
+	top: 44px;	bottom: 0;
+	opacity: 0;
+	-webkit-transition: all .25s ease-out;
+}
+
+#first-line {
+	height: 100%;
+	position: absolute;
+	width: .5%;
+	top: 0; left: 0;
+	overflow: hidden;	
+}
+
+#left-box {
+	height: 100%;
+	position: absolute;
+	width: 59.5%;
+	top: 0;
+	left: .5%;
+}
+
+#second-line {
+	height: 100%;
+	position: absolute;
+	width: .5%;
+	top: 0; left: 59.5%;	
+}
+
+#right-box {
+	position: absolute;
+	height: 100%;
+	width: 39.5%;
+	overflow: visible;
+	top: 0;	right: 0;
+	background: #272727;
+	-webkit-transition: all .20s ease-in;
+}
+
+/* SPINNER */
+
+#spinner-wrap {
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	position: fixed;
+	text-align: center;
+	left: 0; top: 0;
+	background: rgba(0,0,0,0.25);
+	display: none;
+}
+
+#spinner-box {
+	position: relative;
+	top: 38%;
+	z-index: 99999;
+	background: rgba(0, 0, 0, 0.75);
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 15px;
+	display: none;
+}
+
+.spinner {
+	position: relative;
+	width: 75px;
+	height: 75px;
+	z-index: 999999;
+	margin-top: 12.5px;
+	display: none;
+}
+
+.spin-bars {
+	width: 12%;
+	height: 26%;
+	background: white;
+	position: absolute;
+	left: 44.5%;
+	top: 37%;
+	opacity: 0;
+	-webkit-animation: fade 1s linear infinite;
+	-webkit-border-radius: 50px;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+div.spinner div.bar1 {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+div.spinner div.bar2 {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+div.spinner div.bar3 {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+div.spinner div.bar4 {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+div.spinner div.bar5 {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+div.spinner div.bar6 {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+div.spinner div.bar7 {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+div.spinner div.bar8 {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+div.spinner div.bar9 {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+div.spinner div.bar10 {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+div.spinner div.bar11 {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+
+@-webkit-keyframes fade {
+	from {opacity: 1;}
+	to {opacity: 0.25;}
+}
+
+/* PRINT */
+
+.addy-wrap {
+	display: none;
+}
+
+#footer-print, #merchant-record {
+	display: none;
+}
+
+/* NAVI */
+
+#top-wrap {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin: 15px 0;
+	z-index: 2000;
+	overflow: hidden;
+}
+
+#show-wrap {
+	width: 502px;
+	margin: 0 auto;
+}
+
+#show-new {
+	background: url("http://cdn.flowtab.mobi/img/top-fours.png") no-repeat 1px -59px;
+	background-size: 498px auto;
+	height: 51px;
+	width: 125px;
+	float: left;
+}
+
+#show-all {
+	background: url("http://cdn.flowtab.mobi/img/top-fours.png") no-repeat -125px -59px;
+	background-size: 499px auto;
+	height: 51px;
+	width: 125px;
+	float: left;
+}
+
+#show-shifts {
+	background: url("http://cdn.flowtab.mobi/img/top-fours.png") no-repeat -251px -60px;
+	background-size: 502px auto;
+	height: 51px;
+	width: 125px;
+	float: left;
+}
+
+#show-totals {
+	background: url("http://cdn.flowtab.mobi/img/top-fours.png") no-repeat -375px -59px;
+	background-size: 499px auto;
+	height: 51px;
+	width: 125px;
+	float: left;
+}
+
+.show-new-clicked {
+	background-position: 4px 0 !important;
+	background-size: 485px auto !important;
+}
+
+.show-all-clicked {
+	background-position: -122px 0px !important;
+	background-size: 492px auto !important;
+}
+
+.show-shifts-clicked {
+	background-position: -246px -1px !important;
+	background-size: 493px auto !important;
+}
+
+.show-totals-clicked {
+	background-position: -365px 0 !important;
+	background-size: 486px auto !important;
+}
+
+.hidden {
+	display: none;
+	opacity: .30;
+}
+
+.dead {
+	display: none !important;
+}
+
+/* TOPBAR */
+
+#tb {
+    background-image: url("http://cdn.flowtab.mobi/img/tb2.png");
+    background-repeat: repeat-x;
+    height: 44px;
+    position: absolute;
+    overflow: hidden;
+    top: 0px; left: 0px;
+    width: 100%;
+	opacity: 0;
+	-webkit-transition: all .25s ease-out;
+}
+
+#emergency {
+	font-family: 'Open Sans';
+	font-size: 11px;
+	color: white !important;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	opacity: .4;
+	text-align: center;
+	text-decoration: none;
+	width: 150px;
+	display: inline-block;
+}
+
+#bar-name {
+	font-family: 'Open Sans';
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	left: 195px;
+	top: 8px;
+	opacity: .4;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	display: inline-block;
+}
+
+#logo-wrap {
+	width: 100px;
+	position: relative;
+	height: 43px;
+	margin: 0 auto;
+}
+
+.logo {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -98px -223px;
+	background-size: 400px;
+	width: 100px;
+	height: 35px;
+	position: absolute;
+	top: 5px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+#tab-wrapper {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    width: 45%;
+}
+
+#options-group {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#node-check {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -466px -91px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: 295px;
+	top: 11px;
+	display: none;
+}
+
+#closed-btn, #open-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -82px -516px;
+	border-radius: 3px;
+    height: 32px;
+    width: 64px;
+    position: absolute;
+    right: 219px;
+    top: 5px;
+    -webkit-tap-highlight-color: rgba(0,0,0,.5);
+}
+
+#closed-btn {
+	background-position: -82px -467px;
+}
+
+#unhappy-btn, #happy-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -153px -516px;
+	border-radius: 3px;
+    height: 32px;
+    width: 64px;
+    position: absolute;
+    right: 147px;
+    top: 5px;
+    -webkit-tap-highlight-color: rgba(0,0,0,.5);
+}
+
+#unhappy-btn {
+	background-position: -153px -467px;
+}
+
+#tables-btn, #notables-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -226px -516px;
+	border-radius: 3px;
+    height: 32px;
+    width: 64px;
+    position: absolute;
+    right: 75px;
+    top: 5px;
+    -webkit-tap-highlight-color: rgba(0,0,0,.5);
+}
+
+#notables-btn {
+	background-position: -226px -467px;
+}
+
+#print-btn, #noprint-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -10px -516px;
+	border-radius: 3px;
+    height: 32px;
+    width: 64px;
+    position: absolute;
+    right: 78px; top: 5px;
+    display: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,.5);
+}
+
+#noprint-btn {
+	background-position: -10px -467px;
+}
+
+#logout-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -297px -516px;
+	border-radius: 3px;
+    height: 32px;
+    width: 64px;
+    position: absolute;
+    display: block;
+    right: 7px;
+    top: 5px;
+}
+
+/* PIGGY DAY */
+
+#shifts {
+	width: 100%;
+	display: none;
+}
+
+#piggyday-div, #activeshift-div, #piggyshifts-div, #piggycats-div, #orderhistory-div, #servertables-div {
+	position: relative;
+    font-size: 13px;
+	-webkit-transform:translate3d(0,0,0);
+}
+
+#stats-box, #tables-box, .shifts-box {
+	position: relative;
+	width: 510px;
+	display: none;
+	box-shadow: inset 0px 1px 0px 0px white;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #EDEDED), color-stop(1, #DFDFDF) );
+	background-color: #EDEDED;
+	border-radius: 6px;
+	border: 1px solid #CCC;
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 28px;
+	line-height: 38px;
+	padding: 6px 24px 15px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px white;
+	margin: 30px auto 0;
+}
+
+
+#no-orders {
+	background: url("http://cdn.flowtab.mobi/img/ft-empty.png") no-repeat;
+	background-size: 100% auto;
+	width: 80%;
+	height: 250px;
+	margin: 125px 10%;
+	position: absolute;
+}
+
+#stats-box {
+    height: 285px;
+}
+
+.table-wrap, #tables-table {
+	width: 100%;
+}
+
+.table1, .table2, .table3, .table4 {
+	width: 20%;
+	text-align: center;
+}
+
+#no-table {
+	text-align: center;
+	font-size: 18px;
+	margin: 15px auto 10px;
+	line-height: 18px;
+}
+
+.totals {
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 17px;
+	text-shadow: 1px 1px 1px white;
+	line-height: 30px;
+}
+
+.table-header {
+	font-weight: bold;
+}
+
+.Week, .Month, .Year, .All {
+	display: none;
+}
+
+#date-small {
+	font-family: 'Open Sans';
+	font-size: 18px;
+	margin-top: 4px;
+	font-weight: normal;
+}
+
+.bar-name {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 32px;
+	margin-top: 15px;
+	font-family: 'Open Sans';
+}
+
+#bar-wrapper, #table-wrapper, #total-wrapper {
+	margin: 15px 0 15px 3%;
+	width: 30%;
+	float: left;
+	text-align: left;
+}
+
+#bar-title, #table-title {
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 17px;
+	line-height: 28px;
+	text-align: left;
+	font-weight: bold;
+	width: 100%;
+}
+
+.green {
+	color: #009900;
+}
+
+.small {
+	font-size: 17px;
+	line-height: 32px;
+	font-style: italic;
+	text-align: center;
+	bottom: 15px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+
+/* PIGGY WEEK */
+
+#summary-box {
+	margin: 0 auto;
+	text-align: center;
+	width: 582px;
+	height: 145px;
+}
+
+#widget-left, #widget-mid, #widget-right {
+	position: relative;
+	width: 124px;
+	height: 92px;
+	box-shadow: inset 0px 1px 0px 0px white;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #EDEDED), color-stop(1, #DFDFDF) );
+	background-color: #EDEDED;
+	border-radius: 6px;
+	border: 1px solid #CCC;
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 15px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px white;
+	margin: 20px 10px;
+	text-align: center;
+	float: left;
+}
+
+.widget-header {
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 28px;
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	margin: 5px 0 0 10px;
+}
+
+.widget-data {
+	margin: 8px 0;
+	text-align: center;
+}
+
+.bottom-wrap {
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	margin: 0;
+}
+
+#totals-wrap {
+	display: none;
+}
+
+.blue-btn {
+	box-shadow: inset 0px 1px 0px 0px #BBDAF7;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79BBFF), color-stop(1, #378DE5) );
+	background-color: #79BBFF;
+	border-radius: 6px;
+	border: 1px solid #84BBF3;
+	display: inline-block;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 22px;
+	line-height: 38px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #AAA;
+	height: 40px;
+	width: 125px;
+	margin: 0 12px 15px;
+	float: left;
+}
+
+.red-btn {
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FE1A00), color-stop(1, maroon) );
+	text-shadow:1px 1px 0px #b23e35;
+	background-color:#fe1a00;
+	border:1px solid #d83526;
+	color:#ffffff;
+}
+
+.disabled {
+	opacity: .5;
+}
+
+#shifts-btn {
+	display: none;
+}
+
+#totals-btns {
+	width: 585px;
+	margin: 0 auto;
+	height: 55px;
+}
+
+#totals-btns .blue-btn {
+	margin: 0 10px 15px;
+}
+
+#cats-btn {
+	font-size: 21px;
+}
+
+#servers-btn, #end-btn {
+	margin-left: 15px;
+}
+
+#refresh-wrap {
+	width: 100%;
+	text-align: center;
+	height: 20px;
+	top: 270px;
+	position: absolute;
+}
+
+#new-wrap {
+	width: 100%;
+	text-align: center;
+	top: 30px;
+	position: absolute;
+	display: none;
+}
+
+#refresh-text {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 21px;
+	width: 165px;
+	margin: 10px auto;
+}
+
+#new-text {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 34px;
+	width: 300px;
+	margin: 10px auto;
+	padding-left: 20px;
+	font-style: italic;
+}
+
+#new-ad {
+	color:white;
+	font-family:'Open Sans';
+	font-size:40px;
+	margin:110px auto;
+	padding-left:20px;
+	width: 365px;
+}
+
+#new-ios, #new-android {
+	width: 46%;
+	float: left;
+	margin: 45px 2%;
+}
+
+#new-logo {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -182px -395px;
+	width: 150px;
+	height: 54px;
+	display: inline-block;
+	margin: 0 0 -10px 5px;
+}
+
+.new-ad-bg {
+	-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#79bbff),color-stop(1,#4197ee))
+}
+
+#first {
+	font-size: 17px;
+	line-height: 80px;
+}
+
+#new-arrow {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -12px -8px;
+	width: 30px;
+	height: 33px;
+	position: absolute;
+	top: 17px;	left: 5px;
+	display: none;
+}
+
+#close-reminder {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 21px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+#tax-rates {
+	float: right;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 20px;
+	position: absolute;
+	top: 145px;
+	text-align: center;
+	width: 70%;
+	padding: 0 15%;
+	display: none;	
+}
+
+.tax-input {
+	margin: 20px;
+}
+
+#tax-header {
+	font-size: 28px;
+	line-height: 30px;
+	margin-bottom: 25px;
+	font-weight: normal;
+}
+
+.tax-input span {
+	background: white;
+	border: 1px solid #AAA;
+	border-radius: 5px;
+	color: #888;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	height: 27px;
+	padding: 3px 8px;
+	margin: 5px 5px 5px 15px;
+	width: 42px;
+}
+
+/* POS */
+
+#shifts-wrap {
+	display: none;
+}
+
+#cats-box {
+	position: relative;
+	width: 510px;
+	height: 285px;
+	display: none;
+	box-shadow: inset 0px 1px 0px 0px white;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #EDEDED), color-stop(1, #DFDFDF) );
+	background-color: #EDEDED;
+	border-radius: 6px;
+	border: 1px solid #CCC;
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 28px;
+	line-height: 38px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px white;
+	margin: 30px auto 0;
+}
+
+#pmx-box {
+	position: relative;
+	width: 575px;
+	display: none;
+	box-shadow: inset 0px 1px 0px 0px white;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #EDEDED), color-stop(1, #DFDFDF) );
+	background-color: #EDEDED;
+	border-radius: 6px;
+	border: 1px solid #CCC;
+	color: #777;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	line-height: 12px;
+	padding: 20px 15px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px white;
+	margin: 30px auto 25px;
+	text-align: left;
+}
+
+#pmx-head {
+	line-height: 22px;
+	text-align: left;
+}
+
+.pmx-blank {
+	position: absolute;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	margin: 8px 0;
+	font-weight: normal;
+	z-index: 100;
+	width: 100%;
+	text-align: center;
+	color: #777;
+}
+
+.product {
+	font-size: 11px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	width: 135px;
+	height: 14px;
+}
+
+.pos-header {
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	line-height: 28px;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+#liquor-border {
+	display: block;
+	/* border: 1px solid #CCC; */
+	padding-bottom: 9px;
+	border-radius: 5px;
+	width: 290px;
+	margin: -2px auto -10px;
+}
+
+.pos-data {
+	color: #888;
+	font-family: 'Open Sans';
+	font-size: 17px;
+	font-weight: 100;
+	line-height: 25px;
+	width: 100%;
+	text-align: center;
+	margin: 6px 0;
+}
+
+.pos-grat, .pos-tax {
+	font-weight: bold;
+}
+
+.pos-sub {
+	border-top: 1px solid #CCC;
+	padding-top: 8px;
+	width: 280px;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.pos-total {
+	font-weight: bold;
+}
+
+#shifts-btns {
+	width: 608px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#pos-taxes, #pos-print {
+	box-shadow: inset 0px 1px 0px 0px #BBDAF7;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79BBFF), color-stop(1, #378DE5) );
+	background-color: #79BBFF;
+	border-radius: 6px;
+	border: 1px solid #84BBF3;
+	display: inline-block;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 26px;
+	line-height: 38px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #AAA;
+	height: 40px;
+	width: 125px;
+	margin: 12px;
+	float: left;
+}
+
+#pos-print {
+	font-size: 28px;
+}
+
+/* ORDERS DIV */
+
+#getorders-div {
+	position: relative;
+	height: 100%; width: 100%;
+	float: left;
+	-webkit-transform:translate3d(0,0,0);
+}
+
+/* ORDER LINES */
+
+.order-line {
+	font-family: 'Open Sans';
+	font-size: 19px;
+	color: white;
+	height: 70px;
+	width: 100%;
+	background: #272727;
+	margin: 0 0 15px;
+	border-radius: 5px;
+	-webkit-transform:translate3d(0,0,0);
+}
+
+.order-id {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 65px;
+	left: 15px;
+}
+
+.order-name {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 65px;
+	margin-left: 25px;
+}
+
+.waiting-tag, .ready-tag {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+	line-height: 65px;
+}
+
+.ready, .waiting .ready-tag, .ready .waiting-tag {
+	display: none;
+}
+
+.order-time {
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 65px;
+	right: 15px;
+	top: 0;
+	width: 185px;
+	text-align: right;
+	overflow: hidden;
+	height: 70px;
+	opacity: 0;
+	-webkit-transition: all .25s ease-out;
+}
+
+.table-order, .bar-order {
+	width: 100%;
+	text-align: center;
+	top: -5px;
+	font-size: 17px;
+	font-family: 'Open Sans';
+	background: #AAA;
+	border-radius: 0 0 5px 5px;
+	height: 24px;
+	line-height: 24px;
+	letter-spacing: 2px;
+	font-weight: 300;
+	z-index: -1;
+	position: relative;
+	color: white;
+}
+
+/*
+.ready .table-order {
+	top: -5px;
+}
+*/
+
+.spacer {
+	height: 18px;
+	width: 100%;
+}
+
+.table-order .table-num {
+	font-size: 22px;
+	display: inline-block;
+	width: 45px;
+	font-weight: bold;
+	vertical-align: top;
+	text-shadow: 2px 2px #777;
+	line-height: 22px;
+}
+
+#sofa {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -9px -101px;
+	width: 32px;
+	height: 29px;
+	margin-bottom: -4px;
+	display: none;
+}
+
+#sofa-num {
+	font-size: 24px;
+	font-family: 'Open Sans';
+	color: white;
+	display: inline-block;
+	position: absolute;
+	margin-top: 8px;
+	margin-left: -52px;
+	z-index: 999;
+	width: 32px;
+	text-align: center;
+}
+
+.freeze-time {
+	font-size: 17px;
+}
+
+.hrs {
+	position: absolute;
+	right: 180px;
+	width: 90px;
+	display: none;
+	
+}
+
+.mins {
+	position: absolute;
+	right: 80px;
+}
+
+.secs {
+	display: block;
+	float: right;
+}
+
+.secs-num {
+	display: block;
+	float: right;
+	right: 46px;
+	text-align: center;
+	width: 25px;
+	position: absolute;
+}
+
+/* ORDER INFO */
+
+#order-info {
+	font-family: 'American Typewriter';
+	text-align: center;
+	font-size: 17px;
+	position: absolute;
+	top: 0; right: 0;
+	width: 100%;
+	display: none;
+	-webkit-transition: all .25s linear;
+}
+
+.order-info {
+	font-family: 'American Typewriter';
+	text-align: center;
+	display: none;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	width: 39.5%;
+	top: -72px;
+	border-radius: 5px;
+}
+
+#info-name {
+	color: white;
+	width: 100%;
+	font-family: 'Open Sans';
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	font-size: 32px;
+	margin-top: 10px;
+}
+
+#info-num {
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 30px;
+	margin: 5px;
+}
+
+#fname {
+	margin-left: 4px;
+}
+
+#info-name #table-num {
+	width: 34px;
+	margin-left: -41px;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: bottom;
+	line-height: 46px;
+	text-shadow: 1px 2px #343434;
+	display: none;
+}
+
+#crown {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -6px -44px;
+	background-size: 580px;
+	height: 30px;
+	width: 32px;
+	margin-bottom: -3px;
+	display: none;
+}
+
+#info-id {
+	color: #AAA;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	margin: 5px 0;
+	display: inline-block;
+	font-family: 'Open Sans';
+}
+
+#receipt-top {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -360px -134px;
+	width: 327px;
+	height: 89px;
+	margin: 10px auto 0;
+	position: relative;
+}
+
+#info-header1 {
+	position: absolute;
+	left: 28px;
+	color: #282828;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 56px 0;
+}
+
+#info-header2 {
+	position: absolute;
+	left: 54px;
+	color: #282828;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 56px 0;
+}
+
+#info-header3 {
+	position: absolute;
+	right: 31px;
+	color: #282828;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 56px 0;
+}
+
+#receipt-middle {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -383px -230px;
+	background-size: 705px;
+	width: 289px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#receipt-lines, #gratuity-line {
+	height: 41px;
+	width: 100%;
+	color: #282828;
+	font-size: 17px;
+}
+
+.line-wrap {
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 42px;
+}
+
+.line-qty {
+	position: absolute;
+	line-height: 40px;
+	width: 35px;
+	left: 8px;
+	text-align: left;
+}
+
+.line-name {
+	position: absolute;
+	line-height: 40px;
+	left: 35px;
+	text-align: left;
+}
+
+.line-price {
+	position: absolute;
+	line-height: 40px;
+	right: 8px;
+	text-align: right;
+}
+
+#receipt-bottom {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -380px -530px;
+	width: 289px;
+	height: 58px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#info-total1, #info-grat1, #info-disc1 {
+	position: absolute;
+	left: 8px;
+	color: #282828;
+	font-weight: bold;
+	margin: 13px 0;
+}
+
+#info-total2, #info-grat2 {
+	position: absolute;
+	right: 8px;
+	color: #282828;
+	font-weight: bold;
+	margin: 13px 0;
+}
+
+#info-grat1, #info-grat2 {
+	color: green;
+	font-weight: normal;
+	line-height: 38px;
+	margin: 0;
+}
+
+#btn-wrap {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	height: 145px;
+	margin: 5px 0 10px;
+}
+
+#ready-btn, #remind-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -7px -195px;
+	width: 312px;
+	height: 90px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#remind-btn {
+	display: none;
+	background-position: -8px -296px;
+}
+
+#print-arrow {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -152px -5px;
+	background-size: 350px;
+	width: 50px;
+	height: 33px;
+	position: absolute;
+	right: 5px;
+	top: 25px;
+}
+
+#small-btn-wrap {
+	width: 300px;
+	/*width: 205px;*/
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+#void-btn, #stock-btn, #close-btn {
+	width: 92px;
+	height: 45px;
+	position: relative;
+	margin: 10px 4px 0;
+	float: left;
+}
+
+#void-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -56px -5px;
+	background-size: 600px;
+}
+
+#stock-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -56px -59px;
+	background-size: 600px;
+}
+
+#close-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -54px -113px;
+	background-size: 600px;
+	display: none;
+}
+
+#stock-top {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -182px -5px;
+	background-size: 400px;
+	position: absolute;
+	opacity: .8;
+	width: 18px;
+	height: 18px;
+	right: 79px;
+	top: 25px;
+}
+
+#stock-msg {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -215px -55px;
+	background-size: 500px;
+	position: absolute;
+	width: 75px;
+	height: 35px;
+	right: 0;
+	top: 15px;
+}
+
+#all-wrap {
+	width: 70%;
+	text-align: center;
+	position: relative;
+	top: 85px;
+	display: none;
+	padding: 0 15%;
+}
+
+#void-alert-wrap, #stock-alert-wrap, #close-alert-wrap, #batch-out-wrap, #manager-verify-wrap, #name-verify-wrap, #print-alert-wrap {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	background: rgba(0,0,0,0.3);
+	display: none;
+}
+
+#void-alert, #stock-alert, #close-alert, #batch-out-alert, #manager-alert, #name-alert, #print-alert {
+	background: #292929;
+	border: 6px solid #272727;
+	height: 164px;
+	width: 290px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 10px;
+	top: 30%;
+	box-shadow: 2px 2px 2px black;
+}
+
+#manager-verify, #name-verify {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#print-alert {
+	margin-top: 10px;
+	text-align: center;
+	width: 245px;
+	height: 156px;
+}
+
+#manager-alert {
+	padding: 0 15px;
+	height: 210px;
+	width: 245px;
+}
+
+#name-alert {
+	padding: 0 15px;
+	height: 200px;
+	width: 245px;
+}
+
+#pswd-verify {
+	text-align: center;
+	font-size: 23px;
+}
+
+#void-text, #stock-text, #close-text, #batch-out-text, #manager-text, #name-text, #print-text {
+	font-family: 'Open Sans';
+	font-size: 23px;
+	padding: 10px 20px;
+	color: white;
+	font-weight: 700;
+	line-height: 25px;
+}
+
+#print-text {
+	margin: 8px 0 0;
+}
+
+#manager-text, #name-text {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.cancel-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -201px -67px;
+	background-size: 800px;
+	width: 135px;
+	height: 55px;
+	position: relative;
+	margin: 5px;
+	float: left;
+	z-index: 999999;
+}
+
+#real-void-btn, #real-stock-btn, #real-close-btn, #real-batch-btn {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -202px -6px;
+	background-size: 800px;
+	width: 135px;
+	height: 55px;
+	position: relative;
+	margin: 5px;
+	float: left;
+	z-index: 999999;
+}
+
+/* LOGIN */
+
+#login {
+	width: 300px;
+	margin: 100px auto;
+	position: relative;
+}
+
+.f-line {
+	background: url("http://cdn.flowtab.mobi/img/sprite.png");
+	background-position: -168px -2px;
+	background-size: 710px;
+	width: 285px;
+	height: 44px;
+	margin: 8px auto;
+	clear: both;
+}
+
+.text-input {
+	background: white;
+	border: 1px solid #AAA;
+	border-radius: 5px;
+	color: #888;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	height: 40px;
+	padding: 1px 2%;
+	margin: 6px auto;
+	width: 96%;
+}
+
+#login p {
+	margin: 0;
+}
+
+#password, #pass {
+    -webkit-text-security: disc;
+}
+
+#send_credentials_via_email {
+	display: none;
+}
+
+#login-btn, #tax-btn, #verify-btn, #name-btn, #real-print-btn, #print-shift-btn, #cancel-print-btn {
+	box-shadow: inset 0px 1px 0px 0px #BBDAF7;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79BBFF), color-stop(1, #378DE5) );
+	background-color: #79BBFF;
+	border-radius: 6px;
+	border: 1px solid #84BBF3;
+	display: inline-block;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	width: 100%;
+	margin: 15px auto;
+	height: 45px;
+	padding: 8px 0;
+	text-decoration: none;
+	position: relative;
+	left: 0; top: 0;
+}
+
+#print-shift-btn, #cancel-print-btn {
+	box-shadow: inset 0px 1px 0px 0px #EFEFEF;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #EDEDED), color-stop(1, white) );
+	background-color: #EDEDED;
+	border-radius: 6px;
+	border: 1px solid #CCC;
+	color: #555;
+	margin: 15px 3% 0;
+	width: 35%;
+	float: left;
+	padding: 10px 4% 0;
+	line-height: 30px;
+}
+
+#verify-btn, #name-btn {
+	margin: 8px 1px;
+}
+
+#tax-btn {
+	width: 50%;
+	margin: 10px auto;
+}
+
+.x-icon {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -10px -142px;
+	width: 27px;
+	height: 27px;
+	top: -10px;
+	position: absolute;
+	right: -16px;
+}
+
+label, #remember-me {
+	display: none;
+}
+
+#first_name {
+	width: 45%;
+	float: left;
+	border-radius: 5px; 
+}
+
+#last_name {
+	width: 45%;
+	float: right;
+	border-radius: 5px;
+}
+
+.terms-wrap {
+	color: #888;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	width: 55%;
+	margin: 0 auto;
+	line-height: 19px;
+}
+
+.terms-btn {
+    color: #0066FF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#login-success, #reg-success, #manager-success {
+	background:rgba(236,244,229,0.5);
+	border-radius: 3px;
+	width: 100%;
+	text-align: center;
+	height: 0;
+	border: none;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-transition: all .25s linear;
+}
+
+#login-fail, #reg-fail1, #reg-fail2, #reg-fail3, #manager-fail {
+	background:rgba(128,0,0,0.1);
+	border-radius: 3px;
+	width: 100%;
+	text-align: center;
+	height: 0;
+	border: none;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-transition: all .25s linear;
+}
+
+#login {
+	line-height: 30px;
+	font-size: 13px;
+	color: #888;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+.green-check {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -433px -91px;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 2px;
+	margin-right: -30px;
+}
+
+.red-x {
+	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -409px -91px;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 2px;
+	margin-right: -30px;
+}
+
+.center {
+	text-align: center;
+}
+
+/* SHIFTS */
+
+#shifts-wrapper {
+	margin-top: 30px;
+}
+
+.shifts-box {
+	height: 50px;
+	margin: 5px auto 20px;
+}
+
+#tables-box {
+	margin: 30px auto 20px;
+}
+
+#shifts .active {
+	border: 7px solid #BBDAF7;
+}
+
+#shifts-wrapper em {
+	color: #378DE5;
+	text-shadow: 1px 1px 1px #EEE;
+}
+
+.shift-h1, .shift-h2, .shift-h3, .shift-h4, .shift-h5, .shift-h6, .shift-empty {
+	font-size: 16px;
+	float: left;
+	margin: 0 1%;
+	width: 14%;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.shift-h1, .shift-name {
+	width: 19% !important;
+}
+
+.shift-h2, .shift-orders {
+	width: 13% !important;
+}
+
+.shift-empty {
+	line-height: 60px;
+}
+
+.shift-name, .shift-orders, .shift-start, .shift-end, .shift-sales, .shift-gratuity {
+	font-size: 16px;
+	float: left;
+	margin: 0 1%;
+	width: 14%;
+	line-height: 25px;
+}
+
+
+/* iSCROLL */
+
+#queue-w {
+	top: 85px;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	position: absolute;
+	width: 102%;
+}
+
+.clear {
+	display: block;
+	width: 100%;
+	height: 15px;
+}
+
+#scroller {
+	position: absolute;
+	left: 0;
+	right: 15px;
+}
+
+#thelist {
+	padding: 0;
+	margin: 0;
+}
+
+#pullDown, #pullUp {
+	background:#fff;
+	height:40px;
+	line-height:40px;
+	padding: 5px 10px;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	font-size:14px;
+	color:#888;
+}
+
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+	display:block; float:left;
+	width:40px; height:40px;
+	background:url(pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size:40px 80px; background-size:40px 80px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+}
+
+#pullDown .pullDownIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullUp .pullUpIcon  {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+
+#pullDown, #pullUp {
+	display: none;
+}

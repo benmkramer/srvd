@@ -1,0 +1,447 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "%d digits"
+msgstr "%d dígitos"
+
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d producto"
+msgstr[1] "%d productos"
+
+msgid "%s sales"
+msgstr "%s ventas"
+
+msgid "%s sales &#155; Avg %s%0.2f"
+msgstr "%s ventas &#155; Promedio %s%0.2f"
+
+msgid "%s%d%s license(s) remaining."
+msgstr "%s%d%s licencia/s restantes."
+
+msgid "* You can reset all support and auto-upgrade licenses once every %d days."
+msgstr "* Puede restablecer todas las licecias de soporte y auto-actualización una vez cada %d días."
+
+msgid "API Keys"
+msgstr "Códigos API"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Account"
+msgstr "Cuenta"
+
+msgid "Account + Licenses"
+msgstr "Cuenta + Licencias"
+
+msgid "Account E-Mail"
+msgstr "E-mail de cuenta"
+
+msgid "Account Information"
+msgstr "Información de la cuenta"
+
+msgid "Activate This WordPress installation &raquo;"
+msgstr "Activar esta instalación de WordPress &raquo;"
+
+msgid "Activating license, please wait..."
+msgstr "Activando licencia, por favor espere..."
+
+msgid "Adjust All-Time Sales Count"
+msgstr "Ajustar el recuento de todas las ventas"
+
+msgid "Adjust All-Time Sales Total"
+msgstr "Ajustar total de todas las ventas"
+
+msgid "Advanced"
+msgstr "Avanzado"
+
+msgid "All Time"
+msgstr "Todos"
+
+msgid "All Time Sales"
+msgstr "Todas las ventas"
+
+msgid "Back"
+msgstr "Atrás"
+
+msgid "Best All Time"
+msgstr "Los mejores de todos los períodos"
+
+msgid "Best Sellers"
+msgstr "Los más vendidos"
+
+msgid "Best This Month"
+msgstr "Los mejores del mes"
+
+msgid "Best This Year"
+msgstr "Los mejores del año"
+
+msgid "Black Skies"
+msgstr "Cielo oscuro"
+
+msgid "Blue Skies"
+msgstr "Cielo azul"
+
+msgid "Close"
+msgstr "Cerrar"
+
+msgid "Configure a push-notification service to deliver real-time push updates of e-Commerce sales to your Mac or iOS device. Requires Prowl or Howl iOS apps installed and configured on each device."
+msgstr "Configure un servicio de notificaciones push para enviar actualizaciones en tiempo real de las ventas vía e-Commerce a su Mac o dispositivo iOS. Es necesario tener aplicaciones Prowl o Howl iOS instaladas y configuradas en cada dispositivo."
+
+msgid "Currency symbol"
+msgstr "Símbolo de divisa"
+
+msgid "Current"
+msgstr "Actuales"
+
+msgid "Docs"
+msgstr "Documentos"
+
+msgid "Dollar ($)"
+msgstr "Dolar ($)"
+
+msgid "Done"
+msgstr "Hecho"
+
+msgid "Enter a number here to adjust the all-time sales count. This can be used to account for sales from another e-Commerce engine."
+msgstr "Introduzca un número aquí para ajustar el recuento de todas las ventas. Esto se puede utilizar para registrar las ventas de otro motor del e-Commerce."
+
+msgid "Enter a number here to adjust the all-time sales total. This can be used to account for sales from another e-Commerce engine."
+msgstr "Introduzca un número aquí para ajustar el recuento de todas las ventas. Esto se puede utilizar para registrar las ventas de otro motor del e-Commerce."
+
+msgid "Enter your passcode to view Piggy"
+msgstr "Introduzca su código de acceso para acceder a Piggy"
+
+msgid "Euro (€)"
+msgstr "Euro (€)"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "Follow @PiggyPlugin on Twitter!"
+msgstr "¡Siga @PiggyPlugin en Twitter!"
+
+msgid "Frequently asked questions"
+msgstr "Preguntas frecuentes"
+
+msgid "From the BraveNewCode Blog"
+msgstr "Del Blog BraveNewCode"
+
+msgid "General"
+msgstr "General"
+
+msgid "Howl"
+msgstr "Howl"
+
+msgid "Howl Settings"
+msgstr "Ajustes Howl"
+
+msgid "Howl Username"
+msgstr "Nombre de usuario de Howl"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Last checked for updates:"
+msgstr "Última vez que vio actualizaciones:"
+
+msgid "Last updated"
+msgstr "Última actualización"
+
+msgid "Learn More"
+msgstr "Conozca más"
+
+msgid "License Key"
+msgstr "Código de licencia"
+
+msgid "License accepted, thank you for supporting Piggy!"
+msgstr "La licencia ha sido aceptada. ¡Gracias por apoyar a Piggy!"
+
+msgid "Loading licenses from the BNC server..."
+msgstr "Cargando licencias desde el servicdor BNC..."
+
+msgid "Loading..."
+msgstr "Cargando..."
+
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+msgid "Looks like it's working!"
+msgstr "¡Parece estar funcionando!"
+
+msgid "Manage Licenses"
+msgstr "Administrar licencias"
+
+msgid "Maximum number of 'Best Sellers' to display"
+msgstr "Cantidad máxima de 'Los más vendidos' a visualizar"
+
+msgid "Modify the appearance of Piggy and Home Screen bookmark icon."
+msgstr "Modificar la apariencia de Piggy y el icono de favoritos de la pantalla de inicio."
+
+msgid "My Account"
+msgstr "Mi cuenta"
+
+msgid "New eCommerce Sale!"
+msgstr "¡Venta vía e-Commerce nueva!"
+
+msgid "No sales this week."
+msgstr "Sin ventas esta semana"
+
+msgid "No sales today."
+msgstr "Sin ventas hoy"
+
+msgid "None"
+msgstr "Ninguno"
+
+msgid "Notification message title"
+msgstr "Título del mensaje de notificación"
+
+msgid "Notification service"
+msgstr "Servicio de notificaciones"
+
+msgid "Notifications"
+msgstr "Notificaciones"
+
+msgid "Number of digits for the passcode"
+msgstr "Cantidad de dígitos del código de acceso"
+
+msgid "Numeric passcode to access Piggy"
+msgstr "Código de acceso numérico para ingresar a Piggy"
+
+msgid "OinkBoard"
+msgstr "OinkBoard"
+
+msgid "Oops! Try saving again."
+msgstr "¡Ups! Intente volver a guardarlo."
+
+msgid "Other"
+msgstr "Otro"
+
+msgid "Overview"
+msgstr "Resumen"
+
+msgid "Panels"
+msgstr "Secciones"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Piggy Changelog"
+msgstr "Registro de cambios de Piggy"
+
+msgid "Piggy News"
+msgstr "Novedades de Piggy"
+
+msgid "Piggy Theme"
+msgstr "Tema Piggy"
+
+msgid "Piggy URL"
+msgstr "URL de Piggy"
+
+msgid "Piggy adds a web-app to your website for monitoring WP E-Commerce, Cart66 and Shopp sales and statistics in real-time."
+msgstr "Piggy añade una web-app a su sitio web para que pueda controlar las ventas y estadísticas de WP E-Commerce, Cart66 y Shopp en tiempo real."
+
+msgid "Piggy will respect this zone for its date/time statistics counting."
+msgstr "Piggy respetará esta zona horaria para realizar el recuento de estadísticas."
+
+msgid "Piggy will use a startup background while loading, matching the Piggy Theme chosen above."
+msgstr "Piggy utilizará un fondo de inicio mientras se carga, que se corresponderá con el Tema Piggy elegido anteriormente."
+
+msgid "Pink Pop"
+msgstr "Refresco rosa"
+
+msgid "Please enter your Account E-Mail and License Key to begin the license activation process, or %spurchase a license &raquo;%s"
+msgstr "Por favor, ingrese su dirección de e-mail y código de licencia para iniciar el proceso de activación, o %sadquiera una licencia &raquo;%s"
+
+msgid "Pretty Permalinks have not been set for this website."
+msgstr "No se han establecido enlaces permanentes \"bonitos\" para este sitio."
+
+msgid "Products This Month"
+msgstr "Productos de este mes"
+
+msgid "Products This Week"
+msgstr "Productos de esta semana"
+
+msgid "Projected"
+msgstr "Previstas"
+
+msgid "Prowl"
+msgstr "Prowl"
+
+msgid "Prowl API Key"
+msgstr "Clave API de Prowl"
+
+msgid "Prowl Settings"
+msgstr "Ajustes Prowl"
+
+msgid "Purchase More Licenses"
+msgstr "Comprar más licencias"
+
+msgid "Push Notifications"
+msgstr "Notificaciones Push"
+
+msgid "Remove license?"
+msgstr "¿Desea eliminar esta licencia?"
+
+msgid "Require passcode on each launch"
+msgstr "Solicitar código de acceso cada vez que inicie la aplicación."
+
+msgid "Reset Licenses Now"
+msgstr "Restablecer licencias ahora"
+
+msgid "Reset Settings"
+msgstr "Restablecer ajustes"
+
+msgid "Reset all Piggy admin settings? This operation cannot be undone."
+msgstr "¿Desea restablecer todas las opciones de configuración de Piggy? Esta operación no podrá deshacerse."
+
+msgid "Revenue"
+msgstr "Ingresos"
+
+msgid "Right Now"
+msgstr "Ahora"
+
+msgid "Ruby Red"
+msgstr "Rojo rubí"
+
+msgid "Sales"
+msgstr "Ventas"
+
+msgid "Sales This Month"
+msgstr "Ventas del mes actual"
+
+msgid "Sales This Week"
+msgstr "Ventas de esta semana"
+
+msgid "Sales This Year"
+msgstr "Ventas de este año"
+
+msgid "Sales Today"
+msgstr "Ventas de hoy"
+
+msgid "Sales at a Glance"
+msgstr "Resumen de ventas"
+
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+msgid "Saving..."
+msgstr "Guardando..."
+
+msgid "Security"
+msgstr "Seguridad"
+
+msgid "Send test notification message"
+msgstr "Enviar mensaje de notificación de prueba"
+
+msgid "Settings"
+msgstr "Ajustes"
+
+msgid "Sorry, Piggy is not yet compatible with %s"
+msgstr "¡Lo sentimos! Piggy aún no es compatible con %s"
+
+msgid "Sorry, Piggy is not yet viewable in browsers"
+msgstr "¡Lo sentimos! Piggy aún no se encuentra visible en buscadores"
+
+msgid "Support Forums"
+msgstr "Foros de soporte"
+
+msgid "Terms &amp; Legal"
+msgstr "Términos &amp; Condiciones"
+
+msgid "Test Notification"
+msgstr "Notificación de prueba"
+
+msgid "The Account E-Mail you have entered is invalid. Please try again."
+msgstr "El correo electrónico ingresado no es válido. Por favor, vuelva  a intentarlo."
+
+msgid "The Account E-Mail you have entered is not associated with a valid license.  Please check your Account E-Mail and try again."
+msgstr "La dirección de e-mail que ha ingresado no se encuentra asociada a una licancia válida. Por favor, verifíquela y vuela a intentarlo."
+
+msgid "The BraveNewCode Blog timed out."
+msgstr "El blog de BraveNewCode no está disponible."
+
+msgid "They must be enabled to access Piggy."
+msgstr "Deben estar activados para acceder a Piggy."
+
+msgid "This Account/License Key combination you have entered was rejected by the BraveNewCode server. Please try again."
+msgstr "La combinación cuenta/código de acceso ingresados fue rechazada por el servidor de BraveNewCode. Por favor, vuelva a intentarlo."
+
+msgid "This Month"
+msgstr "Este mes"
+
+msgid "This Week"
+msgstr "Esta semana"
+
+msgid "This Year"
+msgstr "Este año"
+
+msgid "This link will open in Safari."
+msgstr "Este enlace se abrirá con Safari"
+
+msgid "Timezone"
+msgstr "Zona horaria"
+
+msgid "To access Piggy,  visit the URL in mobile Safari on iOS devices, or the web browser on Android"
+msgstr "Para tener acceso a Piggy, visite la URL en Safari Mobile en dispositivos iOS o el navegador web de Android"
+
+msgid "To install this web app on your %device: tap %icon then \"<strong>Add to Home Screen</strong>\"."
+msgstr "Para instalar esta aplicación web en su %device: pulse %icon y luego \"<strong>Añadir a la pantalla de inicio</strong>\"."
+
+msgid "Today"
+msgstr "Hoy"
+
+msgid "Try again."
+msgstr "Vuelva a intentarlo"
+
+msgid "Twitter &rsaquo; BNC"
+msgstr "Twitter &rsaquo; BNC"
+
+msgid "URL fragment that Piggy should use to be accessed on your website, e.g. \"/stats/\" or \"/piggy/\"."
+msgstr "Fragmento URL que debería utilizar Piggy para poder tener acceso desde su sitio web, por ejemplo, \"/stats/\" o \"/piggy/\"."
+
+msgid "Upgrade to Piggy Pro!"
+msgstr "¡Actualize a Piggy Pro!"
+
+msgid "Use startup image"
+msgstr "Usar imagen de inicio"
+
+msgid "Username"
+msgstr "Nombre de usuario"
+
+msgid "Warning"
+msgstr "Advertencia"
+
+msgid "When checked the passcode will always be required on launch. If unchecked, the passcode will be valid until the user logs out."
+msgstr "Si la casilla es marcada, el código de acceso siempre será requerido al iniciar. Si la deja sin marcar, el código de acceso será válido hasta que el usuario cierre sesión."
+
+msgid "You have activated these sites for automatic upgrades & support:"
+msgstr "Ha activado los siguientes sitios para obtener actualizaciones automáticas y soporte:"
+
+msgid "You have not activated a license for this WordPress installation."
+msgstr "No ha activado una licencia para esta instalación de WordPress."
+
+msgid "You will be able to reset licenses again in %d day(s)."
+msgstr "Podrá restablecer las licencias nuevamente en %d días/s."
+
+msgid "Your Account E-Mail and License Key are required to enable site licenses for support and auto-upgrades with Piggy."
+msgstr "Se requiere del correo electrónico de su cuenta y la clave de licencia para activar las licencias del sitio que le permitirán acceder al soporte y actualizaciones automáticas en Piggy."
+
+msgid "Your Account and License Key have been accepted. <br />Next, %sconnect a site license%s to this domain to enable support and automatic upgrades."
+msgstr "Su cuenta y código de licencia han sido aceptados. <br />Ahora %sdebe asociar una licencia%s de sitio con este dominio para poder habilitar el soporte y las actualizaciones automáticas."
+
+msgid "Your changes will take effect the next time you launch Piggy"
+msgstr "Sus cambios tendrán efecto la próxima vez que reinicie Piggy"
+
+msgid "Your current Piggy URL is"
+msgstr "Su URL de Piggy actual es"
+
+msgid "by BraveNewCode Inc."
+msgstr "por BraveNewCode Inc."
+
+msgid "eCommerce Platform"
+msgstr "Plataforma e-Commerce"
