@@ -8,7 +8,7 @@ var jQT = new $.jQTouch({
 		'http://cdn.flowtab.mobi/img/pattern.png',
 		'http://cdn.flowtab.mobi/img/topbar.png',
 		//'http://cdn.flowtab.mobi/img/taps.jpg'
-		'http://nick.hesling.com:81/wp-content/themes/Starkers/img/srvd-logo.png'
+		'/wp-content/themes/Starkers/img/srvd-logo.png'
     ]
 });
 
@@ -21,10 +21,7 @@ var number, token, last4, code, orders, earnings, wifi, hasCard, barOpen, barTab
 var newRegister = 0, acctUpdated = 0, tablesActive = 0, tableNumber = 0, allowAction = 0, realCheckout = 0, loginDisabled = 0, clickedAffiliate = 0, mikeWait = 0, customWait = 0;
 
 // STRIPE
-
-if ( (document.domain == 'beta.flowtab.mobi') || (document.domain == 'nick.hesling.com:81') ) {
-	Stripe.setPublishableKey("pk_test_WzcGjaLEaFqJueYvv5IUic1l");
-} else { Stripe.setPublishableKey("pk_test_WzcGjaLEaFqJueYvv5IUic1l");}
+Stripe.setPublishableKey("pk_live_9q5shIvRKbxdY7hnb5s8CaBG");
 
 // FUNCTIONS
 

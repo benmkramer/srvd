@@ -42,7 +42,7 @@ function batchout_do() {
         'id' => $barid
     );
    // post_to_url("http://flowtab.jit.su/demo", $data);
-    post_to_url("http://nick.hesling.com:40001", $data);
+    post_to_url("http://srvd-node.herokuapp.com", $data);
     echo 'Sending order notification to bar #'.$barid;
     die();
 }
@@ -333,7 +333,7 @@ function nodeorders_do() {
         'id' => $barid
     );
     //post_to_url("http://flowtab.jit.su/demo", $data);
-    post_to_url("http://nick.hesling.com:40001", $data);
+    post_to_url("http://srvd-node.herokuap.com", $data);
     echo $piggy;
     die();
 }
@@ -981,14 +981,7 @@ function voidorder_do() {
 	$orderid = $_GET['orderid'];
 	$barid = $current_user->ID;
 	$secret = $wpdb->get_row("select meta_value from wp_usermeta where user_id='$barid' and meta_key='stripe_secret' limit 1");
-	if (get_site_url() == 'http://nick.hesling.com:81' ) {	
-		//Stripe::setApiKey('sk_0DqYGNuhl6leulVBoXJ4iEYFFJTOu');
-		//Stripe::setApiKey('sk_live_qcFFf5ISf79edaZLT2Yt586Y');
-		Stripe::setApiKey('sk_test_CXDxDY628jQSPCT98bCKJDRu');
-	} else {
-		//Stripe::setApiKey('sk_test_FhiU5T8peqZdaOrFCLCwLBtG');
-		Stripe::setApiKey('sk_test_CXDxDY628jQSPCT98bCKJDRu');
-	}
+	Stripe::setApiKey('sk_live_qcFFf5ISf79edaZLT2Yt586Y');
 	$order = $wpdb->get_row("select transactid from wp_wpsc_purchase_logs where id = '$orderid' limit 1");
 	$trans = $order->transactid;
 	$sql = "update wp_wpsc_purchase_logs set processed = 7 where id = '$orderid' limit 1";

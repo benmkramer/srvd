@@ -68,11 +68,7 @@ function pickuparea_do() {
 add_action("wp_ajax_webhook", "webhook_do");
 add_action("wp_ajax_nopriv_webhook", "webhook_do");
 function webhook_do() {
-	if ((get_site_url() == 'http://beta.flowtab.mobi') || (get_site_url() == 'http://nick.hesling.com:81'))  {	
-		Stripe::setApiKey('sk_test_CXDxDY628jQSPCT98bCKJDRu');
-	} else {
-		Stripe::setApiKey('sk_test_CXDxDY628jQSPCT98bCKJDRu');
-	}
+	Stripe::setApiKey('sk_live_qcFFf5ISf79edaZLT2Yt586Y');
 	$body = @file_get_contents('php://input');
 	wp_mail("npascull@gmail.com","Stripe",$body);
 	die();
@@ -90,13 +86,10 @@ function addmerchant_do() {
 	global $wpdb;
 	if ((get_site_url() == 'http://beta.flowtab.mobi') || (get_site_url() == 'http://nick.hesling.com:81')) {	
 		$client_id = 'ca_0sP2jxt5P1pIKUQXiCd2qEqvSqEDGrt8';
-		//$api_key = 'sk_0DqYGNuhl6leulVBoXJ4iEYFFJTOu';
-		//$api_key = 'sk_live_qcFFf5ISf79edaZLT2Yt586Y';
-		$api_key = 'sk_test_CXDxDY628jQSPCT98bCKJDRu';
+		$api_key = 'sk_live_qcFFf5ISf79edaZLT2Yt586Y';
 	} else {
 		$client_id = 'ca_0sP278wdXCOTkFYBub5uNQZC9ZPqdAkq';
-		//$api_key = 'sk_test_ZGW1zywBukd7NLy0MQa7t5IE';
-		$api_key = 'sk_test_CXDxDY628jQSPCT98bCKJDRu';
+		$api_key = 'sk_live_qcFFf5ISf79edaZLT2Yt586Y';
 	}
 	$token_uri = 'https://connect.stripe.com/oauth/token';
 	$authorize_uri = 'https://connect.stripe.com/oauth/authorize';

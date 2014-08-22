@@ -14,6 +14,9 @@ License: Flowtab
 add_action("wp_ajax_loginajax", "loginajax_do");
 add_action("wp_ajax_nopriv_loginajax", "loginajax_do");
 function loginajax_do() {
+    //error_reporting(1);
+    //error_log("error log test11\n");
+    //error_reporting(0);
     $uname = $_REQUEST["uname"];
     $upass = $_REQUEST["upass"];
     $creds = array();
@@ -215,75 +218,27 @@ function getprofile_do(){
 	    echo '<span id="get-url">'.site_url().'</span>';
 	    echo '<span id="get-time">'.date().'</span>';
     echo '</span><!--/hidden-->';
-	if (get_site_url() == 'nick.hesling.com:81' ) { 
-	
-		if (get_user_meta(647,'jabber',true)==0) { $live_647 = 'closed'; } else { $live_647 = 'open'; };
-		if (get_user_meta(723,'jabber',true)==0) { $live_723 = 'closed'; } else { $live_723 = 'open'; };
-		if (get_user_meta(896,'jabber',true)==0) { $live_896 = 'closed'; } else { $live_896 = 'open'; };
-		if (get_user_meta(1029,'jabber',true)==0) { $live_1029 = 'closed'; } else { $live_1029 = 'open'; };
-		if (get_user_meta(877,'jabber',true)==0) { $live_877 = 'closed'; } else { $live_877 = 'open'; };
-		if (get_user_meta(726,'jabber',true)==0) { $live_726 = 'closed'; } else { $live_726 = 'open'; };
-		if (get_user_meta(711,'jabber',true)==0) { $live_711 = 'closed'; } else { $live_711 = 'open'; };
-		if (get_user_meta(460,'jabber',true)==0) { $live_460 = 'closed'; } else { $live_460 = 'open'; };
-		if (get_user_meta(464,'jabber',true)==0) { $live_464 = 'closed'; } else { $live_464 = 'open'; };
-	
+	if (get_user_meta(2,'jabber',true)==0) { $live_2 = 'closed'; } else { $live_2 = 'open'; };
+	if (get_user_meta(3,'jabber',true)==0) { $live_3 = 'closed'; } else { $live_3 = 'open'; };
 	?>
-
-		<div id="locations-list">
-			<div class="spacer">Pittsburgh, PA</div>
-			<li barid="8" barname="Shady Grove" class="open">
-				<p class="title">Shady Grove</p>
-				<p class="addy">5500 Walnut St, Pittsburgh, PA 15232</p>
-			</li>
-			<li barid="1029" barname="Mayes" class="<?php echo $live_1029; ?>">
-				<p class="title">Mayes Lounge</p>
-				<p class="addy">1233 Polk St, San Francisco, CA</p>
-			</li>
-			<li barid="647" barname="Specchio" class="<?php echo $live_647; ?>">
-				<p class="title">Specchio</p>
-				<p class="addy">2331 Mission St, San Francisco, CA</p>
-			</li>
-			<li barid="896" barname="Azucar" class="<?php echo $live_896; ?>">
-				<p class="title">Azucar Lounge</p>
-				<p class="addy">299 9th St, San Francisco, CA</p>
-			</li>
-			<div class="spacer">Denver, CO</div>
-			<li barid="726" barname="RooBar" class="<?php echo $live_726; ?>">
-				<p class="title">Roo Bar</p>
-				<p class="addy">3480 Park Ave, Denver, CO</p>
-			</li>
-			<li barid="711" barname="Shotguns" class="<?php echo $live_711; ?>">
-				<p class="title">Shotgun Willie's</p>
-				<p class="addy">490 S. Colorado Blvd, Denver, CO</p>
-			</li>
-			<div class="spacer">Los Angeles, CA</div>
-			<li barid="460" barname="Basement" class="<?php echo $live_460; ?>">
-				<p class="title">Basement Tavern</p>
-				<p class="addy">2640 Main St, Santa Monica, CA</p>
-			</li>
-		</div>
-	<?php } else {
-		if (get_user_meta(2,'jabber',true)==0) { $live_2 = 'closed'; } else { $live_2 = 'open'; };
-		if (get_user_meta(3,'jabber',true)==0) { $live_3 = 'closed'; } else { $live_3 = 'open'; };
-	?>
-		<div id="locations-list">
-			<div class="spacer">Marina HQ, CA</div>
-			<!-- just hacked this so i could see more site navigation -->
-			<li barid="8" barname="Shady Grove" class="open">
-				<p class="title">Shady Grove</p>
-				<p class="addy">5500 Walnut St, Pittsburgh, PA 15232</p>
-			</li>
-			<li barid="2" barname="Basement" class="open<?php i/*echo $live_2; */?>">
-				<p class="title">Basement</p>
-				<p class="addy">2640 Main St, Santa Monica</p>
-			</li>
-			<li barid="3" barname="Apple Bar" class="<?php echo $live_3; ?>">
-				<p class="title">Apple Bar</p>
-				<p class="addy">1326 Francisco St, Santa Monica</p>
-			</li>
-		</div>
+	<div id="locations-list">
+		<div class="spacer">Marina HQ, CA</div>
+		<!-- just hacked this so i could see more site navigation -->
+		<li barid="8" barname="Shady Grove" class="open">
+			<p class="title">Shady Grove</p>
+			<p class="addy">5500 Walnut St, Pittsburgh, PA 15232</p>
+		</li>
+		<!--<li barid="2" barname="Basement" class="open<?php /*echo $live_2; */?>">
+			<p class="title">Basement</p>
+			<p class="addy">2640 Main St, Santa Monica</p>
+		</li>
+		<li barid="3" barname="Apple Bar" class="<?php /*echo $live_3;*/ ?>">
+			<p class="title">Apple Bar</p>
+			<p class="addy">1326 Francisco St, Santa Monica</p>
+		</li>-->
+	</div>
 		
-	<?php }; die();
+	<?php ; die();
 }
 
 // Send mobile confirm
@@ -333,7 +288,7 @@ function mobileconfirm_do() {
     global $wpdb;
     $id = $_GET['id'];
     update_user_meta($id,'mobile_confirm',1);
-    echo '<script type="text/javascript">window.location.href="http://nick.hesling.com:81/confirmed";</script>';
+    echo '<script type="text/javascript">window.location.href="/confirmed";</script>';
     die();
 }
 
@@ -532,17 +487,12 @@ function savecard_do() {
 	$email = $current_user->user_email;
 	$fname = $current_user->first_name;
 	$lname = $current_user->last_name;
-	if ((get_site_url() == 'http://beta.flowtab.mobi') || (get_site_url() == 'http://nick.hesling.com:81')) {	
-		//Stripe::setApiKey('sk_0DqYGNuhl6leulVBoXJ4iEYFFJTOu');
-		//Stripe::setApiKey('sk_live_qcFFf5ISf79edaZLT2Yt586Y');
-		Stripe::setApiKey('sk_test_CXDxDY628jQSPCT98bCKJDRu');
-	} else {
-		//Stripe::setApiKey('sk_test_ZGW1zywBukd7NLy0MQa7t5IE');
-		Stripe::setApiKey('sk_test_CXDxDY628jQSPCT98bCKJDRu');
-	}
+	Stripe::setApiKey('sk_live_qcFFf5ISf79edaZLT2Yt586Y');
+
 	$token = $_GET['stripe_token'];
 	$last4 = $_GET['stripe_last4'];
 	$name = $fname.' '.$lname;
+	//error_log("token: $token last4: $last4 name: $name");
 	try {
 		$customer = Stripe_Customer::create(array(
 			"card" => $token,
@@ -583,14 +533,8 @@ function chargeuser_do() {
 	$fname = $current_user->first_name;
 	$lname = $current_user->last_name;
 	$name = $fname.' '.$lname;
-	if ((get_site_url() == 'http://beta.flowtab.mobi') || (get_site_url() == 'http://nick.hesling.com:81'))  {	
-		//Stripe::setApiKey('sk_0DqYGNuhl6leulVBoXJ4iEYFFJTOu');
-		//Stripe::setApiKey('sk_live_qcFFf5ISf79edaZLT2Yt586Y');
-		Stripe::setApiKey('sk_test_CXDxDY628jQSPCT98bCKJDRu');
-	} else {
-		//Stripe::setApiKey('sk_test_ZGW1zywBukd7NLy0MQa7t5IE');
-		Stripe::setApiKey('sk_test_CXDxDY628jQSPCT98bCKJDRu');
-	}
+	Stripe::setApiKey('sk_live_qcFFf5ISf79edaZLT2Yt586Y');
+
 	$barid = $_GET['stripe_bar'];
 	$token = $_GET['stripe_token'];
 	$last4 = $_GET['stripe_last4'];
@@ -602,6 +546,7 @@ function chargeuser_do() {
 	$secret = $wpdb->get_row("select meta_value from wp_usermeta where user_id='$barid' and meta_key='stripe_secret' limit 1");
 	$check_0 = $wpdb->get_row("select meta_value from wp_usermeta where user_id='$id' and meta_key='stripe_0' limit 1");
 	$check_1 = $wpdb->get_row("select meta_value from wp_usermeta where user_id='$id' and meta_key='$stripe_num' limit 1");
+	error_log("barid: $barid token: $token last4: $last4 amount: $amount name: $name stripe_num: $stripe_num secret: ".$secret->meta_key." check_0: ".$check_0->meta_key." check_1: ".$check_1->meta_key);
 	if ($check_1 > 0) { // Does user have stripe account for this bar?
 		try {
 			Stripe_Charge::create(array(
@@ -788,7 +733,7 @@ function afterpurchase_do($id) {
         'message' => $piggy,
         'id' => $barid
     );
-    post_to_url("http://nick.hesling.com:40001", $data);
+    post_to_url("http://srvd-node.herokuapp.com", $data);
 
 	$date = date('F jS, Y',time());
 	$email = $current_user->user_email;	

@@ -80,6 +80,9 @@ define('WPLANG', '');
  */
 define('WP_DEBUG', false);
 
+//Enable debug logging to the /wp-content/debug.log file
+define('WP_DEBUG_LOG', true);
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
