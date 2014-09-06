@@ -907,6 +907,6 @@ if ($iphone) { ?><script type="text/javascript">var evname = 'touchstart';</scri
 <script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/iscroll.min.js"></script>
 <script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/swiper.min.js"></script>
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-<script type="text/javascript" src="https://srvdme.com/wp-content/themes/Starkers/js/my-home.js?999345"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/my-home.js?999345"></script>
 
 </html>
