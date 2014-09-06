@@ -73,7 +73,7 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 }
 
 body {
-	background: url("http://cdn.flowtab.mobi/img/pattern.png") repeat !important;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/pattern.png") repeat !important;
 }
 
 #login {
@@ -130,7 +130,7 @@ body {
 }
 
 #logo {
-	background: url("http://cdn.flowtab.mobi/img/ft-black.png?123") no-repeat 0 0;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/ft-black.png?123") no-repeat 0 0;
 	background-size: 300px;
 	width: 300px;
 	height: 110px;
@@ -489,7 +489,7 @@ case 'retrievepassword' :
 		}
 	}
 
-	if ( isset($_GET['error']) && 'invalidkey' == $_GET['error'] ) $errors->add('invalidkey', __('Sorry, that link is expired. You can request a new PIN number from within the Flowtab app.'));
+	if ( isset($_GET['error']) && 'invalidkey' == $_GET['error'] ) $errors->add('invalidkey', __('Sorry, that link is expired. You can request a new PIN number from within the Srvd app.'));
 	$redirect_to = apply_filters( 'lostpassword_redirect', !empty( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : '' );
 
 	do_action('lost_password');

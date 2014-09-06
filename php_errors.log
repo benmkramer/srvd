@@ -1,0 +1,229 @@
+[17-Aug-2014 20:12:32 UTC] error log test
+
+[17-Aug-2014 20:12:34 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:13:53 UTC] error log test11
+
+[17-Aug-2014 20:13:55 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:20:22 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:33:29 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:33:58 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:36:10 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:36:21 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:37:23 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /var/www/html/wp-content/plugins/api-app/api-app.php on line 567
+[17-Aug-2014 20:39:21 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:39:32 UTC] barid: 8 token:  last4: 5303 amount: 610 name: Pick Nascullo stripe_num: stripe_8 secret:  check_0:  check_1: 
+[17-Aug-2014 20:40:32 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 20:40:40 UTC] barid: 8 token:  last4: 5303 amount: 610 name: Pick Nascullo stripe_num: stripe_8 secret:  check_0:  check_1: 
+[17-Aug-2014 21:03:01 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 21:18:16 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 21:20:18 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 21:36:57 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 21:44:27 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[17-Aug-2014 21:48:39 UTC] barid: 8 token: tok_14SbSk4NI8Hx9gW8JnsHGb17 last4: 5303 amount: 130 name: pick nascullo stripe_num: stripe_8 secret:  check_0:  check_1: 
+[17-Aug-2014 21:48:40 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Gin & Tonic','cw-8','1','1.00','170','5') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[18-Aug-2014 01:37:22 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[18-Aug-2014 01:39:53 UTC] barid: 8 token: tok_14Sf5v4NI8Hx9gW8rxslF5xz last4: 4574 amount: 430 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[18-Aug-2014 01:39:54 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Budweiser (bottle)','b-8','1','3.50','103','6') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[18-Aug-2014 01:40:52 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 01:40:52 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[18-Aug-2014 01:41:02 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 01:41:02 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[18-Aug-2014 01:45:09 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 01:45:09 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[18-Aug-2014 01:51:50 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[18-Aug-2014 01:51:50 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 01:52:55 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[18-Aug-2014 01:52:55 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 01:53:12 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_start >= 1408276800 order by shift_end desc limit 1 made by do_action('wp_ajax_endshift'), call_user_func_array, endshift_do
+[18-Aug-2014 01:53:12 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query INSERT INTO `ft_shifts` (`bar_id`,`user_name`,`orders`,`shift_start`,`shift_end`,`subtotal`,`tax`,`gratuity`,`total`) VALUES ('8','Sachal','2','1408276800','1408326792','4.5','0.20','0.90','5.4') made by do_action('wp_ajax_endshift'), call_user_func_array, endshift_do
+[18-Aug-2014 01:53:14 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 01:53:14 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[18-Aug-2014 01:53:40 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_start >= 1408276800 order by shift_end desc limit 1 made by do_action('wp_ajax_endshift'), call_user_func_array, endshift_do
+[18-Aug-2014 01:53:40 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query INSERT INTO `ft_shifts` (`bar_id`,`user_name`,`orders`,`shift_start`,`shift_end`,`subtotal`,`tax`,`gratuity`,`total`) VALUES ('8','Sachal','2','1408276800','1408326820','4.5','0.20','0.90','5.4') made by do_action('wp_ajax_endshift'), call_user_func_array, endshift_do
+[18-Aug-2014 01:53:41 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 01:53:41 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[18-Aug-2014 03:29:27 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 03:29:27 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[18-Aug-2014 03:30:57 UTC] barid: 8 token: tok_14Sf5v4NI8Hx9gW8rxslF5xz last4: 4574 amount: 430 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[18-Aug-2014 03:30:58 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (bottle)','b-8','1','3.50','102','7') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[18-Aug-2014 03:33:45 UTC] barid: 8 token: tok_14Sf5v4NI8Hx9gW8rxslF5xz last4: 4574 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[18-Aug-2014 03:33:46 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','8') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[18-Aug-2014 03:40:41 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[18-Aug-2014 03:40:41 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408276800 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[20-Aug-2014 01:16:43 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[21-Aug-2014 01:53:59 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[21-Aug-2014 01:54:17 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[21-Aug-2014 13:18:01 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[22-Aug-2014 02:16:19 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[22-Aug-2014 02:16:37 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[22-Aug-2014 02:17:37 UTC] barid: 8 token:  last4: 4574 amount: 850 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[22-Aug-2014 02:17:38 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Vodka (Ketel One) & Soda','cp-8','1','7.00','151','9') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[22-Aug-2014 21:11:17 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[22-Aug-2014 21:25:30 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[23-Aug-2014 01:09:14 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[23-Aug-2014 01:09:57 UTC] barid: 8 token:  last4: 4574 amount: 448 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[23-Aug-2014 01:09:58 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (bottle)','b-8','1','3.50','102','10') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[23-Aug-2014 02:42:18 UTC] barid: 8 token:  last4: 4574 amount: 448 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[23-Aug-2014 02:42:19 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Budweiser (bottle)','b-8','1','3.50','103','11') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[23-Aug-2014 04:38:08 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[23-Aug-2014 04:38:42 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[23-Aug-2014 04:39:23 UTC] barid: 8 token:  last4: 4574 amount: 430 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[23-Aug-2014 04:39:23 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Budweiser (bottle)','b-8','1','3.50','103','12') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[23-Aug-2014 15:04:58 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[23-Aug-2014 23:55:22 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[24-Aug-2014 01:33:06 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[24-Aug-2014 01:33:35 UTC] barid: 8 token:  last4: 4574 amount: 430 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[24-Aug-2014 01:33:36 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Budweiser (bottle)','b-8','1','3.50','103','13') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[24-Aug-2014 02:10:52 UTC] barid: 8 token:  last4: 4574 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[24-Aug-2014 02:10:53 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','14') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[24-Aug-2014 04:49:51 UTC] barid: 8 token:  last4: 4574 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[24-Aug-2014 04:49:52 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','15') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[24-Aug-2014 18:04:41 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[24-Aug-2014 21:31:47 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[24-Aug-2014 22:14:21 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[24-Aug-2014 22:47:29 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[25-Aug-2014 01:21:23 UTC] barid: 8 token:  last4: 4574 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[25-Aug-2014 01:21:24 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','16') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[25-Aug-2014 01:22:06 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408881600 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[25-Aug-2014 01:22:06 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408881600 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[25-Aug-2014 01:26:47 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[25-Aug-2014 01:27:02 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[25-Aug-2014 01:30:32 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[25-Aug-2014 01:31:52 UTC] barid: 8 token:  last4: 2051 amount: 385 name: serge smailbegovic stripe_num: stripe_8 secret:  check_0:  check_1: 
+[25-Aug-2014 01:33:29 UTC] barid: 8 token: tok_14VCM24NI8Hx9gW8IvzfHr7U last4: 7403 amount: 385 name: serge smailbegovic stripe_num: stripe_8 secret:  check_0:  check_1: 
+[25-Aug-2014 01:33:30 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','17') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[25-Aug-2014 01:38:13 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[25-Aug-2014 01:39:31 UTC] barid: 8 token:  last4: 4574 amount: 395 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[25-Aug-2014 01:39:32 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Yuengling (bottle)','b-8','1','3.50','112','18') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[24-Aug-2014 18:42:18 America/Los_Angeles] PHP Fatal error:  Class 'PHPExcel' not found in /var/www/html/wp-content/plugins/api-ipad/api-ipad.php on line 128
+[25-Aug-2014 01:53:27 UTC] barid: 8 token: tok_14VCM24NI8Hx9gW8IvzfHr7U last4: 7403 amount: 850 name: serge smailbegovic stripe_num: stripe_8 secret:  check_0:  check_1: 
+[25-Aug-2014 01:53:27 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Budweiser (bottle)','b-8','1','3.50','103','19') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[25-Aug-2014 01:53:27 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Bud Light (bottle)','b-8','1','3.50','101','19') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[25-Aug-2014 01:55:16 UTC] PHP Warning:  Missing argument 2 for Stripe_InvalidRequestError::__construct(), called in /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php on line 44 and defined in /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/InvalidRequestError.php on line 5
+[25-Aug-2014 01:55:16 UTC] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Charge instance has invalid ID: ' in /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php:44
+Stack trace:
+#0 /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php(20): Stripe_ApiResource->instanceUrl()
+#1 /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php(13): Stripe_ApiResource->refresh()
+#2 /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', '', NULL)
+#3 /var/www/html/wp-content/plugins/api-ipad/api-ipad.php(992): Stripe_Charge::retrieve('')
+#4 [internal function]: voidorder_do('')
+#5 /var/www/html/wp-includes/plugin.php(470): call_user_func_array('voidorder_do', Array)
+#6 /var/www/html/wp-admin/admin-ajax.php(82): do_action('wp_ajax_voidord...')
+#7 {main}
+  thrown in /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php on line 44
+[25-Aug-2014 02:23:30 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408881600 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[25-Aug-2014 02:23:30 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1408881600 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[25-Aug-2014 03:38:05 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[28-Aug-2014 18:20:28 UTC] barid: 8 token:  last4: 4574 amount: 730 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[28-Aug-2014 18:20:29 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','2','3.00','115','20') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[29-Aug-2014 00:30:47 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[29-Aug-2014 17:41:29 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[30-Aug-2014 00:30:14 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[30-Aug-2014 00:30:34 UTC] barid: 8 token:  last4: 4574 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[30-Aug-2014 00:30:35 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','21') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[30-Aug-2014 04:10:02 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[30-Aug-2014 04:10:24 UTC] barid: 8 token:  last4: 4574 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[30-Aug-2014 04:10:25 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','22') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[30-Aug-2014 18:38:53 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[30-Aug-2014 22:11:06 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[30-Aug-2014 22:11:36 UTC] barid: 8 token:  last4: 4574 amount: 355 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[30-Aug-2014 22:11:37 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','23') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[31-Aug-2014 03:12:40 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[31-Aug-2014 03:13:15 UTC] barid: 8 token:  last4: 4574 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[31-Aug-2014 03:13:15 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','24') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[31-Aug-2014 05:11:27 UTC] barid: 8 token:  last4: 4574 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[31-Aug-2014 05:11:28 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','25') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[31-Aug-2014 17:34:57 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[31-Aug-2014 20:56:59 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[31-Aug-2014 20:57:24 UTC] barid: 8 token:  last4: 4574 amount: 400 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[31-Aug-2014 20:57:25 UTC] WordPress database error Unknown column 'category' in 'field list' for query INSERT INTO `wp_wpsc_cart_contents` (`name`,`category`,`quantity`,`price`,`prodid`,`purchaseid`) VALUES ('Coors Light (draft)','b-8','1','3.00','115','26') made by do_action('wp_ajax_chargeuser'), call_user_func_array, chargeuser_do
+[02-Sep-2014 05:26:12 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[02-Sep-2014 21:16:04 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[02-Sep-2014 21:59:30 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[02-Sep-2014 21:59:57 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[02-Sep-2014 22:24:53 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 02:24:10 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 02:24:40 UTC] barid: 8 token:  last4: 4574 amount: 395 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[03-Sep-2014 02:25:41 UTC] barid: 8 token: tok_14YTSY4NI8Hx9gW8lk8ONZtd last4: 3006 amount: 395 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[03-Sep-2014 02:30:24 UTC] barid: 8 token: tok_14YTSY4NI8Hx9gW8lk8ONZtd last4: 3006 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[03-Sep-2014 21:57:11 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:04:51 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:05:22 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:06:26 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:16:10 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:20:32 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:21:06 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:22:12 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:22:33 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:25:17 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:25:50 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:26:02 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:30:05 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:31:53 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:33:51 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:35:29 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:35:43 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:40:10 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:41:14 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:45:06 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 22:47:54 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 23:54:45 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 23:54:57 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[03-Sep-2014 23:55:57 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[04-Sep-2014 00:46:58 UTC] barid: 16 token:  last4: 3006 amount: 700 name: Sachal Lakhavani stripe_num: stripe_16 secret:  check_0:  check_1: 
+[04-Sep-2014 01:29:42 UTC] barid: 16 token:  last4: 3006 amount: 700 name: Sachal Lakhavani stripe_num: stripe_16 secret:  check_0:  check_1: 
+[04-Sep-2014 02:07:10 UTC] barid: 16 token:  last4: 3006 amount: 730 name: Sachal Lakhavani stripe_num: stripe_16 secret:  check_0:  check_1: 
+[04-Sep-2014 02:11:52 UTC] barid: 16 token:  last4: 3006 amount: 730 name: Sachal Lakhavani stripe_num: stripe_16 secret:  check_0:  check_1: 
+[04-Sep-2014 02:32:06 UTC] barid: 16 token:  last4: 3006 amount: 730 name: Sachal Lakhavani stripe_num: stripe_16 secret:  check_0:  check_1: 
+[04-Sep-2014 02:33:38 UTC] barid: 16 token:  last4: 3006 amount: 1450 name: Sachal Lakhavani stripe_num: stripe_16 secret:  check_0:  check_1: 
+[04-Sep-2014 02:37:26 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[04-Sep-2014 02:38:14 UTC] barid: 16 token:  last4: 3006 amount: 2170 name: Sachal Lakhavani stripe_num: stripe_16 secret:  check_0:  check_1: 
+[04-Sep-2014 16:16:06 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[04-Sep-2014 21:22:26 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[04-Sep-2014 22:54:27 UTC] barid: 8 token:  last4: 3006 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[04-Sep-2014 23:12:12 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[04-Sep-2014 23:48:44 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[05-Sep-2014 00:11:06 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[05-Sep-2014 01:27:05 UTC] barid: 8 token:  last4: 3006 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 01:30:55 UTC] PHP Warning:  Missing argument 2 for Stripe_InvalidRequestError::__construct(), called in /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php on line 44 and defined in /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/InvalidRequestError.php on line 5
+[05-Sep-2014 01:30:55 UTC] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Charge instance has invalid ID: ' in /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php:44
+Stack trace:
+#0 /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php(20): Stripe_ApiResource->instanceUrl()
+#1 /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php(13): Stripe_ApiResource->refresh()
+#2 /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', '', NULL)
+#3 /var/www/html/wp-content/plugins/api-ipad/api-ipad.php(992): Stripe_Charge::retrieve('')
+#4 [internal function]: voidorder_do('')
+#5 /var/www/html/wp-includes/plugin.php(470): call_user_func_array('voidorder_do', Array)
+#6 /var/www/html/wp-admin/admin-ajax.php(82): do_action('wp_ajax_voidord...')
+#7 {main}
+  thrown in /var/www/html/wp-content/plugins/wp-e-commerce_stripe_gateway/stripe/Stripe/ApiResource.php on line 44
+[05-Sep-2014 01:31:52 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 16 and shift_end > 1409832000 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[05-Sep-2014 01:31:52 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 16 and shift_end > 1409832000 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[04-Sep-2014 18:32:12 America/Los_Angeles] PHP Fatal error:  Class 'PHPExcel' not found in /var/www/html/wp-content/plugins/api-ipad/api-ipad.php on line 128
+[05-Sep-2014 02:09:50 UTC] barid: 8 token:  last4: 3006 amount: 1198 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 02:11:31 UTC] barid: 8 token:  last4: 3006 amount: 595 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 02:17:02 UTC] barid: 8 token:  last4: 3006 amount: 1310 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 02:37:34 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[05-Sep-2014 02:38:36 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[05-Sep-2014 02:39:44 UTC] barid: 8 token:  last4: 7403 amount: 660 name: serge smailbegovic stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 02:42:44 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[05-Sep-2014 02:54:48 UTC] barid: 8 token:  last4: 3006 amount: 385 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 03:17:40 UTC] barid: 8 token:  last4: 3006 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 03:19:04 UTC] barid: 8 token:  last4: 3006 amount: 430 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 03:24:14 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[05-Sep-2014 03:26:09 UTC] barid: 8 token: tok_14ZDKz4NI8Hx9gW8jThavXsi last4: 3362 amount: 610 name: Nathaniel Eliason stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 03:33:44 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[05-Sep-2014 03:34:18 UTC] barid: 8 token:  last4: 7403 amount: 1210 name: serge smailbegovic stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 03:35:54 UTC] barid: 8 token: tok_14ZDUW4NI8Hx9gW8daxNRv2f last4: 2860 amount: 370 name: charlie marks stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 03:36:31 UTC] barid: 8 token:  last4: 7403 amount: 1210 name: serge smailbegovic stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 03:37:29 UTC] barid: 8 token:  last4: 3006 amount: 1210 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 03:38:37 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[05-Sep-2014 03:40:38 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1409832000 order by id desc made by do_action('wp_ajax_getshifts'), call_user_func_array, getshifts_do
+[05-Sep-2014 03:40:38 UTC] WordPress database error Table 'wordpress-db.ft_shifts' doesn't exist for query select * from ft_shifts where bar_id = 8 and shift_end > 1409832000 order by id desc limit 1 made by do_action('wp_ajax_activeshift'), call_user_func_array, activeshift_do
+[05-Sep-2014 03:41:10 UTC] barid: 8 token:  last4: 7403 amount: 370 name: serge smailbegovic stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 04:19:26 UTC] barid: 8 token:  last4: 3006 amount: 370 name: Sachal Lakhavani stripe_num: stripe_8 secret:  check_0:  check_1: 
+[05-Sep-2014 16:54:26 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[06-Sep-2014 02:16:25 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[06-Sep-2014 19:09:22 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[06-Sep-2014 19:27:29 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219
+[06-Sep-2014 19:40:06 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/html/wp-content/plugins/api-app/api-app.php on line 219

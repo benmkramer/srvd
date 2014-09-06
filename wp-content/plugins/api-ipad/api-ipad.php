@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Flowtab API (iPad)
-Plugin URI: http://nick.hesling.com:81
-Description: A nifty API plugin for Flowtab's ipad app.
+Plugin Name: Srvd API (iPad)
+Plugin URI: http://srvdme.com
+Description: A nifty API plugin for Srvd's ipad app.
 Version: 1.01
-Author: Alex Kouznetsov & Kyle Hill
-Author URI: http://nick.hesling.com:81
-License: Flowtab
+Author: Nick Pascullo
+Author URI: http://srvdme.com
+License: Srvd
 */
 
 // Batchout
@@ -41,7 +41,6 @@ function batchout_do() {
         'message' => $piggy,
         'id' => $barid
     );
-   // post_to_url("http://flowtab.jit.su/demo", $data);
     post_to_url("http://srvd-node.herokuapp.com", $data);
     echo 'Sending order notification to bar #'.$barid;
     die();
@@ -77,7 +76,7 @@ function pmxreport_do() {
     $email = $current_user->user_email;
     $admin = $_GET['admin'];
     if ($admin == 1) {
-    	$email = 'kyle@nick.hesling.com:81';
+    	$email = 'kyle@srvdme.com';
     }
     $name = $current_user->first_name;
     $orders = $wpdb->get_results("select * from wp_wpsc_purchase_logs where engravetext='$id' and (processed=3 or processed=5) order by id desc");
@@ -131,8 +130,8 @@ function pmxreport_do() {
 	$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
 	$file_name = $name.'('.$id.').xls';
 	$objWriter->save(dirname(__FILE__).'/excel/'.$file_name);
-    $subject = 'Flowtab Sales Report';
-    $message = '<p>Attached is a Flowtab Sales Report for <strong>'.$name.'</strong>.</p><p>The Flowtab Team</p>';
+    $subject = 'Srvd Sales Report';
+    $message = '<p>Attached is a Srvd Sales Report for <strong>'.$name.'</strong>.</p><p>The Srvd Team</p>';
 	wp_mail($email,$subject,$message,NULL,dirname(__FILE__).'/excel/'.$file_name);
     die();
 }
@@ -162,7 +161,7 @@ function pmxpage_do() {
 	}
     $header = array('Time', 'Order', 'Qty', 'Product', 'Price', 'Gratuity', 'Total');
     $body[] = $header;
-    date_default_timezone_set('America/Los_Angeles');
+    date_default_timezone_set('America/New_York');
     foreach ($orders as $order) {
     	$order_id = $order->id;
 		$items = $wpdb->get_results("select * from wp_wpsc_cart_contents where purchaseid='$order_id'");
@@ -332,7 +331,6 @@ function nodeorders_do() {
         'message' => $piggy,
         'id' => $barid
     );
-    //post_to_url("http://flowtab.jit.su/demo", $data);
     post_to_url("http://srvd-node.herokuap.com", $data);
     echo $piggy;
     die();
@@ -392,7 +390,7 @@ add_action("wp_ajax_nopriv_installtax", "installtax_do");
 function installtax_do() {
     // Usage: /wp-admin/admin-ajax.php?action=installtax&id=47
     $barid = $_GET['id'];?>
-	<script type="text/javascript" src="http://cdn.flowtab.mobi/js/zepto.min.js"></script>
+	<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/zepto.min.js"></script>
 	<script type="text/javascript">
 	    barid = "<?php echo $barid; ?>";
 	    $(function () {
@@ -1174,9 +1172,9 @@ function affiliates_do() {
             echo $name.': $'.number_format($discount,2).'<br/>';
         }
     }
-    $header = '<p>Flowtab affiliate payouts since '.date('g:iA \o\n D, M jS Y',$shift_start).':</p>';
+    $header = '<p>Srvd affiliate payouts since '.date('g:iA \o\n D, M jS Y',$shift_start).':</p>';
     $subject = 'Affiliate Deposits (' . date('l') . ')';
-    $email = 'support@nick.hesling.com:81';
+    $email = 'support@srvdme.com';
     wp_mail($email, $subject, $header . $message);
     die();
 }

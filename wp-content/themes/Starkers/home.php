@@ -12,11 +12,10 @@ if ($iphone) { ?><script type="text/javascript">var evname = 'touchstart';</scri
 <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-icon-precomposed" href="http://cdn.flowtab.mobi/img/icon.jpg">
-<!--<link rel="icon" type="image/x-icon" href="http://cdn.flowtab.mobi/img/favicon.ico"> -->
+<link rel="apple-touch-icon-precomposed" href="http://srvdme.com/wp-content/themes/Starkers/img/icon.jpg">
 <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/450077642251706368/_7dKkVV__bigger.png">
-<link href="http://cdn.flowtab.mobi/img/splash4.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-<link href="http://cdn.flowtab.mobi/img/splash6.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<link href="http://srvdme.com/wp-content/themes/Starkers/img/splash4.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+<link href="http://srvdme.com/wp-content/themes/Starkers/img/splash6.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 
 <!-- CSS -->
 <link type="text/css" rel="stylesheet" href="/wp-content/themes/Starkers/css/my-home.css">
@@ -57,9 +56,6 @@ if ($iphone) { ?><script type="text/javascript">var evname = 'touchstart';</scri
 	        <div id="logout">
 	        	<!--<div class="logo-wrap"><div id="logo"></div></div> -->
 	        	<div id="img-box">
-				<!--<span id="checkers-box"><img id="checkers" src="http://cdn.flowtab.mobi/img/checkers.jpg"></span> -->
-	        		<!--<span id="barpad-box"><img id="barpad" src="http://cdn.flowtab.mobi/img/chicago8.jpg"></span> -->
-	        		<!--<span id="taps-box"><img id="taps" src="http://cdn.flowtab.mobi/img/taps.jpg"></span> -->
 	        		<span id="checkers-box"><img id="taps" src="/wp-content/themes/Starkers/img/srvd-logo.png"></span>
 	        		<span id="barpad-box"><img id="taps" src="/wp-content/themes/Starkers/img/srvd-logo.png"></span>
 	        		<span id="taps-box"><img id="taps" src="/wp-content/themes/Starkers/img/srvd-logo.png"></span>
@@ -693,7 +689,7 @@ if ($iphone) { ?><script type="text/javascript">var evname = 'touchstart';</scri
 			<div class="text-box">
 				<p id="green">Order Approved!</p>
 				<p id="directions">We will text you when your drinks are ready. Pick up drinks at <span id="location"></span>!</p>
-				<img id="responsibly" src="http://cdn.flowtab.mobi/img/responsibly.png">
+				<img id="responsibly" src="http://srvdme.com/wp-content/themes/Starkers/img/responsibly.png">
 			</div><!--/text-box-->
 	    </div><!--/success-->
 
@@ -749,7 +745,7 @@ if ($iphone) { ?><script type="text/javascript">var evname = 'touchstart';</scri
 					<h2>Lost Phone</h2>
 					<p>We rely on a robust <em>tokenization service</em> to safely store your credit card details on a reliable 3rd-party site. Tokenization is a neat way of saying "data substitution". It is the act of using a substitute value, or <em>token</em>, which has no inherent value, in the place of data that does have value.<br/><br/>Therefore, your personal information is never stored on this mobile device. If your phone were to be lost or stolen, only your tokens would be compromised, not your actual card data.</p>
 					<h2>Terms of Use</h2>
-					<p>The creation and use of a Srvd account indicates your agreement to comply with our Terms of Use as well as any applicable local laws and regulations. Please visit nick.hesling.com:81/terms for details.</p>
+					<p>The creation and use of a Srvd account indicates your agreement to comply with our Terms of Use as well as any applicable local laws and regulations. Please visit srvdme.com/terms for details.</p>
 				</div><!--/text-->
 	        </div><!--/scroller--></div><!--/wrapper-->
 	    </div><!--/security-->
@@ -843,7 +839,7 @@ if ($iphone) { ?><script type="text/javascript">var evname = 'touchstart';</scri
         	<div class="text">
         		<h2>Send a Free Drink</h2>
         		<p>Have a friend who you think might like Srvd? Email them a free download link:</p>
-        		<a href="mailto:?subject=Check%20out%20Srvd&body=Srvd%20lets%20you%20order%20and%20pay%20for%20drinks%20in%20crowded%20nightclubs%20and%20bars%20right%20from%20your%20phone.%0D%0A%0D%0ADownload%20the%20free%20iPhone/Android%20app%20at%20http://flwtb.co/Dwnload%20or%20play%20with%20the%20HTML5%20web%20app%20at%20http://nick.hesling.com:81."><div id="send-text">Send Message</div></a>
+        		<a href="mailto:?subject=Check%20out%20Srvd&body=Srvd%20lets%20you%20order%20and%20pay%20for%20drinks%20in%20crowded%20nightclubs%20and%20bars%20right%20from%20your%20phone.%0D%0A%0D%0ADownload%20the%20free%20iPhone/Android%20app%20at%20http://flwtb.co/Dwnload%20or%20play%20with%20the%20HTML5%20web%20app%20at%20http://srvdme.com."><div id="send-text">Send Message</div></a>
 	        </div><!--/text-->
 	    </div><!--/share-->
 
@@ -906,11 +902,11 @@ if ($iphone) { ?><script type="text/javascript">var evname = 'touchstart';</scri
 </body>
 
 <!-- JS -->
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/zepto.min.js"></script>
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/jqt.min.js"></script>
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/iscroll.min.js"></script>
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/swiper.min.js"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/zepto.min.js"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/jqt.min.js"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/iscroll.min.js"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/swiper.min.js"></script>
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-<script type="text/javascript" src="/wp-content/themes/Starkers/js/my-home.js?999345"></script>
+<script type="text/javascript" src="https://srvdme.com/wp-content/themes/Starkers/js/my-home.js?999345"></script>
 
 </html>

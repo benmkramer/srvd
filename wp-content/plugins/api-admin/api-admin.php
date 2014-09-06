@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Flowtab API (Admin)
-Plugin URI: http://nick.hesling.com:81
-Description: A nifty API plugin for Flowtab's admin functions.
+Plugin Name: Srvd API (Admin)
+Plugin URI: http://srvdme.com
+Description: A nifty API plugin for Srvd's admin functions.
 Version: 1.02
-Author: Alex Kouznetsov & Kyle Hill
-Author URI: http://nick.hesling.com:81
-License: Flowtab
+Author: Nick Pascullo
+Author URI: http://srvdme.com
+License: Srvd
 */
 
 // Add Google Keys
@@ -84,10 +84,14 @@ function addmerchant_do() {
 	    header("Location: $redirect");
 	}
 	global $wpdb;
-	if ((get_site_url() == 'http://beta.flowtab.mobi') || (get_site_url() == 'http://nick.hesling.com:81')) {	
+	if( get_site_url() == 'http://srvdme.com')
+	{	
 		$client_id = 'ca_0sP2jxt5P1pIKUQXiCd2qEqvSqEDGrt8';
 		$api_key = 'sk_live_qcFFf5ISf79edaZLT2Yt586Y';
-	} else {
+	}
+
+	else 
+	{
 		$client_id = 'ca_0sP278wdXCOTkFYBub5uNQZC9ZPqdAkq';
 		$api_key = 'sk_live_qcFFf5ISf79edaZLT2Yt586Y';
 	}
@@ -123,12 +127,12 @@ function addmerchant_do() {
 	update_user_meta($id, 'stripe_secret', $stripe_user);
 	update_user_meta($id, 'stripe_client', $stripe_client);
 	update_user_meta($id, 'stripe_publish', $stripe_key);
-    echo '<script type="text/javascript">window.location = "http://nick.hesling.com:81/"</script>';
+    echo '<script type="text/javascript">window.location = "http://srvdme.com/"</script>';
 	die();
 }
 
 // Twilio Response
-
+/*
 add_action("wp_ajax_twilio", "twilio_do");
 add_action("wp_ajax_nopriv_twilio", "twilio_do");
 function twilio_do() {
@@ -136,12 +140,12 @@ function twilio_do() {
     echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 	?>
 		<Response>
-		    <Sms>Click for your photos: www.fb.com/flowtab
-Click for a free drink: nick.hesling.com:81</Sms>		    
+		    <Sms>Click for your photos: www.fb.com/srvd
+Click for a free drink: srvdme.com</Sms>		    
 		</Response>
 	<?php
     die();
-}
+}*/
 
 // Sync Menu
 
@@ -383,7 +387,7 @@ function bugsuggestion_do() {
 	$phone = $current_user->user_login;
 	$message = $_GET["message"];
 	$body = ('Name: '.$fname.' '.$lname.'<br/>Email: '.$email.'<br/>Phone: '.$phone.'<br/><br/>'.$message);
-	wp_mail('support@nick.hesling.com:81','Flowtab Bug/inSuggestion',$body);
+	wp_mail('npascull@gmail.com','Srvd Bug/Suggestion',$body);
     die();
 }
 
@@ -397,7 +401,7 @@ function newaffiliate_do() {
 	$lname = $current_user->last_name;
 	$phone = $current_user->user_login;
 	$body = ('Name: '.$fname.' '.$lname.'<br/>Email: '.$email.'<br/>Phone: '.$phone);
-	wp_mail('affiliates@nick.hesling.com:81','New Flowtab Affiliate',$body);
+	wp_mail('npascull@gmail.com','New Srvd Affiliate',$body);
     die();
 }
 
@@ -408,7 +412,7 @@ add_action("wp_ajax_nopriv_dailyreport", "dailyreport_do");
 
 function dailyreport_do() {
 	// Usage: /wp-admin/admin-ajax.php?action=dailyreport
-    date_default_timezone_set('America/Los_Angeles');
+    date_default_timezone_set('America/New_York');
     global $wpdb;
     $end_time = strtotime(date('Y-m-d').'04:00:00');
     $start_time = strtotime('-1 day', $end_time);
@@ -470,9 +474,9 @@ function dailyreport_do() {
         }
     }
 	$message .= '<p>We\'ve processed <strong>$'.number_format($amount->total,2).'</strong> in total sales, with <strong>$'.number_format($average,2).'</strong> average.</p>';
-    $subject = 'Flowtab Metrics ('.date('l').')';
+    $subject = 'Srvd Metrics ('.date('l').')';
     echo $message;
-    $email = 'marinahq@nick.hesling.com:81';
+    $email = 'npascull@gmail.com';
     wp_mail($email, $subject, $header . $message_head . $message);
     die();
 }

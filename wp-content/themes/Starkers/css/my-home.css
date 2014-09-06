@@ -20,7 +20,7 @@ body, #jqt {
 }
 
 body, .pattern {
-	background: url("http://cdn.flowtab.mobi/img/pattern.png") repeat !important;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/pattern.png") repeat !important;
 }
 
 .hidden {
@@ -137,7 +137,7 @@ a {
 /* TOPBAR */
 
 .toolbar {
-	background: url("http://cdn.flowtab.mobi/img/topbar.png");
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/topbar.png");
 	background-size: auto 100%;
 	background-repeat: repeat-x;
 	-webkit-box-sizing: border-box;
@@ -492,7 +492,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 .f-line {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -159px -8px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -159px -8px;
 	background-size: 450px;
 	width: 285px;
 	height: 44px;
@@ -611,7 +611,7 @@ h1, .clear {
 }
 
 #homepage {
-	background: url("http://cdn.flowtab.mobi/img/chicago9.jpg") repeat;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/chicago9.jpg") repeat;
 	background-position: top right;
 	background-size: auto 150%;
 	height: 0;
@@ -666,7 +666,7 @@ h1, .clear {
 }
 
 #thirsty-btn, #settings-btn, #coupons-btn {
-	background: url("http://cdn.flowtab.mobi/img/dropbar.jpg") repeat 0 -1px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/dropbar.jpg") repeat 0 -1px;
 	border-radius: 4px;
 	margin: 5px auto 0;
 	height: 48px;
@@ -695,7 +695,7 @@ h1, .clear {
 }
 
 #thirsty-icon, #settings-icon, #coupons-icon {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -257px -93px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -257px -93px;
 	background-size: 400px;
 	height: 43px;
 	margin: 2px 2px 2px 5px;
@@ -809,7 +809,7 @@ h1, .clear {
 }
 
 #logo {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -214px -92px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -214px -92px;
 	background-size: 700px;
 	width: 220px;
 	height: 80px;
@@ -967,7 +967,7 @@ h1, .clear {
 }
 
 .closed .cat-arrow {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -764px -110px !important;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -764px -110px !important;
 	width: 28px;
 	height: 30px;
 	top: 15px;
@@ -988,7 +988,7 @@ h1, .clear {
 }
 
 .white-arrow {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -737px -228px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -737px -228px;
 	width: 20px;
 	height: 18px;
 	position: absolute;
@@ -998,7 +998,7 @@ h1, .clear {
 }
 
 .black-arrow {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -702px -228px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -702px -228px;
 	width: 20px;
 	height: 18px;
 	position: absolute;
@@ -1009,7 +1009,7 @@ h1, .clear {
 }
 
 .cat-arrow {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -702px -228px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -702px -228px;
 	width: 20px;
 	height: 18px;
 	position: absolute;
@@ -1154,7 +1154,7 @@ a {
 /* MENU */
 
 .imagecol {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -77px -319px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -77px -319px;
 	background-size: 415px;
 	width: 35px;
 	height: 35px;
@@ -1170,7 +1170,7 @@ a {
 }
 
 .bar-img {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -168px -27px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -168px -27px;
 	width: 35px;
 	height: 35px;
 	position: absolute;
@@ -1502,7 +1502,7 @@ label, #remember-me {
 }
 
 .green-check {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -637px -227px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -637px -227px;
 	width: 24px;
 	height: 24px;
 	float: left;
@@ -1512,7 +1512,7 @@ label, #remember-me {
 }
 
 .red-x {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -608px -226px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -608px -226px;
 	width: 24px;
 	height: 24px;
 	float: left;
@@ -1549,7 +1549,7 @@ label, #remember-me {
 }
 
 .green-check, .green-wifi {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -637px -225px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -637px -225px;
 	width: 24px;
 	z-index: 1000;
 	display: inline-block;
@@ -1560,12 +1560,12 @@ label, #remember-me {
 }
 
 .green-wifi {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -763px -225px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -763px -225px;
 	width: 30px;
 }
 
 .red-x {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -606px -224px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -606px -224px;
 	width: 24px;
 	z-index: 1000;
 	display: inline-block;
@@ -1628,7 +1628,7 @@ label, #remember-me {
 }
 
 #variations-select {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -511px -156px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -511px -156px;
 	background-size: 690px;
 	color: #383838;
 	font-family: 'Open Sans';
@@ -1641,7 +1641,7 @@ label, #remember-me {
 }
 
 .buy-button {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -523px -94px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -523px -94px;
 	background-size: 695px;
 	border: none;
 	border-radius: 18px;
@@ -1775,7 +1775,7 @@ label, #remember-me {
 }
 
 .update-plus, .update-minus {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -452px -225px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -452px -225px;
 	background-size: 600px;
 	position: absolute;
 	top: -21px; left: 0;
@@ -2028,7 +2028,7 @@ label, #remember-me {
 }
 
 #pickup-btn, #table-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -246px -225px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -246px -225px;
 	width: 126px;
 	height: 35px;
 	float: left;
@@ -2092,7 +2092,7 @@ label, #remember-me {
 /* AUTHORIZE */
 
 .mini-card {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -488px -212px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -488px -212px;
 	background-size: 570px;
 	position: absolute;
 	top: 12px;
@@ -2103,7 +2103,7 @@ label, #remember-me {
 }
 
 .brands, .saved-card {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -452px -320px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -452px -320px;
 	background-size: 750px;
 	position: relative;
 	width: 265px;
@@ -2127,7 +2127,7 @@ label, #remember-me {
 }
 
 .powered {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -603px -266px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -603px -266px;
 	width: 119px;
 	height: 26px;
 	position: relative;
@@ -2148,7 +2148,7 @@ label, #remember-me {
 }
 
 .ssl-icon {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -674px -229px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -674px -229px;
 	height: 15px;
 	width: 12px;
 	top: 14px;
@@ -2231,7 +2231,7 @@ label, #remember-me {
 }
 
 #gratuity-plus, #gratuity-minus {
-	background: url("http://cdn.flowtab.mobi/img/sprite-home14.png") no-repeat -506px -253px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png") no-repeat -506px -253px;
 	background-size: 670px;
 	display: inline-block;
 	margin: 0 2px -5px 5px;

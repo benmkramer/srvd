@@ -1,0 +1,33 @@
+[17-Aug-2014 20:06:17 UTC] error log test
+
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  user_pass_ok is <strong>deprecated</strong> since version 3.5! Use wp_authenticate() instead. in /var/www/html/wp-includes/functions.php on line 3078
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 693
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 695
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 696
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 698
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 693
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 695
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 696
+[17-Aug-2014 20:06:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 698
+[17-Aug-2014 20:06:32 UTC] error log test
+
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  user_pass_ok is <strong>deprecated</strong> since version 3.5! Use wp_authenticate() instead. in /var/www/html/wp-includes/functions.php on line 3078
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 693
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 695
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 696
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 698
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 693
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 695
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 696
+[17-Aug-2014 20:06:32 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 698
+[17-Aug-2014 20:06:58 UTC] error log test
+
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  user_pass_ok is <strong>deprecated</strong> since version 3.5! Use wp_authenticate() instead. in /var/www/html/wp-includes/functions.php on line 3078
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 693
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 695
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 696
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 698
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 693
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 695
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 696
+[17-Aug-2014 20:06:58 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/wp-includes/pluggable.php on line 698

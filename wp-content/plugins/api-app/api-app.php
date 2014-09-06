@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Flowtab API (App)
-Plugin URI: http://nick.hesling.com:81
-Description: A nifty API plugin for Flowtab's mobile app.
+Plugin Name: Srvd API (App)
+Plugin URI: http://srvdme.com
+Description: A nifty API plugin for Srvd's mobile app.
 Version: 1.02
-Author: Alex Kouznetsov & Kyle Hill
-Author URI: http://nick.hesling.com:81
-License: Flowtab
+Author: Nick Pascullo
+Author URI: http://srvdme.com
+License: Srvd
 */
 
 // Login
@@ -94,10 +94,10 @@ function registerajax_do() {
         echo 1;
 	    if ($email_given == 1) {
 	        // Send Welcome email
-	        $subject = 'Welcome to Flowtab';
+	        $subject = 'Welcome to Srvd';
 	        $message1 = '<p>Hello ' . $fname . ',</p>';
-	        $message2 = '<p>Thanks for joining us, we look forward to welcoming you into our community. Feel free to <a target="_blank" href="http://twitter.com/flowtab">follow us on Twitter</a> or <a target="_blank" href="http://facebook.com/flowtab">like us on Facebook</a> to stay up to date on what\'s happening in your area.</p>';
-	        $message3 = '<p>Flowtab Team</p>';
+	        $message2 = '<p>Thanks for joining us, we look forward to welcoming you into our community. Feel free to <a target="_blank" href="http://twitter.com/srvd">follow us on Twitter</a> or <a target="_blank" href="http://facebook.com/srvd">like us on Facebook</a> to stay up to date on what\'s happening in your area.</p>';
+	        $message3 = '<p>Srvd Team</p>';
 	        wp_mail($email, $subject, $message1 . $message2 . $message3);	
     	}
     } else {
@@ -161,8 +161,8 @@ function password_do() {
     $message .= __('<p>To reset your PIN number for <strong>' . $nice_phone . '</strong>, please click the following link:</p>');
     $message .= network_site_url("wp-login.php?action=rp&key=$key&login=".rawurlencode($user_login),'login');
     $message .= __('<p>If this was a mistake, just ignore this email and nothing will happen.</p>');
-    $message .= __('<p>Flowtab Team</p>');
-    $title = 'Flowtab Password Reset';
+    $message .= __('<p>Srvd Team</p>');
+    $title = 'Srvd Password Reset';
     $message = apply_filters('retrieve_password_message', $message, $key);
     if ($message && !wp_mail($user_email, $title, $message)) {
         echo "0"; die();
@@ -173,7 +173,7 @@ function password_do() {
 			$query = array(
 			    "version" => "2.0.1",
 			    "longUrl" => $url,
-			    "login" => 'flowtab',
+			    "login" => 'srvd',
 			    "apiKey" => 'R_8a16f491e322e27c87507ddcb130f40a'
 			);
 			$query = http_build_query($query);
@@ -187,7 +187,7 @@ function password_do() {
 			return $response->data->url;
 		}
 		$bitly_link = bitly_shorten($direction);
-		$url = 'http://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call='.$user_login.'&Send+from+Mobile+Number=6466993569&Text=To+reset+your+Flowtab+PIN+number+please+click+this+link:+'.$bitly_link.'&?callback=?';
+		$url = 'http://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call='.$user_login.'&Send+from+Mobile+Number=6466993569&Text=To+reset+your+Srvd+PIN+number+please+click+this+link:+'.$bitly_link.'&?callback=?';
 		$options = array('http' => array('method'  => 'POST','content' => http_build_query()));
 		$context  = stream_context_create($options);
 		$result = file_get_contents($url, false, $context);        
@@ -222,11 +222,15 @@ function getprofile_do(){
 	if (get_user_meta(3,'jabber',true)==0) { $live_3 = 'closed'; } else { $live_3 = 'open'; };
 	?>
 	<div id="locations-list">
-		<div class="spacer">Marina HQ, CA</div>
+		<div class="spacer">Pittsburgh, PA</div>
 		<!-- just hacked this so i could see more site navigation -->
 		<li barid="8" barname="Shady Grove" class="open">
 			<p class="title">Shady Grove</p>
 			<p class="addy">5500 Walnut St, Pittsburgh, PA 15232</p>
+		</li>
+		<li barid="16" barname="Livermore" class="open">
+			<p class="title">Livermore</p>
+			<p class="addy">124 South Highland Ave, Pittsburgh, PA 15206</p>
 		</li>
 		<!--<li barid="2" barname="Basement" class="open<?php /*echo $live_2; */?>">
 			<p class="title">Basement</p>
@@ -257,7 +261,7 @@ function sendmobile_do() {
 		$query = array(
 		    "version" => "2.0.1",
 		    "longUrl" => $url,
-		    "login" => 'flowtab',
+		    "login" => 'srvd',
 		    "apiKey" => 'R_8a16f491e322e27c87507ddcb130f40a'
 		);
 		$query = http_build_query($query);
@@ -273,7 +277,7 @@ function sendmobile_do() {
 	$bitly_link = bitly_shorten($confirm_url);
 	$options = array('http' => array('method'  => 'POST','content' => http_build_query()));
 	$context  = stream_context_create($options);
-	$text_url = 'http://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call='.$phone.'&Send+from+Mobile+Number=6466993569&Text=Flowtab+would+like+to+verify+this+cell+number%2C+please+click+this+link:+'.$bitly_link.'&?callback=?';
+	$text_url = 'http://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call='.$phone.'&Send+from+Mobile+Number=6466993569&Text=Srvd+would+like+to+verify+this+cell+number%2C+please+click+this+link:+'.$bitly_link.'&?callback=?';
 	$result = file_get_contents($text_url, false, $context);
 	echo $bitly_link;
     die();
@@ -742,7 +746,7 @@ function afterpurchase_do($id) {
 	$bar_addy = get_usermeta($barid,'description');
 	$bar_phone = preg_replace('~(\d{3})[^\d]*(\d{3})[^\d]*(\d{4})$~','$1-$2-$3',$bar_phone);
 	
-	$message='<link type="text/css" rel="stylesheet" href="http://cdn.flowtab.mobi/css/my-receipt.css">';
+	$message='<link type="text/css" rel="stylesheet" href="http://srvdme.com/wp-content/themes/Starkers/css/receipts.css">';
 	
 	$message.='<div id="info-left">';
 		$message.='<p class="bar-info name">'.$bar_fname.'</p>';
@@ -803,9 +807,9 @@ function afterpurchase_do($id) {
 	
 	$order_message.='</div>';
 
-	//echo $message.$order_message;	
-	//wp_mail($email,'Flowtab Sales Receipt',$message.$order_message);
-	//wp_mail('kyle@nick.hesling.com:81','Flowtab Sales Receipt',$message.$order_message);
+	echo $message.$order_message;	
+	wp_mail($email,'Srvd Sales Receipt',$message.$order_message);
+	wp_mail('slakhavani@gmail.com','Srvd Sales Receipt',$message.$order_message);
 
 	die();
 }

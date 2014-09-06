@@ -16,7 +16,7 @@
 ?>
 
 <!-- CALL CSS -->
-<link type="text/css" rel="stylesheet" href="http://cdn.flowtab.mobi/css/my-checkout3.css">
+<link type="text/css" rel="stylesheet" href="http://srvdme.com/wp-content/themes/Starkers/css/my-checkout3.css">
 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
 
 </head><body>
@@ -196,7 +196,7 @@
 </body>
 
 <!-- CALL JS -->
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/zepto.min.js"></script>
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/my-checkout5.js"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/zepto.min.js"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/my-checkout5.js"></script>
 
 </html>

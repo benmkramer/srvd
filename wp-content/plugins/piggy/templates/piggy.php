@@ -2,15 +2,15 @@
 <html><head>
 
 <!-- META -->
-<title>Flowtab</title>
+<title>Srvd</title>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0">
 <meta name="format-detection" content="telephone=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-icon-precomposed" href="http://cdn.flowtab.mobi/img/icon.jpg">
-<link rel="icon" type="image/x-icon" href="http://cdn.flowtab.mobi/img/favicon.ico">
-<link rel="apple-touch-startup-image" sizes="1024x748" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1)" href="http://cdn.flowtab.mobi/img/splash2.jpg" />
+<link rel="apple-touch-icon-precomposed" href="/wp-content/themes/Starkers/img/srvd-logo.png">
+<link rel="icon" type="image/x-icon" href="http://srvdme.com/wp-content/themes/Starkers/img/favicon.ico">
+<link rel="apple-touch-startup-image" sizes="1024x748" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1)" href="http://srvdme.com/wp-content/themes/Starkers/img/splash2.jpg" />
 
 <!-- CSS -->
 <link type="text/css" rel="stylesheet" media="screen" href="/wp-content/themes/Starkers/css/my-piggy.css?4747" />
@@ -142,7 +142,7 @@
 		<div id="content">
 			<div id="left-box">
 				<div class="addy-wrap">
-					<img id="ft-print" src="http://cdn.flowtab.mobi/img/ft-print.jpg">
+					<img id="ft-print" src="http://srvdme.com/wp-content/themes/Starkers/img/ft-print.jpg">
 					<div class="addy-print">
 						<p class="addy-line" id="addy1"><?php echo $user_fname?></p>
 						<p class="addy-line" id="addy2"><?php echo $user_addy?></p>
@@ -308,11 +308,10 @@
 
 <!-- JS -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/countup.js"></script>
-<!--<script type="text/javascript" src="http://flowtab.jit.su/socket.io/socket.io.js"></script> -->
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/countup.js"></script>
 <script type="text/javascript" src="http://srvd-node.herokuapp.com/socket.io/socket.io.js"></script>  
 <script type="text/javascript" src="/wp-content/themes/Starkers/js/my-piggy.js?911198"></script>
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/iscroll.js"></script>
-<script type="text/javascript" src="http://cdn.flowtab.mobi/js/i-piggy.js?"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/iscroll.js"></script>
+<script type="text/javascript" src="http://srvdme.com/wp-content/themes/Starkers/js/i-piggy.js?"></script>
 
 </html>

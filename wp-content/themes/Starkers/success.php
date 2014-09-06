@@ -12,7 +12,7 @@
 	<div class="text-box">
 		<p id="green">Order Approved!</p>
 		<p id="directions">We will text you when your order is ready. Pick up your drinks at <span id="location"><?php echo $pickup_area ?></span>!</p>
-		<img id="responsibly" src="http://cdn.flowtab.mobi/img/responsibly.png">
+		<img id="responsibly" src="http://srvdme.com/wp-content/themes/Starkers/img/responsibly.png">
 	</div><!--/text-box-->
 </div><!--/success-->
 

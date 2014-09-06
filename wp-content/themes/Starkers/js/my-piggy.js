@@ -171,7 +171,6 @@ var stockItem = 0;
 var batchItem = 0;
 var oktoClick = 1;
 var longestWait = 0;
-//var socket = io.connect("http://flowtab.jit.su");
 var socket = io.connect("http://srvd-node.herokuapp.com");
 var evname = window.Touch ? 'touchstart' : 'mousedown';
 var hiddenbunch = "#queue,#totals-wrap,#shifts-wrap,#stats-box,#cats-box,#order-info,#queue-w,#tax-rates,#new-wrap,#all-wrap,#tables-box,#summary-box,#shifts-wrapper,.shifts-box,#pmx-box,#servers-btn,#orders-btn,.fax-btn,.fax-faux-btn,#cats-btn,#end-btn,#batch-btn,#shifts-btn,#totals-btn,#email-btn,#no-orders,.alert-wrap";
@@ -248,14 +247,14 @@ $(function() {
 	});
 
 	$("#open-btn").bind(evname, function(){
-		alert("Your store is now closed. You are no longer accepting Flowtab orders!");
+		alert("Your store is now closed. You are no longer accepting Srvd orders!");
 		$("#open-btn").addClass("hidden");
 		$("#closed-btn").removeClass("hidden");
 		$.post("/wp-admin/admin-ajax.php?action=open&status=0");
 	});
 
 	$("#closed-btn").bind(evname, function(){
-		alert("Your store is now open. You are accepting Flowtab orders!");
+		alert("Your store is now open. You are accepting Srvd orders!");
 		$("#open-btn").removeClass("hidden");
 		$("#closed-btn").addClass("hidden");
 		$.post("/wp-admin/admin-ajax.php?action=open&status=1");
@@ -323,7 +322,7 @@ $(function() {
 		startSpin();
 		$.post("/wp-admin/admin-ajax.php?action=pmxreport&bar="+barid+"&admin=0");
 		setTimeout("stopSpin()",500);
-		setTimeout("alert('We have emailed you the Flowtab Sales Report.')",800);
+		setTimeout("alert('We have emailed you the Srvd Sales Report.')",800);
 	});
 
 	$("#emergency").bind(evname, function(){
@@ -503,9 +502,9 @@ $(function() {
 			$(".ready,.ready .ready-tag").hide();
 		}
 		if (orderseating>0){
-			$.post("https://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call="+orderlogin+"&Send+from+Mobile+Number=6466993569&Text=Hi+"+orderfname+"%2C+your+Flowtab+order+is+ready!+The+server+will+come+soon+with+your+drinks.+%23"+orderiid_short+"&?callback=?");
+			$.post("https://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call="+orderlogin+"&Send+from+Mobile+Number=6466993569&Text=Hi+"+orderfname+"%2C+your+Srvd+order+is+ready!+The+server+will+come+soon+with+your+drinks.+%23"+orderiid_short+"&?callback=?");
 		} else {
-			$.post("https://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call="+orderlogin+"&Send+from+Mobile+Number=6466993569&Text=Hi+"+orderfname+"%2C+your+Flowtab+order+is+ready!+Pickup+drinks+from+"+pickup+".+Order+%23"+orderiid_short+"&?callback=?");
+			$.post("https://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call="+orderlogin+"&Send+from+Mobile+Number=6466993569&Text=Hi+"+orderfname+"%2C+your+Srvd+order+is+ready!+Pickup+drinks+from+"+pickup+".+Order+%23"+orderiid_short+"&?callback=?");
 		}
 		$.post("/wp-admin/admin-ajax.php?action=ordermade&id="+orderiid+"&status=1");
 		$.post("/wp-admin/admin-ajax.php?action=orderprinted&id="+orderiid+"&status=1");
@@ -645,9 +644,9 @@ $(function() {
 		startSpin();
 		$("#void-alert-wrap,#order-info").hide();
 		$(".line"+ordernum+",.spacer"+ordernum).addClass("dead").removeClass("ready").removeClass("waiting");
-		$.post("https://www.it6148044000it.com/6148044000/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call="+orderlogin+"&Send+from+Mobile+Number=6466993569&Text=Hey+"+orderfname+"%2C+your+Flowtab+drink+order+has+been+voided!+%23"+orderiid_short+".&?callback=?");
+		$.post("https://www.it6148044000it.com/6148044000/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call="+orderlogin+"&Send+from+Mobile+Number=6466993569&Text=Hey+"+orderfname+"%2C+your+Srvd+drink+order+has+been+voided!+%23"+orderiid_short+".&?callback=?");
 		$.post("/wp-admin/admin-ajax.php?action=status&id="+orderiid+"&status=7");
-		//$.post("https://www.it6148044000it.com/6148044000/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call=6148044000&Send+from+Mobile+Number=6466993569&Text=Hey+Kyle%2C+the+Flowtab+drink+order+%23"+orderiid+"+has+been+voided!&?callback=?");
+		//$.post("https://www.it6148044000it.com/6148044000/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call=6148044000&Send+from+Mobile+Number=6466993569&Text=Hey+Kyle%2C+the+Srvd+drink+order+%23"+orderiid+"+has+been+voided!&?callback=?");
 		$.post("/wp-admin/admin-ajax.php?action=voidorder&orderid="+orderiid);
 		if (showall == 1) {checkOrders()} else {checkNew()};
 		setTimeout("stopSpin()",500);
@@ -659,7 +658,7 @@ $(function() {
 		$(".line"+ordernum+",.spacer"+ordernum).addClass("dead").removeClass("ready").removeClass("waiting");
 		$.post("https://www.it6148044000it.com/6148044000/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call="+orderlogin+"&Send+from+Mobile+Number=6466993569&Text=Hey+"+orderfname+"%2C+the+bar+is+out+of+stock+on+one+of+your+drink+items.+Sorry!+%23"+orderiid_short+".&?callback=?");
 		$.post("/wp-admin/admin-ajax.php?action=status&id="+orderiid+"&status=7");
-		$.post("https://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call=6148044000&Send+from+Mobile+Number=6466993569&Text=Hey+Kyle%2C+the+Flowtab+drink+order+%23"+orderiid+"+has+been+voided!&?callback=?");
+		$.post("https://www.itduzzit.com/duzz/api/twilio-send-sms.json?token=onz2gr9i9khj0qx&Mobile+Number+to+Call=6148044000&Send+from+Mobile+Number=6466993569&Text=Hey+Kyle%2C+the+Srvd+drink+order+%23"+orderiid+"+has+been+voided!&?callback=?");
 		setTimeout("stopSpin()",500);
 	});
 

@@ -1,7 +1,7 @@
 /* MAIN */
 
 body {
-	background: url("http://cdn.flowtab.mobi/img/pattern.png") repeat;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/pattern.png") repeat;
 }
 
 #jqt {
@@ -156,7 +156,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #show-new {
-	background: url("http://cdn.flowtab.mobi/img/top-fours.png") no-repeat 1px -59px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/top-fours.png") no-repeat 1px -59px;
 	background-size: 498px auto;
 	height: 51px;
 	width: 125px;
@@ -164,7 +164,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #show-all {
-	background: url("http://cdn.flowtab.mobi/img/top-fours.png") no-repeat -125px -59px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/top-fours.png") no-repeat -125px -59px;
 	background-size: 499px auto;
 	height: 51px;
 	width: 125px;
@@ -172,7 +172,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #show-shifts {
-	background: url("http://cdn.flowtab.mobi/img/top-fours.png") no-repeat -251px -60px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/top-fours.png") no-repeat -251px -60px;
 	background-size: 502px auto;
 	height: 51px;
 	width: 125px;
@@ -180,7 +180,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #show-totals {
-	background: url("http://cdn.flowtab.mobi/img/top-fours.png") no-repeat -375px -59px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/top-fours.png") no-repeat -375px -59px;
 	background-size: 499px auto;
 	height: 51px;
 	width: 125px;
@@ -219,7 +219,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 /* TOPBAR */
 
 #tb {
-    background-image: url("http://cdn.flowtab.mobi/img/tb2.png");
+    background-image: url("http://srvdme.com/wp-content/themes/Starkers/img/tb2.png");
     background-repeat: repeat-x;
     height: 44px;
     position: absolute;
@@ -266,7 +266,8 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 .logo {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -98px -223px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -98px -223px;
+	//background: url("/wp-content/themes/Starkers/img/sprite-pigNEW.jpg") no-repeat -98px -223px;
 	background-size: 400px;
 	width: 100px;
 	height: 35px;
@@ -293,7 +294,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #node-check {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -466px -91px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -466px -91px;
 	width: 24px;
 	height: 24px;
 	position: absolute;
@@ -303,7 +304,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #closed-btn, #open-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -82px -516px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -82px -516px;
 	border-radius: 3px;
     height: 32px;
     width: 64px;
@@ -318,7 +319,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #unhappy-btn, #happy-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -153px -516px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -153px -516px;
 	border-radius: 3px;
     height: 32px;
     width: 64px;
@@ -333,7 +334,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #tables-btn, #notables-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -226px -516px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -226px -516px;
 	border-radius: 3px;
     height: 32px;
     width: 64px;
@@ -348,7 +349,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #print-btn, #noprint-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -10px -516px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -10px -516px;
 	border-radius: 3px;
     height: 32px;
     width: 64px;
@@ -363,7 +364,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #logout-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -297px -516px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -297px -516px;
 	border-radius: 3px;
     height: 32px;
     width: 64px;
@@ -407,7 +408,8 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 
 
 #no-orders {
-	background: url("http://cdn.flowtab.mobi/img/ft-empty.png") no-repeat;
+	//background: url("http://srvdme.com/wp-content/themes/Starkers/img/ft-empty.png") no-repeat;
+	background: url("/wp-content/themes/Starkers/img/srvd-logo.png") no-repeat;
 	background-size: 100% auto;
 	width: 80%;
 	height: 250px;
@@ -662,7 +664,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #new-logo {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -182px -395px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -182px -395px;
 	width: 150px;
 	height: 54px;
 	display: inline-block;
@@ -679,7 +681,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #new-arrow {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -12px -8px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -12px -8px;
 	width: 30px;
 	height: 33px;
 	position: absolute;
@@ -986,7 +988,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #sofa {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -9px -101px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -9px -101px;
 	width: 32px;
 	height: 29px;
 	margin-bottom: -4px;
@@ -1096,7 +1098,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #crown {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -6px -44px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -6px -44px;
 	background-size: 580px;
 	height: 30px;
 	width: 32px;
@@ -1116,7 +1118,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #receipt-top {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -360px -134px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -360px -134px;
 	width: 327px;
 	height: 89px;
 	margin: 10px auto 0;
@@ -1151,7 +1153,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #receipt-middle {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -383px -230px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -383px -230px;
 	background-size: 705px;
 	width: 289px;
 	position: relative;
@@ -1195,7 +1197,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #receipt-bottom {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -380px -530px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -380px -530px;
 	width: 289px;
 	height: 58px;
 	position: relative;
@@ -1234,7 +1236,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #ready-btn, #remind-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -7px -195px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -7px -195px;
 	width: 312px;
 	height: 90px;
 	position: relative;
@@ -1247,7 +1249,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #print-arrow {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -152px -5px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -152px -5px;
 	background-size: 350px;
 	width: 50px;
 	height: 33px;
@@ -1273,23 +1275,23 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #void-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -56px -5px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -56px -5px;
 	background-size: 600px;
 }
 
 #stock-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -56px -59px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -56px -59px;
 	background-size: 600px;
 }
 
 #close-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -54px -113px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -54px -113px;
 	background-size: 600px;
 	display: none;
 }
 
 #stock-top {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -182px -5px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -182px -5px;
 	background-size: 400px;
 	position: absolute;
 	opacity: .8;
@@ -1300,7 +1302,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #stock-msg {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -215px -55px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -215px -55px;
 	background-size: 500px;
 	position: absolute;
 	width: 75px;
@@ -1390,7 +1392,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 .cancel-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -201px -67px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -201px -67px;
 	background-size: 800px;
 	width: 135px;
 	height: 55px;
@@ -1401,7 +1403,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 #real-void-btn, #real-stock-btn, #real-close-btn, #real-batch-btn {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -202px -6px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -202px -6px;
 	background-size: 800px;
 	width: 135px;
 	height: 55px;
@@ -1420,7 +1422,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 .f-line {
-	background: url("http://cdn.flowtab.mobi/img/sprite.png");
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite.png");
 	background-position: -168px -2px;
 	background-size: 710px;
 	width: 285px;
@@ -1497,7 +1499,7 @@ div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -we
 }
 
 .x-icon {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -10px -142px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -10px -142px;
 	width: 27px;
 	height: 27px;
 	top: -10px;
@@ -1569,7 +1571,7 @@ label, #remember-me {
 }
 
 .green-check {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -433px -91px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -433px -91px;
 	width: 30px;
 	height: 30px;
 	float: left;
@@ -1578,7 +1580,7 @@ label, #remember-me {
 }
 
 .red-x {
-	background: url("http://cdn.flowtab.mobi/img/sprite-pig.png") no-repeat -409px -91px;
+	background: url("http://srvdme.com/wp-content/themes/Starkers/img/sprite-pig.png") no-repeat -409px -91px;
 	width: 30px;
 	height: 30px;
 	float: left;

@@ -2,12 +2,12 @@
 
 var jQT = new $.jQTouch({
     preloadImages: [
-		'http://cdn.flowtab.mobi/img/sprite-home14.png',
-		'http://cdn.flowtab.mobi/img/chicago9.jpg',
-		'http://cdn.flowtab.mobi/img/dropbar.jpg',
-		'http://cdn.flowtab.mobi/img/pattern.png',
-		'http://cdn.flowtab.mobi/img/topbar.png',
-		//'http://cdn.flowtab.mobi/img/taps.jpg'
+		'http://srvdme.com/wp-content/themes/Starkers/img/sprite-home14.png',
+		'http://srvdme.com/wp-content/themes/Starkers/img/chicago9.jpg',
+		'http://srvdme.com/wp-content/themes/Starkers/img/dropbar.jpg',
+		'http://srvdme.com/wp-content/themes/Starkers/img/pattern.png',
+		'http://srvdme.com/wp-content/themes/Starkers/img/topbar.png',
+		//'http://srvdme.com/wp-content/themes/Starkers/img/taps.jpg'
 		'/wp-content/themes/Starkers/img/srvd-logo.png'
     ]
 });
