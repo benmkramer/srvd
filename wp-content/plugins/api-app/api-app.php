@@ -202,6 +202,12 @@ add_action("wp_ajax_getprofile", "getprofile_do");
 function getprofile_do(){
     global $wpdb, $current_user;
     if (is_user_logged_in()) { $login = 1; } else {	die(); }    
+
+
+    error_log("sending test email");
+    wp_mail('npascull@andrew.cmu.edu','Srvd Sales Receipt','<div>some text</div><div><em>some bold text</em></div>', 'Content-type: text/html');
+    wp_mail('npascull@gmail.com','Srvd Sales Receipt','<div>some text</div><div><em>some bold text</em></div>', 'Content-type: text/html');
+
     echo '<span id="profile-storage" class="hidden">';
 	    echo '<span id="get-login">'.$login.'</span>';
 	    echo '<span id="get-userid">'.$current_user->ID.'</span>';
@@ -709,12 +715,15 @@ function chargeuser_do() {
 	die();
 }
 
+function set_html_content_type() { return 'text/html'; }	
+
 // After purchase
 
 add_action("wp_ajax_afterpurchase", "afterpurchase_do");
 add_action("wp_ajax_nopriv_afterpurchase", "afterpurchase_do");
 function afterpurchase_do($id) {
-	global $wpdb;
+	global $wpdb, $current_user;
+	$id    = $current_user->ID;
 	$barid = $_GET['id'];
     $website_url = get_site_url();
     function post_to_url($url, $data) {
@@ -739,6 +748,15 @@ function afterpurchase_do($id) {
     );
     post_to_url("http://srvd-node.herokuapp.com", $data);
 
+
+	$subtotal = 0;
+	$tax      = 0;
+	$gratuity = 0;
+	$shipping = 0;
+	//where does discount come from?
+	$discount = 0;
+	$total    = 0;
+
 	$date = date('F jS, Y',time());
 	$email = $current_user->user_email;	
 	$bar_phone = get_the_author_meta('user_login',$barid);
@@ -750,10 +768,13 @@ function afterpurchase_do($id) {
 	
 	$message.='<div id="info-left">';
 		$message.='<p class="bar-info name">'.$bar_fname.'</p>';
-		$message.='<p class="bar-info">'.str_replace('>','</p><p class="bar-info">',$bar_addy).'</p>';
-		$message.='<p class="bar-info">'.$bar_phone.'</p>';
+	/*	$message.='<p class="bar-info">'.str_replace('>','</p><p class="bar-info">',$bar_addy).'</p>';
+		$message.='<p class="bar-info">'.$bar_phone.'</p>';*/
 	$message.='</div>';
 	
+	$purchase_id = $wpdb->get_row("select id from wp_wpsc_purchase_logs where user_id='$id' order by id desc limit 1");
+	$order_id    = $purchase_id->id;
+	error_log("order_id is ".$order_id);
 	$order_details = $wpdb->get_results("select * from wp_wpsc_cart_contents where purchaseid = '$order_id'");
 	
 	$order_message='<div id="info-right">';
@@ -761,22 +782,29 @@ function afterpurchase_do($id) {
 		$order_message='<p class="bar-info order-id">Order #'.$order_id.'</p>';
 	$order_message.='</div>';
 	
-	$order_message.='<div id="item-wrap">';
-		$order_message.='<div class="item-title qty">Qty</div>';
+	//$order_message.='<div id="item-wrap">';
+		/*$order_message.='<div class="item-title qty">Qty</div>';
 		$order_message.='<div class="item-title product">Product</div>';
 		$order_message.='<div class="item-title price">Price</div>';
-		foreach ($order_details as $key => $order) {
-			$sub_total += ($order->quantity * $order->price);
-			$order_message.='<div class="item-row">';
-				$order_message.='<div class="item-list qty">'.$order->quantity.'</div>';
-				$order_message.='<div class="item-list product">'.$order->name.'</div>';
-				$order_message.='<div class="item-list price">$'.money_format('%.2n',$order->price).'</div>';
-			$order_message.='</div>';
+		*/foreach ($order_details as $key => $order) 
+		{
+			$subtotal  += ($order->quantity * $order->price);
+			$tax       += $order->wpec_taxes_total;
+			$discount  += $order->discount_value;
+			$shipping  += $order->base_shipping;
+			error_log('base_shipping: '.$order->base_shipping);
+			//$gratuity  += ($order->totalprice+$order->discount_value)-($sub_total+$order->wpec_taxes_total);
+			$order_message.='<div>';
+				$order_message.='<div> Qty: '.$order->quantity.'</div>';
+				$order_message.='<div> Product: '.$order->name.'</div>';
+				$order_message.='<div>$'.money_format('%.2n',$order->price).'</div>';
+			$order_message.='</div>';	
 		}
-		$gratuity=($order->totalprice+$order->discount_value)-($sub_total+$order->wpec_taxes_total);
-	$order_message.='</div>';
+	error_log($subtotal.' '.$tax.' '.$discount.' '.$shipping);
+	$total = $subtotal + $tax + $shipping - $discount;
+	//$order_message.='</div>';
 	
-	$order_message.='<div id="totals-wrap">';
+	//$order_message.='<div id="totals-wrap">';
 	
 		$order_message.='<div class="item-totals">';
 			$order_message.='<div class="total-left">Subtotal:</div>';
@@ -805,11 +833,19 @@ function afterpurchase_do($id) {
 			$order_message.='<div class="total-right total">$'.money_format('%.2n',$total).'</div>';
 		$order_message.='</div><br/>';
 	
-	$order_message.='</div>';
+	//$order_message.='</div>';
 
 	echo $message.$order_message;	
-	wp_mail($email,'Srvd Sales Receipt',$message.$order_message);
-	wp_mail('slakhavani@gmail.com','Srvd Sales Receipt',$message.$order_message);
+
+	$headers= "Content-Type: text/html";
+	error_log($headers);
+
+	//add_filter( 'wp_mail_content_type', 'set_html_content_type' );
+	//wp_mail($email,'Srvd Sales Receipt',$message.$order_message, 'From: Srvd Team <srvd.ops@gmail.com>'.'\r\n');
+	wp_mail('npascull@gmail.com','Srvd Sales Receipt',$message.$order_message, $headers);
+	wp_mail('slakhavani@gmail.com','Srvd Sales Receipt',$message.$order_message, $headers);
+	wp_mail($email,'Srvd Sales Receipt',$message.$order_message, $headers);
+	//remove_filter( 'wp_mail_content_type', 'set_html_content_type' );
 
 	die();
 }

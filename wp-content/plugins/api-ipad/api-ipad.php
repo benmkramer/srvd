@@ -331,7 +331,7 @@ function nodeorders_do() {
         'message' => $piggy,
         'id' => $barid
     );
-    post_to_url("http://srvd-node.herokuap.com", $data);
+    post_to_url("http://srvd-node.herokuapp.com", $data);
     echo $piggy;
     die();
 }
@@ -915,7 +915,7 @@ function getorders_do() {
             if ($order_status == "waiting") {
                 echo '<div class="order-time" id="time' . $order_num . '">' . $elapsed_mins . '</div>';
             }
-            ;?>
+            ?>
 	        <script type="text/javascript">
 	            startClock('<?php echo $elapsed_mins ?>', '<?php echo $order_num ?>');
 	        </script><?php

@@ -92,7 +92,7 @@
 			</div><!--/scroll-->
 	    </div><!--/login-->
 	<?php } else { ?>
-		<?php if(!(current_user_can('administrator'))) { header("Location: http://ec2-54-191-220-0.us-west-2.compute.amazonaws.com/"); } ?>
+		<?php if(!(current_user_can('administrator'))) { header("Location: http://srvdapp.com/"); } ?>
 		<script type="text/javascript">isLogin = 0;</script>
 		<div id="tb">
 			<div id="tab-wrapper">
